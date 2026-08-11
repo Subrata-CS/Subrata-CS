@@ -92,18 +92,18 @@
   <text id="l2" class="f" x="62" y="146" font-size="54" font-weight="700" letter-spacing="-1.7" fill="#F7F4FF">Subrata Pramanik</text>
   <text id="l3" class="f" x="64" y="196" font-size="25" font-weight="600" letter-spacing="-.4" fill="url(#ink)">Computer Vision · Pattern Recognition</text>
   <rect id="uline" x="64" y="212" height="4" rx="2" fill="url(#rule)"/>
-  <text id="l4" class="f" x="64" y="252" font-size="16.5" fill="#C3BEE8">Researcher, IIIT Allahabad · Ex-TCS · Kolkata, India</text>
+  <text id="l4" class="f" x="64" y="252" font-size="16.5" fill="#C3BEE8">Researcher, IIIT Allahabad · Ex-TCSer · Kolkata, India</text>
 
   <g id="l5">
     <g fill="rgba(255,255,255,.09)" stroke="rgba(255,255,255,.22)">
       <rect x="64"  y="272" width="176" height="34" rx="17"/>
       <rect x="250" y="272" width="150" height="34" rx="17"/>
-      <rect x="410" y="272" width="216" height="34" rx="17"/>
+      <rect x="410" y="272" width="284" height="34" rx="17"/>
     </g>
     <g class="m" font-size="11.5" letter-spacing="1.6" fill="#E2DEFF">
       <text x="86"  y="294">IIIT ALLAHABAD</text>
       <text x="272" y="294">RESEARCHER</text>
-      <text x="430" y="294">PATTERN RECOGNITION</text>
+      <text x="428" y="294" font-size="10" letter-spacing="1.1">COMPUTER VISION · PATTERN RECOGNITION</text>
     </g>
   </g>
 </g>
