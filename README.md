@@ -31,7 +31,11 @@ I am **Subrata Pramanik**, a researcher at **IIIT Allahabad** working on **compu
 
 ## 🔬 &nbsp;What I work on
 
-<img src="./assets/research.svg" alt="Computer vision and pattern recognition pipeline: pixels, features, representation, prediction" width="100%" />
+<img src="./assets/research.svg" alt="Visual document understanding with retrieval augmented generation: a page is laid out, encoded into patch embeddings, retrieved against, and answered with a citation back to the page" width="100%" />
+
+<div align="center"><sub><b>Visual document understanding with retrieval-augmented generation</b> — the page is laid out and encoded, the query is matched against what the page actually contains, and the answer stays cited back to the region it came from.</sub></div>
+
+<br/>
 
 <table>
 <tr>
@@ -39,14 +43,14 @@ I am **Subrata Pramanik**, a researcher at **IIIT Allahabad** working on **compu
 
 **🖼️ Computer Vision**
 
-Teaching a machine to read an image — where the objects are, what separates one region from the next, and what the picture is actually of.
+Teaching a machine to read a page — where the title, the paragraph, the table and the figure sit, and what each of them says.
 
 </td>
 <td width="50%" valign="top">
 
 **🧩 Pattern Recognition**
 
-The step underneath that: turning raw measurements into features, and features into a decision that holds up on data the model has never seen.
+The step underneath: turning raw measurements into features, and features into a decision that still holds on data the model has never seen.
 
 </td>
 </tr>
