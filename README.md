@@ -4,39 +4,80 @@
 
 <br/>
 
-<a href="https://subrata-cs.github.io/"><img src="https://img.shields.io/badge/Personal_Website-6D5AF7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Personal website" /></a>
-<a href="https://subrata-cs.github.io/learning-hub/"><img src="https://img.shields.io/badge/Learning_Hub-22C9E8?style=for-the-badge&logo=bookstack&logoColor=white" alt="Learning Hub" /></a>
-<a href="https://www.linkedin.com/in/sp4532/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://orcid.org/0009-0001-5676-4312"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" /></a>
-<img src="https://komarev.com/ghpvc/?username=Subrata-CS&style=for-the-badge&color=9B5CF6&label=PROFILE+VIEWS" alt="Profile views" />
+<a href="https://subrata-cs.github.io/"><img src="https://img.shields.io/badge/Personal_Website-6D5AF7?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=160F3C" alt="Personal website" /></a>
+<a href="https://subrata-cs.github.io/learning-hub/"><img src="https://img.shields.io/badge/Learning_Hub-22C9E8?style=for-the-badge&logo=bookstack&logoColor=white&labelColor=160F3C" alt="Learning Hub" /></a>
+<a href="https://www.linkedin.com/in/sp4532/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=160F3C" alt="LinkedIn" /></a>
+<a href="https://orcid.org/0009-0001-5676-4312"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white&labelColor=160F3C" alt="ORCID" /></a>
+<img src="https://komarev.com/ghpvc/?username=Subrata-CS&style=for-the-badge&color=9B5CF6&labelColor=160F3C&label=PROFILE+VIEWS" alt="Profile views" />
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=6D5AF7&center=true&vCenter=true&width=760&lines=Computer+Vision+%C2%B7+Pattern+Recognition;Researcher+at+IIIT+Allahabad;Ex-TCSer" alt="Computer Vision · Pattern Recognition — researcher at IIIT Allahabad, Ex-TCSer" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=9B8CFA&center=true&vCenter=true&width=760&lines=Computer+Vision+%C2%B7+Pattern+Recognition;Researcher+at+IIIT+Allahabad;Ex-TCSer" alt="Computer Vision · Pattern Recognition — researcher at IIIT Allahabad, Ex-TCSer" />
 
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-## 👋 &nbsp;About me
+<img src="./assets/sec-about.svg" width="100%" alt="About me" />
 
 I am **Subrata Pramanik**, a researcher at **IIIT Allahabad** working on **computer vision and pattern recognition**. Before research I was a software engineer at **TCS**.
 
-- 🔬 &nbsp;**Research** — computer vision and pattern recognition
-- 🎓 &nbsp;**Affiliation** — IIIT Allahabad · formerly TCS
-- 📚 &nbsp;**Building** — the [**Learning Hub**](https://subrata-cs.github.io/learning-hub/)
-- 🌐 &nbsp;**Website** — [subrata-cs.github.io](https://subrata-cs.github.io/)
-- 💼 &nbsp;**LinkedIn** — [linkedin.com/in/sp4532](https://www.linkedin.com/in/sp4532/)
-- 📍 &nbsp;**Based in** — Kolkata, India
+<table>
+<tr>
+<td width="34%" valign="top">
+
+<img src="https://img.shields.io/badge/RESEARCH-6D5AF7?style=flat-square&labelColor=160F3C" alt="" />
+
+Computer vision · pattern recognition
+
+</td>
+<td width="33%" valign="top">
+
+<img src="https://img.shields.io/badge/AFFILIATION-22C9E8?style=flat-square&labelColor=160F3C" alt="" />
+
+IIIT Allahabad · formerly TCS
+
+</td>
+<td width="33%" valign="top">
+
+<img src="https://img.shields.io/badge/BASED_IN-22C58B?style=flat-square&labelColor=160F3C" alt="" />
+
+Kolkata, India
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+<img src="https://img.shields.io/badge/BUILDING-F7A93B?style=flat-square&labelColor=160F3C" alt="" />
+
+The [**Learning Hub**](https://subrata-cs.github.io/learning-hub/)
+
+</td>
+<td valign="top">
+
+<img src="https://img.shields.io/badge/WEBSITE-F65C8E?style=flat-square&labelColor=160F3C" alt="" />
+
+[subrata-cs.github.io](https://subrata-cs.github.io/)
+
+</td>
+<td valign="top">
+
+<img src="https://img.shields.io/badge/LINKEDIN-9B5CF6?style=flat-square&labelColor=160F3C" alt="" />
+
+[linkedin.com/in/sp4532](https://www.linkedin.com/in/sp4532/)
+
+</td>
+</tr>
+</table>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-
-## 📚 &nbsp;Featured — the Learning Hub
+<img src="./assets/sec-hub.svg" width="100%" alt="Featured — the Learning Hub" />
 
 <div align="center">
 
-### **[→ Click here](https://subrata-cs.github.io/learning-hub/)**
+<a href="https://subrata-cs.github.io/learning-hub/"><img src="https://img.shields.io/badge/%E2%86%92%20%20CLICK%20HERE-6D5AF7?style=for-the-badge&labelColor=160F3C&logo=readthedocs&logoColor=white" alt="Open the Learning Hub" /></a>
 
 *One shelf for everything I am learning — arranged by subject, then by topic, then by the exact thing you came looking for.*
 
@@ -44,49 +85,54 @@ I am **Subrata Pramanik**, a researcher at **IIIT Allahabad** working on **compu
 <img src="https://img.shields.io/github/last-commit/Subrata-CS/learning-hub?style=for-the-badge&label=last%20update&color=6D5AF7&labelColor=160F3C" alt="Last update" />
 <img src="https://img.shields.io/github/languages/code-size/Subrata-CS/learning-hub?style=for-the-badge&label=size&color=9B5CF6&labelColor=160F3C" alt="Code size" />
 
+<br/><br/>
+
+<img src="./assets/five-ways.svg" width="100%" alt="Every topic opens the same five ways: description, notes, tutorials, run your code, projects" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/Python-6D5AF7?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/Data_Structures_%26_Algorithms-7B5FF5?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/C-22C9E8?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/C_Programming_Practice-22B4E0?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/Machine_Learning-22C58B?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/Deep_Learning-3BC07A?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/Computer_Vision-F7A93B?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/Generative_AI-F6864F?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/Research_Guide-F65C8E?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/Miscellaneous-9B5CF6?style=flat-square&labelColor=160F3C" alt="" />
+
+<sub>Notes are written in Markdown and rendered straight into the page, so the site is never out of date with the repositories behind it.</sub>
+
 </div>
-
-Every topic opens with the same five ways in:
-
-<table>
-<tr><td width="120" align="center">📖<br/><b>Description</b></td><td>The idea set out in full, in plain words.</td></tr>
-<tr><td align="center">📝<br/><b>Notes</b></td><td>Compressed to what matters — the version you want the night before.</td></tr>
-<tr><td align="center">🎓<br/><b>Tutorials</b></td><td>Walked through end to end, with nothing skipped.</td></tr>
-<tr><td align="center">▶️<br/><b>Run your code</b></td><td>An environment that opens in one click.</td></tr>
-<tr><td align="center">🚀<br/><b>Projects</b></td><td>Real builds, from a first attempt to something ambitious.</td></tr>
-</table>
-
-
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-## 📄 &nbsp;Publications
+<img src="./assets/sec-publications.svg" width="100%" alt="Publications" />
 
 <div align="center">
 
-| Type | Year | Paper link |
+| Type | Year | Paper |
 |:---:|:---:|:---|
-| 🎤 &nbsp;**Conference** | `2026` | [Demo Paper I — Layout-aware document understanding](https://example.com/paper-2026-conference) |
-| 📕 &nbsp;**Journal** | `2026` | [Demo Paper II — Pattern recognition for visual documents](https://example.com/paper-2026-journal) |
-| 🎤 &nbsp;**Conference** | `2027` | [Demo Paper III — Retrieval-augmented visual question answering](https://example.com/paper-2027-conference) |
-| 📕 &nbsp;**Journal** | `2028` | [Demo Paper IV — Grounded generation over scanned pages](https://example.com/paper-2028-journal) |
-| 🎤 &nbsp;**Conference** | `2029` | [Demo Paper V — Multimodal representation learning](https://example.com/paper-2029-conference) |
-
-<sub></sub>
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=flat-square&labelColor=160F3C" alt="Conference" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=flat-square&labelColor=160F3C" alt="2026" /> | [Demo Paper I — Layout-aware document understanding](https://example.com/paper-2026-conference) |
+| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=flat-square&labelColor=160F3C" alt="Journal" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=flat-square&labelColor=160F3C" alt="2026" /> | [Demo Paper II — Pattern recognition for visual documents](https://example.com/paper-2026-journal) |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=flat-square&labelColor=160F3C" alt="Conference" /> | <img src="https://img.shields.io/badge/2027-9B5CF6?style=flat-square&labelColor=160F3C" alt="2027" /> | [Demo Paper III — Retrieval-augmented visual question answering](https://example.com/paper-2027-conference) |
+| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=flat-square&labelColor=160F3C" alt="Journal" /> | <img src="https://img.shields.io/badge/2028-9B5CF6?style=flat-square&labelColor=160F3C" alt="2028" /> | [Demo Paper IV — Grounded generation over scanned pages](https://example.com/paper-2028-journal) |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=flat-square&labelColor=160F3C" alt="Conference" /> | <img src="https://img.shields.io/badge/2029-9B5CF6?style=flat-square&labelColor=160F3C" alt="2029" /> | [Demo Paper V — Multimodal representation learning](https://example.com/paper-2029-conference) |
 
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
-## 🤝 &nbsp;Reach me
+<img src="./assets/sec-reach.svg" width="100%" alt="Reach me" />
 
 <div align="center">
 
-<a href="https://subrata-cs.github.io/"><img src="https://img.shields.io/badge/Website-6D5AF7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
-<a href="https://subrata-cs.github.io/learning-hub/"><img src="https://img.shields.io/badge/Learning_Hub-22C9E8?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Learning Hub" /></a>
-<a href="https://www.linkedin.com/in/sp4532/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://orcid.org/0009-0001-5676-4312"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" /></a>
-<a href="https://github.com/Subrata-CS?tab=repositories"><img src="https://img.shields.io/badge/Repositories-9B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" /></a>
+<a href="https://subrata-cs.github.io/"><img src="https://img.shields.io/badge/Website-6D5AF7?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=160F3C" alt="Website" /></a>
+<a href="https://subrata-cs.github.io/learning-hub/"><img src="https://img.shields.io/badge/Learning_Hub-22C9E8?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=160F3C" alt="Learning Hub" /></a>
+<a href="https://www.linkedin.com/in/sp4532/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=160F3C" alt="LinkedIn" /></a>
+<a href="https://orcid.org/0009-0001-5676-4312"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white&labelColor=160F3C" alt="ORCID" /></a>
+<a href="https://github.com/Subrata-CS?tab=repositories"><img src="https://img.shields.io/badge/Repositories-9B5CF6?style=for-the-badge&logo=github&logoColor=white&labelColor=160F3C" alt="Repositories" /></a>
 
 </div>
 
@@ -94,6 +140,6 @@ Every topic opens with the same five ways in:
 
 <div align="center">
 
-**Subrata Pramanik** &nbsp;·&nbsp; Computer Vision &amp; Pattern Recognition &nbsp;·&nbsp; IIIT Allahabad
+<img src="./assets/footer.svg" width="100%" alt="Subrata Pramanik — Computer Vision and Pattern Recognition, IIIT Allahabad" />
 
 </div>
