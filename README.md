@@ -56,7 +56,7 @@ Every topic opens with the same five ways in:
 <tr><td align="center">🚀<br/><b>Projects</b></td><td>Real builds, from a first attempt to something ambitious.</td></tr>
 </table>
 
-The subjects on the shelf: **Python · Data Structures & Algorithms · C · C Programming Practice · Machine Learning · Deep Learning · Computer Vision · Generative AI · Research Guide · Miscellaneous**. Notes are written in Markdown and rendered straight into the page, so the site is never out of date with the repositories behind it.
+
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
