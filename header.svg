@@ -53,21 +53,25 @@
   <g>
     <rect x="828" y="74" width="196" height="196" rx="14" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.22)"/>
     <g clip-path="url(#frame)">
-      <g opacity=".85">
-        <rect x="828" y="74" width="196" height="196" fill="#0E0A28"/>
-        <circle cx="905" cy="150" r="34" fill="#3B2E8F" opacity=".9"/>
-        <rect x="856" y="196" width="140" height="52" rx="10" fill="#2A3F8F" opacity=".8"/>
-        <path d="M828 176 L900 128 L960 168 L1024 132 L1024 270 L828 270 Z" fill="#1B2A66" opacity=".85"/>
-        <g stroke="rgba(255,255,255,.07)">
-          <path d="M877 74 V270"/><path d="M926 74 V270"/><path d="M975 74 V270"/>
-          <path d="M828 123 H1024"/><path d="M828 172 H1024"/><path d="M828 221 H1024"/>
-        </g>
-        <rect x="864" y="112" width="86" height="86" rx="6" fill="none" stroke="#22C9E8" stroke-width="2"/>
-        <rect x="944" y="176" width="62" height="62" rx="6" fill="none" stroke="#F65C8E" stroke-width="2"/>
+      <rect x="828" y="74" width="196" height="196" fill="#F4F2FF"/>
+      <rect x="846" y="90" width="120" height="13" rx="4" fill="#B7B0DC"/>
+      <g fill="#DAD5EE">
+        <rect x="846" y="116" width="160" height="7" rx="3.5"/><rect x="846" y="130" width="148" height="7" rx="3.5"/>
+        <rect x="846" y="144" width="160" height="7" rx="3.5"/><rect x="846" y="158" width="104" height="7" rx="3.5"/>
       </g>
-      <g id="scan"><rect x="828" y="74" width="196" height="14" fill="url(#rule)" opacity=".45"/></g>
+      <g stroke="#C2BBE4" fill="none"><rect x="846" y="178" width="86" height="52" rx="4"/><path d="M846 195 H932 M846 212 H932 M875 178 V230 M904 178 V230"/></g>
+      <g><rect x="944" y="178" width="62" height="52" rx="5" fill="#E4E0F7"/><circle cx="962" cy="193" r="7" fill="#F7C86B"/>
+         <path d="M944 220 L962 202 L976 214 L1006 190 L1006 230 L944 230 Z" fill="#BFB8E8"/></g>
+      <g fill="#DAD5EE"><rect x="846" y="242" width="160" height="7" rx="3.5"/></g>
+      <g fill="none" stroke-width="2">
+        <rect x="842" y="86" width="128" height="21" rx="3" stroke="#6D5AF7"/>
+        <rect x="842" y="111" width="168" height="58" rx="3" stroke="#22C9E8"/>
+        <rect x="842" y="174" width="94" height="60" rx="3" stroke="#22C58B"/>
+        <rect x="940" y="174" width="70" height="60" rx="3" stroke="#F7A93B"/>
+      </g>
+      <g id="scan"><rect x="828" y="74" width="196" height="14" fill="url(#rule)" opacity=".5"/></g>
     </g>
-    <text class="m" x="828" y="292" font-size="10.5" letter-spacing="1.8" fill="#8F88C4">DETECT · RECOGNISE · CLASSIFY</text>
+    <text class="m" x="828" y="292" font-size="10.5" letter-spacing="1.8" fill="#8F88C4">LAYOUT · RETRIEVE · GROUND</text>
   </g>
 
   <!-- tiny network between text and image -->
