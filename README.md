@@ -102,7 +102,7 @@ The [**Learning Hub**](https://subrata-cs.github.io/learning-hub/)
 <img src="https://img.shields.io/badge/Research_Guide-F65C8E?style=flat-square&labelColor=160F3C" alt="" />
 <img src="https://img.shields.io/badge/Miscellaneous-9B5CF6?style=flat-square&labelColor=160F3C" alt="" />
 
-<sub>Notes are written in Markdown and rendered straight into the page, so the site is never out of date with the repositories behind it.</sub>
+<sub></sub>
 
 </div>
 
