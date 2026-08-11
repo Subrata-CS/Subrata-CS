@@ -111,7 +111,7 @@ The subjects on the shelf: **Python · Data Structures & Algorithms · C · C Pr
 
 <div align="center">
 
-<sub>Everything below is read live from the GitHub API — nothing here is typed in by hand.</sub>
+<sub></sub>
 
 <br/><br/>
 
