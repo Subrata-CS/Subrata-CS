@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Research focus orbiting a visual document understanding core: layout-aware models, OCR-free reading, document VQA, retrieval-augmented generation, vision language models, resolution-bounded legibility">
+  <title>Current research focus — a visual document understanding core with orbiting sub-problems</title>
+  <defs>
+    <linearGradient id="oBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08050F"/>
+      <stop offset="50%" stop-color="#140E33"/>
+      <stop offset="100%" stop-color="#08050F"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22C9E8" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#6D5AF7" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#6D5AF7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="coreFill" cx="38%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#3B2C8F"/>
+      <stop offset="100%" stop-color="#0D0824"/>
+    </radialGradient>
+    <filter id="oSoft" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="30"/></filter>
+    <filter id="oGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="oCard"><rect width="1200" height="380" rx="22"/></clipPath>
+
+    <path id="ring1" d="M600 34 a470 146 0 1 0 0 292 a470 146 0 1 0 0 -292" fill="none"/>
+    <path id="ring2" d="M600 60 a366 120 0 1 0 0 240 a366 120 0 1 0 0 -240" fill="none"/>
+    <path id="ring3" d="M600 88 a240 92 0 1 0 0 184 a240 92 0 1 0 0 -184" fill="none"/>
+
+    <style>
+      .halo { transform-box: fill-box; transform-origin: center; animation: hazeMove 16s ease-in-out infinite; filter: url(#oSoft); }
+      @keyframes hazeMove { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-70px,26px) scale(1.2); } }
+      .core { transform-box: fill-box; transform-origin: center; animation: coreBeat 3.6s ease-in-out infinite; }
+      @keyframes coreBeat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+      .ringLine { animation: ringFade 6s ease-in-out infinite; }
+      .rl2 { animation-delay: 2s; } .rl3 { animation-delay: 4s; }
+      @keyframes ringFade { 0%,100% { stroke-opacity:.16; } 50% { stroke-opacity:.42; } }
+      .star { animation: tw 4s ease-in-out infinite; }
+      .s2 { animation-delay: .8s; } .s3 { animation-delay: 1.6s; } .s4 { animation-delay: 2.4s; } .s5 { animation-delay: 3.2s; }
+      @keyframes tw { 0%,100% { opacity:.12; } 50% { opacity:.85; } }
+      .caption { animation: capFade 5s ease-in-out infinite; }
+      @keyframes capFade { 0%,100% { opacity:.45; } 50% { opacity:.9; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#oCard)">
+    <rect width="1200" height="380" fill="url(#oBg)"/>
+    <ellipse class="halo" cx="600" cy="180" rx="380" ry="170" fill="url(#coreGlow)"/>
+
+    <g fill="#9B8CFA">
+      <circle class="star"    cx="120" cy="60"  r="1.8"/>
+      <circle class="star s2" cx="1080" cy="92" r="2.2"/>
+      <circle class="star s3" cx="220" cy="316" r="2"/>
+      <circle class="star s4" cx="980" cy="300" r="1.8"/>
+      <circle class="star s5" cx="640" cy="36"  r="2"/>
+      <circle class="star s2" cx="330" cy="120" r="1.6"/>
+      <circle class="star s4" cx="880" cy="200" r="1.6"/>
+    </g>
+
+    <!-- orbit rings -->
+    <g fill="none" stroke="#9B8CFA" stroke-width="1.2" stroke-dasharray="4 8">
+      <use class="ringLine"     href="#ring1" xlink:href="#ring1"/>
+      <use class="ringLine rl2" href="#ring2" xlink:href="#ring2" stroke="#7FE6FF"/>
+      <use class="ringLine rl3" href="#ring3" xlink:href="#ring3" stroke="#8DE8C0"/>
+    </g>
+
+    <!-- core -->
+    <g class="core">
+      <circle cx="600" cy="180" r="70" fill="none" stroke="#22C9E8" stroke-opacity="0.28" stroke-width="1.4">
+        <animate attributeName="r" values="58;96" dur="3.8s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.5;0" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="180" r="70" fill="none" stroke="#6D5AF7" stroke-opacity="0.28" stroke-width="1.4">
+        <animate attributeName="r" values="58;96" dur="3.8s" begin="1.9s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.5;0" dur="3.8s" begin="1.9s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="180" r="56" fill="url(#coreFill)" stroke="#7FE6FF" stroke-opacity="0.8" stroke-width="1.6"/>
+      <circle cx="600" cy="180" r="46" fill="none" stroke="#9B8CFA" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="3 6">
+        <animateTransform attributeName="transform" type="rotate" from="0 600 180" to="360 600 180" dur="22s" repeatCount="indefinite"/>
+      </circle>
+      <text x="600" y="176" text-anchor="middle" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="2" fill="#EDE9FF">VDU</text>
+      <text x="600" y="196" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="8.5" letter-spacing="1.5" fill="#8FE3F5">VISUAL DOCUMENT</text>
+      <text x="600" y="208" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="8.5" letter-spacing="1.5" fill="#8FE3F5">UNDERSTANDING</text>
+    </g>
+
+    <!-- orbiting chips: outer ring -->
+    <g font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" font-size="11" letter-spacing="1.6">
+      <g>
+        <animateMotion dur="26s" repeatCount="indefinite" rotate="0">
+          <mpath href="#ring1" xlink:href="#ring1"/>
+        </animateMotion>
+        <rect x="-78" y="-15" width="156" height="30" rx="15" fill="#0D0824" stroke="#6D5AF7" stroke-opacity="0.85"/>
+        <circle cx="-60" cy="0" r="3.6" fill="#9B5CF6"/>
+        <text x="-46" y="4" fill="#CFC6FF">LAYOUT-AWARE</text>
+      </g>
+      <g>
+        <animateMotion dur="26s" begin="-8.6s" repeatCount="indefinite" rotate="0">
+          <mpath href="#ring1" xlink:href="#ring1"/>
+        </animateMotion>
+        <rect x="-66" y="-15" width="132" height="30" rx="15" fill="#0D0824" stroke="#F7A93B" stroke-opacity="0.85"/>
+        <circle cx="-48" cy="0" r="3.6" fill="#F7A93B"/>
+        <text x="-34" y="4" fill="#F8DCAE">OCR-FREE</text>
+      </g>
+      <g>
+        <animateMotion dur="26s" begin="-17.3s" repeatCount="indefinite" rotate="0">
+          <mpath href="#ring1" xlink:href="#ring1"/>
+        </animateMotion>
+        <rect x="-70" y="-15" width="140" height="30" rx="15" fill="#0D0824" stroke="#F65C8E" stroke-opacity="0.85"/>
+        <circle cx="-52" cy="0" r="3.6" fill="#F65C8E"/>
+        <text x="-38" y="4" fill="#FBC7D8">DocVQA</text>
+      </g>
+
+      <!-- middle ring -->
+      <g>
+        <animateMotion dur="19s" repeatCount="indefinite" rotate="0">
+          <mpath href="#ring2" xlink:href="#ring2"/>
+        </animateMotion>
+        <rect x="-58" y="-14" width="116" height="28" rx="14" fill="#0D0824" stroke="#22C9E8" stroke-opacity="0.85"/>
+        <circle cx="-42" cy="0" r="3.4" fill="#22C9E8"/>
+        <text x="-28" y="4" fill="#A9EEFA">RAG</text>
+      </g>
+      <g>
+        <animateMotion dur="19s" begin="-9.5s" repeatCount="indefinite" rotate="0">
+          <mpath href="#ring2" xlink:href="#ring2"/>
+        </animateMotion>
+        <rect x="-72" y="-14" width="144" height="28" rx="14" fill="#0D0824" stroke="#22C58B" stroke-opacity="0.85"/>
+        <circle cx="-56" cy="0" r="3.4" fill="#22C58B"/>
+        <text x="-42" y="4" fill="#A6EFCD">VLM PROBING</text>
+      </g>
+
+      <!-- inner ring -->
+      <g>
+        <animateMotion dur="13s" repeatCount="indefinite" rotate="0">
+          <mpath href="#ring3" xlink:href="#ring3"/>
+        </animateMotion>
+        <rect x="-84" y="-13" width="168" height="26" rx="13" fill="#0D0824" stroke="#9B8CFA" stroke-opacity="0.9"/>
+        <circle cx="-68" cy="0" r="3.2" fill="#7FE6FF" filter="url(#oGlow)"/>
+        <text x="-54" y="4" font-size="10" fill="#E3DCFF">LEGIBILITY LIMITS</text>
+      </g>
+    </g>
+
+    <text class="caption" x="34" y="352" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="10.5" letter-spacing="2.4" fill="#7C6FB8">THE QUESTIONS I AM CHASING · IIIT ALLAHABAD</text>
+    <text class="caption" x="1166" y="352" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="10.5" letter-spacing="2.4" fill="#7C6FB8">PhD TRACK</text>
+    <rect x="0.5" y="0.5" width="1199" height="379" rx="22" fill="none" stroke="#6D5AF7" stroke-opacity="0.35"/>
+  </g>
+</svg>
