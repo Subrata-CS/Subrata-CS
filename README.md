@@ -133,11 +133,11 @@ The [**Learning Hub**](https://subrata-cs.github.io/learning-hub/)
 
 | Type | Year | Paper |
 |:---:|:---:|:---|
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=flat-square&labelColor=160F3C" alt="Conference" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=flat-square&labelColor=160F3C" alt="2026" /> | [Demo Paper I — Layout-aware document understanding](https://example.com/paper-2026-conference) |
-| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=flat-square&labelColor=160F3C" alt="Journal" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=flat-square&labelColor=160F3C" alt="2026" /> | [Demo Paper II — Pattern recognition for visual documents](https://example.com/paper-2026-journal) |
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=flat-square&labelColor=160F3C" alt="Conference" /> | <img src="https://img.shields.io/badge/2027-9B5CF6?style=flat-square&labelColor=160F3C" alt="2027" /> | [Demo Paper III — Retrieval-augmented visual question answering](https://example.com/paper-2027-conference) |
-| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=flat-square&labelColor=160F3C" alt="Journal" /> | <img src="https://img.shields.io/badge/2028-9B5CF6?style=flat-square&labelColor=160F3C" alt="2028" /> | [Demo Paper IV — Grounded generation over scanned pages](https://example.com/paper-2028-journal) |
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=flat-square&labelColor=160F3C" alt="Conference" /> | <img src="https://img.shields.io/badge/2029-9B5CF6?style=flat-square&labelColor=160F3C" alt="2029" /> | [Demo Paper V — Multimodal representation learning](https://example.com/paper-2029-conference) |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=flat-square&labelColor=160F3C" alt="Conference" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=flat-square&labelColor=160F3C" alt="2026" /> | [Demo Paper I — I will update](https://example.com/paper-2026-conference) |
+| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=flat-square&labelColor=160F3C" alt="Journal" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=flat-square&labelColor=160F3C" alt="2026" /> | [Demo Paper II — I will update](https://example.com/paper-2026-journal) |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=flat-square&labelColor=160F3C" alt="Conference" /> | <img src="https://img.shields.io/badge/2027-9B5CF6?style=flat-square&labelColor=160F3C" alt="2027" /> | [Demo Paper III — I will update](https://example.com/paper-2027-conference) |
+| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=flat-square&labelColor=160F3C" alt="Journal" /> | <img src="https://img.shields.io/badge/2028-9B5CF6?style=flat-square&labelColor=160F3C" alt="2028" /> | [Demo Paper IV — I will update](https://example.com/paper-2028-journal) |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=flat-square&labelColor=160F3C" alt="Conference" /> | <img src="https://img.shields.io/badge/2029-9B5CF6?style=flat-square&labelColor=160F3C" alt="2029" /> | [Demo Paper V — I will update](https://example.com/paper-2029-conference) |
 
 </div>
 
