@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/header.svg" alt="Subrata Pramanik — Computer Vision and Pattern Recognition researcher, IIIT Allahabad" width="100%" />
+<img src="./assets/header.svg?v=2" alt="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad" width="100%" />
 
 <br/>
 
@@ -12,15 +12,15 @@
 
 <br/><br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=9B8CFA&center=true&vCenter=true&width=760&lines=Computer+Vision+%C2%B7+Pattern+Recognition;Researcher+at+IIIT+Allahabad;Ex-TCSer" alt="Computer Vision · Pattern Recognition — researcher at IIIT Allahabad, Ex-TCSer" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1200&color=9B8CFA&center=true&vCenter=true&width=760&lines=Computer+Vision+%C2%B7+Pattern+Recognition;Research+Scholar+at+IIIT+Allahabad;Ex-TCSer" alt="Computer Vision · Pattern Recognition — Research Scholar at IIIT Allahabad, Ex-TCSer" />
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
-<img src="./assets/sec-about.svg" width="100%" alt="About me" />
+<img src="./assets/sec-about.svg?v=2" width="100%" alt="About me" />
 
-I am **Subrata Pramanik**, a researcher at **IIIT Allahabad** working on **computer vision and pattern recognition**. Before research I was a software engineer at **TCS**.
+I am **Subrata Pramanik**, a **research scholar** at **IIIT Allahabad** working on **computer vision and pattern recognition**. Before research I was a software engineer at **TCS**.
 
 <table>
 <tr>
@@ -71,9 +71,28 @@ The [**Learning Hub**](https://subrata-cs.github.io/learning-hub/)
 </tr>
 </table>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
-<img src="./assets/sec-hub.svg" width="100%" alt="Featured — the Learning Hub" />
+<img src="./assets/sec-focus.svg?v=2" width="100%" alt="Current research focus" />
+
+<div align="center">
+
+<img src="./assets/focus-orbit.svg?v=2" width="100%" alt="Visual document understanding at the centre, with layout-aware models, OCR-free reading, document VQA, retrieval-augmented generation, vision-language probing and legibility limits orbiting it" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/COMPUTER_VISION-6D5AF7?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/PATTERN_RECOGNITION-9B5CF6?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/VISUAL_DOCUMENT_UNDERSTANDING-22C9E8?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/DOCUMENT_VQA-22C58B?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/RETRIEVAL_AUGMENTED_GENERATION-F7A93B?style=flat-square&labelColor=160F3C" alt="" />
+<img src="https://img.shields.io/badge/VISION_LANGUAGE_MODELS-F65C8E?style=flat-square&labelColor=160F3C" alt="" />
+
+</div>
+
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
+
+<img src="./assets/sec-hub.svg?v=2" width="100%" alt="Featured — the Learning Hub" />
 
 <div align="center">
 
@@ -87,7 +106,7 @@ The [**Learning Hub**](https://subrata-cs.github.io/learning-hub/)
 
 <br/><br/>
 
-<img src="./assets/five-ways.svg" width="100%" alt="Every topic opens the same five ways: description, notes, tutorials, run your code, projects" />
+<img src="./assets/five-ways.svg?v=2" width="100%" alt="Every topic opens the same five ways: description, notes, tutorials, run your code, projects" />
 
 <br/>
 
@@ -106,9 +125,9 @@ The [**Learning Hub**](https://subrata-cs.github.io/learning-hub/)
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
-<img src="./assets/sec-publications.svg" width="100%" alt="Publications" />
+<img src="./assets/sec-publications.svg?v=2" width="100%" alt="Publications" />
 
 <div align="center">
 
@@ -122,9 +141,9 @@ The [**Learning Hub**](https://subrata-cs.github.io/learning-hub/)
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
-<img src="./assets/sec-reach.svg" width="100%" alt="Reach me" />
+<img src="./assets/sec-reach.svg?v=2" width="100%" alt="Reach me" />
 
 <div align="center">
 
@@ -136,10 +155,10 @@ The [**Learning Hub**](https://subrata-cs.github.io/learning-hub/)
 
 </div>
 
-<img src="./assets/divider.svg" width="100%" alt="" />
+<img src="./assets/divider.svg?v=2" width="100%" alt="" />
 
 <div align="center">
 
-<img src="./assets/footer.svg" width="100%" alt="Subrata Pramanik — Computer Vision and Pattern Recognition, IIIT Allahabad" />
+<img src="./assets/footer.svg?v=2" width="100%" alt="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad" />
 
 </div>
