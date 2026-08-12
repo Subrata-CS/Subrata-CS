@@ -1,54 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 128" width="1200" height="128" role="img" aria-label="Featured — the Learning Hub">
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#0E0A2B"/><stop offset="55%" stop-color="#1A1046"/><stop offset="100%" stop-color="#100B31"/>
-  </linearGradient>
-  <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#22C9E8"/><stop offset="100%" stop-color="#22C58B"/>
-  </linearGradient>
-  <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#22C9E8"/>
-  </linearGradient>
-  <linearGradient id="ghost" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".13"/><stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-  </linearGradient>
-  <radialGradient id="blob"><stop offset="0" stop-color="#22C9E8" stop-opacity=".55"/><stop offset="1" stop-color="#22C9E8" stop-opacity="0"/></radialGradient>
-  <radialGradient id="blob2"><stop offset="0" stop-color="#22C58B" stop-opacity=".34"/><stop offset="1" stop-color="#22C58B" stop-opacity="0"/></radialGradient>
-  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.4" fill="#fff" opacity=".09"/></pattern>
-  <clipPath id="round"><rect width="1200" height="128" rx="18"/></clipPath>
-  <style>
-    .f{font-family:'Segoe UI',Helvetica,Arial,sans-serif}
-    .m{font-family:'DejaVu Sans Mono',Consolas,monospace}
-    @keyframes rise{0%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:none}}
-    @keyframes wipe{0%{width:0}100%{width:386px}}
-    @keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(26px,-12px)}}
-    @keyframes glow{0%,100%{opacity:.45}50%{opacity:1}}
-    #b1{animation:drift 16s ease-in-out infinite}
-    #b2{animation:drift 21s ease-in-out infinite reverse}
-    #e{animation:rise .7s cubic-bezier(.2,.7,.25,1) .05s both}
-    #t{animation:rise .7s cubic-bezier(.2,.7,.25,1) .18s both}
-    #u{animation:wipe .9s cubic-bezier(.2,.7,.25,1) .42s both}
-    #tick{animation:glow 3s ease-in-out infinite}
-  </style>
-</defs>
-<g clip-path="url(#round)">
-  <rect width="1200" height="128" fill="url(#bg)"/>
-  <rect width="1200" height="128" fill="url(#dots)"/>
-  <circle id="b1" cx="90" cy="20" r="170" fill="url(#blob)"/>
-  <circle id="b2" cx="1080" cy="120" r="180" fill="url(#blob2)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 86" width="1200" height="86" role="img" aria-label="Featured — the Learning Hub">
+  <title>Featured — the Learning Hub</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#160F3C"/>
+      <stop offset="55%" stop-color="#0E0A26"/>
+      <stop offset="100%" stop-color="#08050F"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22C9E8"/>
+      <stop offset="100%" stop-color="#22B4E0"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F2EEFF"/>
+      <stop offset="100%" stop-color="#22C9E8"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="48%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="52%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="56%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <animate attributeName="x1" from="-300" to="900" dur="6s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="x2" from="-60" to="1140" dur="6s" begin="0.4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="under" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22C9E8"/>
+      <stop offset="100%" stop-color="#22B4E0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="haze" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22C9E8" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22C9E8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="24"/></filter>
+    <clipPath id="card"><rect width="1200" height="86" rx="16"/></clipPath>
+    <style>
+      .haze { filter: url(#soft); transform-box: fill-box; transform-origin: center; animation: sweep 13s ease-in-out infinite; }
+      @keyframes sweep { 0%,100% { transform: translateX(0) scale(1); } 50% { transform: translateX(300px) scale(1.25); } }
+      .bar { animation: pulse 2.6s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity:.65; } 50% { opacity:1; } }
+      .under { stroke-dasharray: 300; stroke-dashoffset: 300; animation: drawIn 4.5s ease-in-out infinite; }
+      @keyframes drawIn { 0% { stroke-dashoffset:300; } 40%,70% { stroke-dashoffset:0; } 100% { stroke-dashoffset:-300; } }
+      .tick { animation: march 3.2s linear infinite; }
+      @keyframes march { from { transform: translateX(0); } to { transform: translateX(-24px); } }
+      .glyph { transform-box: fill-box; transform-origin: center; animation: spin 9s linear infinite; }
+      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      .dot { animation: breathe 2.2s ease-in-out infinite; }
+      .dot.b { animation-delay: .35s; }
+      .dot.c { animation-delay: .7s; }
+      @keyframes breathe { 0%,100% { opacity:.3; } 50% { opacity:1; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .under { stroke-dashoffset: 0; } }
+    </style>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="86" fill="url(#bg)"/>
+    <ellipse class="haze" cx="200" cy="43" rx="260" ry="70" fill="url(#haze)"/>
+    <rect class="bar" x="0" y="0" width="6" height="86" fill="url(#accent)"/>
 
-  <text class="f" x="1176" y="106" text-anchor="end" font-size="76" font-weight="800" letter-spacing="-3"
-        fill="url(#ghost)">02</text>
+    <g class="glyph" transform="translate(46,43)">
+      <circle r="13" fill="none" stroke="#22C9E8" stroke-opacity="0.85" stroke-width="1.6" stroke-dasharray="6 5"/>
+      <circle r="5" fill="#22B4E0" fill-opacity="0.9"/>
+    </g>
 
-  <rect x="0" y="0" width="5" height="128" fill="url(#rule)"/>
+    <text x="80" y="49" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="4.5" fill="url(#txt)">LEARNING HUB</text>
+    <text x="80" y="49" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="4.5" fill="url(#shine)">LEARNING HUB</text>
+    <text x="82" y="70" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,monospace" font-size="10.5" letter-spacing="2.6" fill="#7C6FB8">ONE SHELF FOR EVERYTHING I AM LEARNING</text>
+    <path class="under" d="M80 57 H380" stroke="url(#under)" stroke-width="2" stroke-linecap="round" fill="none"/>
 
-  <g id="e">
-    <rect id="tick" x="44" y="34" width="22" height="3" rx="1.5" fill="url(#rule)"/>
-    <text class="m" x="76" y="40" font-size="11.5" letter-spacing="3" fill="#22C9E8">THE SHELF</text>
+    <g transform="translate(0,43)">
+      <g class="tick" stroke="#22C9E8" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round">
+        <path d="M900 0h8 M924 0h8 M948 0h8 M972 0h8 M996 0h8 M1020 0h8 M1044 0h8 M1068 0h8 M1092 0h8 M1116 0h8"/>
+      </g>
+      <g fill="#22B4E0">
+        <circle class="dot"   cx="1146" cy="0" r="3.5"/>
+        <circle class="dot b" cx="1160" cy="0" r="3.5"/>
+        <circle class="dot c" cx="1174" cy="0" r="3.5"/>
+      </g>
+    </g>
+    <rect x="0.5" y="0.5" width="1199" height="85" rx="16" fill="none" stroke="#22C9E8" stroke-opacity="0.35"/>
   </g>
-  <text id="t" class="f" x="44" y="86" font-size="36" font-weight="700" letter-spacing="-1.1" fill="url(#ink)">Featured — the Learning Hub</text>
-  <rect id="u" x="44" y="98" height="3.5" rx="2" fill="url(#rule)"/>
-
-  <text class="m" x="1160" y="40" text-anchor="end" font-size="10.5" letter-spacing="2" fill="#8F88C4">OPEN ACCESS</text>
-</g>
 </svg>
