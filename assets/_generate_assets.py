@@ -478,7 +478,7 @@ def topics_grid():
 {''.join(legend)}
 {''.join(cards)}
 <text x="24" y="{height - 24}" font-family="{MONO}" font-size="18" font-weight="600" fill="{INK_3}">SUBRATA-CS.GITHUB.IO/OPEN · FREE AND OPEN SOURCE</text>
-<text x="1176" y="{height - 24}" text-anchor="end" font-family="{MONO}" font-size="18" font-weight="600" fill="{INK_3}">MIT LICENSED</text>
+<text x="1176" y="{height - 24}" text-anchor="end" font-family="{MONO}" font-size="18" font-weight="600" fill="{INK_3}">MIT LICENSED · 2026</text>
 <rect x="0.75" y="0.75" width="1198.5" height="{height - 1.5}" rx="22" fill="none" stroke="{VIOLET}" stroke-opacity="0.5" stroke-width="1.5"/>
 </g>
 </svg>'''
