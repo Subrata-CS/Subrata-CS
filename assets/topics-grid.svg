@@ -1,88 +1,222 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1216 866" width="1216" height="866" role="img" aria-label="Forty computer science sections covered by the Learning Hub, grouped into six tracks">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1302" width="1200" height="1302" role="img" aria-label="Forty computer science sections in the Learning Hub, grouped into six tracks: foundations, core CS, engineering, AI and data, frontier and research">
 <title>The Learning Hub — 40 sections, 578 topics</title>
 <defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#08050F"/><stop offset="52%" stop-color="#140E33"/><stop offset="100%" stop-color="#08050F"/></linearGradient>
-<linearGradient id="cd" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1B1345"/><stop offset="100%" stop-color="#0C0820"/></linearGradient>
-<linearGradient id="tt" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EDE9FF"/><stop offset="55%" stop-color="#B9A8FF"/><stop offset="100%" stop-color="#7FE6FF"/></linearGradient>
-<radialGradient id="hz" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6D5AF7" stop-opacity="0.5"/><stop offset="100%" stop-color="#6D5AF7" stop-opacity="0"/></radialGradient>
-<filter id="sf" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="46"/></filter>
-<pattern id="gd" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#9B8CFA" stroke-opacity="0.07"/></pattern>
-<clipPath id="cp"><rect width="1216" height="866" rx="22"/></clipPath>
-<style>
-.bx{rx:12px;fill:url(#cd);stroke-opacity:.42;stroke-width:1}
-.eg{rx:2px;animation:eg 3.4s ease-in-out infinite}
-@keyframes eg{0%,100%{opacity:.55}50%{opacity:1}}
-.pp{animation:pp 2.8s ease-in-out infinite}
-@keyframes pp{0%,100%{opacity:.25}50%{opacity:1}}
-.nu{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;font-weight:700;letter-spacing:1.4px}
-.nm{font-family:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:12.5px;font-weight:600}
-.lb,.cap{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;letter-spacing:1.6px;fill:#7C6FB8}
-.cd{transform-box:fill-box;transform-origin:center;animation:fl 7s ease-in-out infinite}
-@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-.c1{animation-delay:.28s}.c2{animation-delay:.56s}.c3{animation-delay:.84s}.c4{animation-delay:1.12s}
-.ka .bx,.ka .eg{stroke:#6D5AF7}.ka .eg,.ka .nu,.ka .pp,.ka .lg{fill:#6D5AF7}.ka .nm,.ka .lb{fill:#CFC6FF}
-.kb .bx,.kb .eg{stroke:#22C9E8}.kb .eg,.kb .nu,.kb .pp,.kb .lg{fill:#22C9E8}.kb .nm,.kb .lb{fill:#A9EEFA}
-.kc .bx,.kc .eg{stroke:#9B5CF6}.kc .eg,.kc .nu,.kc .pp,.kc .lg{fill:#9B5CF6}.kc .nm,.kc .lb{fill:#DCC9FF}
-.kd .bx,.kd .eg{stroke:#22C58B}.kd .eg,.kd .nu,.kd .pp,.kd .lg{fill:#22C58B}.kd .nm,.kd .lb{fill:#A6EFCD}
-.ke .bx,.ke .eg{stroke:#F7A93B}.ke .eg,.ke .nu,.ke .pp,.ke .lg{fill:#F7A93B}.ke .nm,.ke .lb{fill:#F8DCAE}
-.kf .bx,.kf .eg{stroke:#F65C8E}.kf .eg,.kf .nu,.kf .pp,.kf .lg{fill:#F65C8E}.kf .nm,.kf .lb{fill:#FBC7D8}
-.hz{filter:url(#sf);transform-box:fill-box;transform-origin:center;animation:dr 18s ease-in-out infinite}
-@keyframes dr{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(120px,40px) scale(1.25)}}
-.rl{stroke-dasharray:520;stroke-dashoffset:520;animation:dw 2s .3s ease-out forwards}
-@keyframes dw{to{stroke-dashoffset:0}}
-@media (prefers-reduced-motion:reduce){*{animation:none !important}.rl{stroke-dashoffset:0}}
-</style>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0A0620"/><stop offset="52%" stop-color="#151038"/><stop offset="100%" stop-color="#0A0620"/>
+</linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8B6BFF" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<clipPath id="cp"><rect width="1200" height="1302" rx="22"/></clipPath>
 </defs>
 <g clip-path="url(#cp)">
-<rect width="1216" height="866" fill="url(#bg)"/>
-<ellipse class="hz" cx="260" cy="120" rx="420" ry="220" fill="url(#hz)"/>
-<rect width="1216" height="866" fill="url(#gd)"/>
-<text x="20" y="52" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="27" font-weight="700" fill="url(#tt)">40 sections &#183; 578 topics</text>
-<text class="cap" x="20" y="76">EVERY SUBJECT ON THE SHELF, GROUPED INTO SIX TRACKS</text>
-<path class="rl" d="M20 88 H538" stroke="#6D5AF7" stroke-opacity=".8" stroke-width="2" stroke-linecap="round" fill="none"/>
-<g transform="translate(0,108)"><g transform="translate(20,0)"><g class="ka"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">FOUNDATIONS</text></g></g><g transform="translate(131,0)"><g class="kb"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">CORE CS</text></g></g><g transform="translate(212,0)"><g class="kc"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">ENGINEERING</text></g></g><g transform="translate(323,0)"><g class="kd"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">AI &amp; DATA</text></g></g><g transform="translate(409,0)"><g class="ke"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">FRONTIER</text></g></g><g transform="translate(498,0)"><g class="kf"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">RESEARCH</text></g></g></g>
-<g transform="translate(18,118)"><g class="cd ka c0"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">01</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Computer Fundamentals</text></g></g>
-<g transform="translate(257,118)"><g class="cd ka c1"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">02</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Programming Fundamentals</text></g></g>
-<g transform="translate(496,118)"><g class="cd ka c2"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">03</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Discrete Mathematics</text></g></g>
-<g transform="translate(735,118)"><g class="cd ka c3"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">04</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Linear Algebra</text></g></g>
-<g transform="translate(974,118)"><g class="cd ka c4"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">05</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Probability &amp; Statistics</text></g></g>
-<g transform="translate(18,204)"><g class="cd ka c0"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">06</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Calculus</text></g></g>
-<g transform="translate(257,204)"><g class="cd kb c1"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">07</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Data Structures &amp; Algorithms</text></g></g>
-<g transform="translate(496,204)"><g class="cd kb c2"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">08</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Computer Organization</text></g></g>
-<g transform="translate(735,204)"><g class="cd kb c3"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">09</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Operating Systems</text></g></g>
-<g transform="translate(974,204)"><g class="cd kb c4"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">10</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Computer Networks</text></g></g>
-<g transform="translate(18,290)"><g class="cd kb c0"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">11</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Database Systems</text></g></g>
-<g transform="translate(257,290)"><g class="cd kb c1"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">12</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Software Engineering</text></g></g>
-<g transform="translate(496,290)"><g class="cd kc c2"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">13</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Git &amp; GitHub</text></g></g>
-<g transform="translate(735,290)"><g class="cd kc c3"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">14</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Web Development</text></g></g>
-<g transform="translate(974,290)"><g class="cd kc c4"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">15</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Mobile Development</text></g></g>
-<g transform="translate(18,376)"><g class="cd kc c0"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">16</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Cloud Computing</text></g></g>
-<g transform="translate(257,376)"><g class="cd kc c1"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">17</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Cybersecurity</text></g></g>
-<g transform="translate(496,376)"><g class="cd kc c2"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">18</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Compiler Design</text></g></g>
-<g transform="translate(735,376)"><g class="cd kc c3"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">19</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Theory of Computation</text></g></g>
-<g transform="translate(974,376)"><g class="cd kc c4"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">20</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Distributed Systems</text></g></g>
-<g transform="translate(18,462)"><g class="cd kc c0"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">21</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Parallel Computing</text></g></g>
-<g transform="translate(257,462)"><g class="cd kc c1"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">22</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Computer Graphics</text></g></g>
-<g transform="translate(496,462)"><g class="cd kc c2"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">23</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Human-Computer Interaction</text></g></g>
-<g transform="translate(735,462)"><g class="cd kc c3"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">24</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Embedded Systems</text></g></g>
-<g transform="translate(974,462)"><g class="cd kc c4"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">25</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Real-Time Systems</text></g></g>
-<g transform="translate(18,548)"><g class="cd kd c0"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">26</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Data Science</text></g></g>
-<g transform="translate(257,548)"><g class="cd kd c1"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">27</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Data Mining</text></g></g>
-<g transform="translate(496,548)"><g class="cd kd c2"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">28</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Information Retrieval</text></g></g>
-<g transform="translate(735,548)"><g class="cd kd c3"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">29</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Artificial Intelligence</text></g></g>
-<g transform="translate(974,548)"><g class="cd kd c4"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">30</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Machine Learning</text></g></g>
-<g transform="translate(18,634)"><g class="cd kd c0"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">31</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Deep Learning</text></g></g>
-<g transform="translate(257,634)"><g class="cd kd c1"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">32</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Specialized AI Fields</text></g></g>
-<g transform="translate(496,634)"><g class="cd kd c2"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">33</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">MLOps</text></g></g>
-<g transform="translate(735,634)"><g class="cd kd c3"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">34</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">DevOps</text></g></g>
-<g transform="translate(974,634)"><g class="cd ke c4"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">35</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Blockchain</text></g></g>
-<g transform="translate(18,720)"><g class="cd ke c0"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">36</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Internet of Things</text></g></g>
-<g transform="translate(257,720)"><g class="cd ke c1"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">37</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Robotics</text></g></g>
-<g transform="translate(496,720)"><g class="cd ke c2"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">38</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Quantum Computing</text></g></g>
-<g transform="translate(735,720)"><g class="cd kf c3"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">39</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Research Methodology</text></g></g>
-<g transform="translate(974,720)"><g class="cd kf c4"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">40</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Advanced Research Areas</text></g></g>
-<text class="cap" x="20" y="840">SUBRATA-CS.GITHUB.IO/OPEN &#183; FREE AND OPEN SOURCE</text>
-<text class="cap" x="1196" y="840" text-anchor="end">MIT LICENSED</text>
-<rect x=".5" y=".5" width="1215" height="865" rx="22" fill="none" stroke="#6D5AF7" stroke-opacity=".35"/>
+<rect width="1200" height="1302" fill="url(#bg)"/>
+<rect width="1200" height="1302" fill="url(#grid)"/>
+<text x="24" y="60" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="36" font-weight="700" fill="#FFFFFF">40 sections · 578 topics</text>
+<text x="24" y="92" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="19" fill="#C3B8EE">EVERY SUBJECT ON THE SHELF, GROUPED INTO SIX TRACKS</text>
+<path d="M24 106 H620" stroke="#8B6BFF" stroke-width="3" stroke-linecap="round"/>
+<circle cx="33" cy="132" r="8" fill="#8B6BFF"/><text x="50" y="140" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="700" letter-spacing="1.4" fill="#EDE7FF">FOUNDATIONS</text><circle cx="245" cy="132" r="8" fill="#2ED8F7"/><text x="262" y="140" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="700" letter-spacing="1.4" fill="#EDE7FF">CORE CS</text><circle cx="403" cy="132" r="8" fill="#B072FF"/><text x="420" y="140" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="700" letter-spacing="1.4" fill="#EDE7FF">ENGINEERING</text><circle cx="615" cy="132" r="8" fill="#2FDCA0"/><text x="632" y="140" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="700" letter-spacing="1.4" fill="#EDE7FF">AI &amp; DATA</text><circle cx="800" cy="132" r="8" fill="#FFB645"/><text x="817" y="140" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="700" letter-spacing="1.4" fill="#EDE7FF">FRONTIER</text><circle cx="972" cy="132" r="8" fill="#FF6EA0"/><text x="989" y="140" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="700" letter-spacing="1.4" fill="#EDE7FF">RESEARCH</text>
+<g>
+<rect x="24" y="176" width="282" height="92" rx="14" fill="#171041" stroke="#8B6BFF" stroke-width="2"/>
+<rect x="24" y="176" width="7" height="92" rx="3.5" fill="#8B6BFF"/>
+<text x="50" y="232" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#8B6BFF">01</text>
+<text x="98" y="220" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Computer</text><text x="98" y="247" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Fundamentals</text>
+</g><g>
+<rect x="322" y="176" width="282" height="92" rx="14" fill="#171041" stroke="#8B6BFF" stroke-width="2"/>
+<rect x="322" y="176" width="7" height="92" rx="3.5" fill="#8B6BFF"/>
+<text x="348" y="232" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#8B6BFF">02</text>
+<text x="396" y="220" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Programming</text><text x="396" y="247" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Fundamentals</text>
+</g><g>
+<rect x="620" y="176" width="282" height="92" rx="14" fill="#171041" stroke="#8B6BFF" stroke-width="2"/>
+<rect x="620" y="176" width="7" height="92" rx="3.5" fill="#8B6BFF"/>
+<text x="646" y="232" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#8B6BFF">03</text>
+<text x="694" y="220" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Discrete</text><text x="694" y="247" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Mathematics</text>
+</g><g>
+<rect x="918" y="176" width="282" height="92" rx="14" fill="#171041" stroke="#8B6BFF" stroke-width="2"/>
+<rect x="918" y="176" width="7" height="92" rx="3.5" fill="#8B6BFF"/>
+<text x="944" y="232" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#8B6BFF">04</text>
+<text x="992" y="220" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Linear</text><text x="992" y="247" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Algebra</text>
+</g><g>
+<rect x="24" y="282" width="282" height="92" rx="14" fill="#171041" stroke="#8B6BFF" stroke-width="2"/>
+<rect x="24" y="282" width="7" height="92" rx="3.5" fill="#8B6BFF"/>
+<text x="50" y="338" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#8B6BFF">05</text>
+<text x="98" y="326" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Probability &amp;</text><text x="98" y="353" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Statistics</text>
+</g><g>
+<rect x="322" y="282" width="282" height="92" rx="14" fill="#171041" stroke="#8B6BFF" stroke-width="2"/>
+<rect x="322" y="282" width="7" height="92" rx="3.5" fill="#8B6BFF"/>
+<text x="348" y="338" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#8B6BFF">06</text>
+<text x="396" y="336" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Calculus</text>
+</g><g>
+<rect x="620" y="282" width="282" height="92" rx="14" fill="#171041" stroke="#2ED8F7" stroke-width="2"/>
+<rect x="620" y="282" width="7" height="92" rx="3.5" fill="#2ED8F7"/>
+<text x="646" y="338" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2ED8F7">07</text>
+<text x="694" y="326" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="600" fill="#EDE7FF">Data Structures</text><text x="694" y="353" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="600" fill="#EDE7FF">&amp; Algorithms</text>
+</g><g>
+<rect x="918" y="282" width="282" height="92" rx="14" fill="#171041" stroke="#2ED8F7" stroke-width="2"/>
+<rect x="918" y="282" width="7" height="92" rx="3.5" fill="#2ED8F7"/>
+<text x="944" y="338" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2ED8F7">08</text>
+<text x="992" y="326" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Computer</text><text x="992" y="353" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Organization</text>
+</g><g>
+<rect x="24" y="388" width="282" height="92" rx="14" fill="#171041" stroke="#2ED8F7" stroke-width="2"/>
+<rect x="24" y="388" width="7" height="92" rx="3.5" fill="#2ED8F7"/>
+<text x="50" y="444" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2ED8F7">09</text>
+<text x="98" y="432" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Operating</text><text x="98" y="459" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Systems</text>
+</g><g>
+<rect x="322" y="388" width="282" height="92" rx="14" fill="#171041" stroke="#2ED8F7" stroke-width="2"/>
+<rect x="322" y="388" width="7" height="92" rx="3.5" fill="#2ED8F7"/>
+<text x="348" y="444" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2ED8F7">10</text>
+<text x="396" y="432" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Computer</text><text x="396" y="459" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Networks</text>
+</g><g>
+<rect x="620" y="388" width="282" height="92" rx="14" fill="#171041" stroke="#2ED8F7" stroke-width="2"/>
+<rect x="620" y="388" width="7" height="92" rx="3.5" fill="#2ED8F7"/>
+<text x="646" y="444" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2ED8F7">11</text>
+<text x="694" y="432" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Database</text><text x="694" y="459" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Systems</text>
+</g><g>
+<rect x="918" y="388" width="282" height="92" rx="14" fill="#171041" stroke="#2ED8F7" stroke-width="2"/>
+<rect x="918" y="388" width="7" height="92" rx="3.5" fill="#2ED8F7"/>
+<text x="944" y="444" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2ED8F7">12</text>
+<text x="992" y="432" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Software</text><text x="992" y="459" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Engineering</text>
+</g><g>
+<rect x="24" y="494" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="24" y="494" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="50" y="550" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">13</text>
+<text x="98" y="548" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Git &amp; GitHub</text>
+</g><g>
+<rect x="322" y="494" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="322" y="494" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="348" y="550" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">14</text>
+<text x="396" y="538" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Web</text><text x="396" y="565" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Development</text>
+</g><g>
+<rect x="620" y="494" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="620" y="494" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="646" y="550" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">15</text>
+<text x="694" y="538" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Mobile</text><text x="694" y="565" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Development</text>
+</g><g>
+<rect x="918" y="494" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="918" y="494" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="944" y="550" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">16</text>
+<text x="992" y="538" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Cloud</text><text x="992" y="565" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Computing</text>
+</g><g>
+<rect x="24" y="600" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="24" y="600" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="50" y="656" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">17</text>
+<text x="98" y="654" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Cybersecurity</text>
+</g><g>
+<rect x="322" y="600" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="322" y="600" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="348" y="656" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">18</text>
+<text x="396" y="644" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Compiler</text><text x="396" y="671" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Design</text>
+</g><g>
+<rect x="620" y="600" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="620" y="600" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="646" y="656" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">19</text>
+<text x="694" y="644" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Theory of</text><text x="694" y="671" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Computation</text>
+</g><g>
+<rect x="918" y="600" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="918" y="600" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="944" y="656" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">20</text>
+<text x="992" y="644" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Distributed</text><text x="992" y="671" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Systems</text>
+</g><g>
+<rect x="24" y="706" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="24" y="706" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="50" y="762" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">21</text>
+<text x="98" y="750" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Parallel</text><text x="98" y="777" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Computing</text>
+</g><g>
+<rect x="322" y="706" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="322" y="706" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="348" y="762" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">22</text>
+<text x="396" y="750" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Computer</text><text x="396" y="777" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Graphics</text>
+</g><g>
+<rect x="620" y="706" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="620" y="706" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="646" y="762" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">23</text>
+<text x="694" y="750" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#EDE7FF">Human-Computer</text><text x="694" y="777" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#EDE7FF">Interaction</text>
+</g><g>
+<rect x="918" y="706" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="918" y="706" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="944" y="762" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">24</text>
+<text x="992" y="750" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Embedded</text><text x="992" y="777" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Systems</text>
+</g><g>
+<rect x="24" y="812" width="282" height="92" rx="14" fill="#171041" stroke="#B072FF" stroke-width="2"/>
+<rect x="24" y="812" width="7" height="92" rx="3.5" fill="#B072FF"/>
+<text x="50" y="868" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#B072FF">25</text>
+<text x="98" y="856" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Real-Time</text><text x="98" y="883" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Systems</text>
+</g><g>
+<rect x="322" y="812" width="282" height="92" rx="14" fill="#171041" stroke="#2FDCA0" stroke-width="2"/>
+<rect x="322" y="812" width="7" height="92" rx="3.5" fill="#2FDCA0"/>
+<text x="348" y="868" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2FDCA0">26</text>
+<text x="396" y="866" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Data Science</text>
+</g><g>
+<rect x="620" y="812" width="282" height="92" rx="14" fill="#171041" stroke="#2FDCA0" stroke-width="2"/>
+<rect x="620" y="812" width="7" height="92" rx="3.5" fill="#2FDCA0"/>
+<text x="646" y="868" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2FDCA0">27</text>
+<text x="694" y="866" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Data Mining</text>
+</g><g>
+<rect x="918" y="812" width="282" height="92" rx="14" fill="#171041" stroke="#2FDCA0" stroke-width="2"/>
+<rect x="918" y="812" width="7" height="92" rx="3.5" fill="#2FDCA0"/>
+<text x="944" y="868" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2FDCA0">28</text>
+<text x="992" y="856" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Information</text><text x="992" y="883" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Retrieval</text>
+</g><g>
+<rect x="24" y="918" width="282" height="92" rx="14" fill="#171041" stroke="#2FDCA0" stroke-width="2"/>
+<rect x="24" y="918" width="7" height="92" rx="3.5" fill="#2FDCA0"/>
+<text x="50" y="974" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2FDCA0">29</text>
+<text x="98" y="962" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Artificial</text><text x="98" y="989" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Intelligence</text>
+</g><g>
+<rect x="322" y="918" width="282" height="92" rx="14" fill="#171041" stroke="#2FDCA0" stroke-width="2"/>
+<rect x="322" y="918" width="7" height="92" rx="3.5" fill="#2FDCA0"/>
+<text x="348" y="974" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2FDCA0">30</text>
+<text x="396" y="962" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Machine</text><text x="396" y="989" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Learning</text>
+</g><g>
+<rect x="620" y="918" width="282" height="92" rx="14" fill="#171041" stroke="#2FDCA0" stroke-width="2"/>
+<rect x="620" y="918" width="7" height="92" rx="3.5" fill="#2FDCA0"/>
+<text x="646" y="974" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2FDCA0">31</text>
+<text x="694" y="972" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Deep Learning</text>
+</g><g>
+<rect x="918" y="918" width="282" height="92" rx="14" fill="#171041" stroke="#2FDCA0" stroke-width="2"/>
+<rect x="918" y="918" width="7" height="92" rx="3.5" fill="#2FDCA0"/>
+<text x="944" y="974" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2FDCA0">32</text>
+<text x="992" y="962" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Specialized</text><text x="992" y="989" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">AI Fields</text>
+</g><g>
+<rect x="24" y="1024" width="282" height="92" rx="14" fill="#171041" stroke="#2FDCA0" stroke-width="2"/>
+<rect x="24" y="1024" width="7" height="92" rx="3.5" fill="#2FDCA0"/>
+<text x="50" y="1080" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2FDCA0">33</text>
+<text x="98" y="1078" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">MLOps</text>
+</g><g>
+<rect x="322" y="1024" width="282" height="92" rx="14" fill="#171041" stroke="#2FDCA0" stroke-width="2"/>
+<rect x="322" y="1024" width="7" height="92" rx="3.5" fill="#2FDCA0"/>
+<text x="348" y="1080" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#2FDCA0">34</text>
+<text x="396" y="1078" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">DevOps</text>
+</g><g>
+<rect x="620" y="1024" width="282" height="92" rx="14" fill="#171041" stroke="#FFB645" stroke-width="2"/>
+<rect x="620" y="1024" width="7" height="92" rx="3.5" fill="#FFB645"/>
+<text x="646" y="1080" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#FFB645">35</text>
+<text x="694" y="1078" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Blockchain</text>
+</g><g>
+<rect x="918" y="1024" width="282" height="92" rx="14" fill="#171041" stroke="#FFB645" stroke-width="2"/>
+<rect x="918" y="1024" width="7" height="92" rx="3.5" fill="#FFB645"/>
+<text x="944" y="1080" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#FFB645">36</text>
+<text x="992" y="1068" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Internet of</text><text x="992" y="1095" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Things</text>
+</g><g>
+<rect x="24" y="1130" width="282" height="92" rx="14" fill="#171041" stroke="#FFB645" stroke-width="2"/>
+<rect x="24" y="1130" width="7" height="92" rx="3.5" fill="#FFB645"/>
+<text x="50" y="1186" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#FFB645">37</text>
+<text x="98" y="1184" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Robotics</text>
+</g><g>
+<rect x="322" y="1130" width="282" height="92" rx="14" fill="#171041" stroke="#FFB645" stroke-width="2"/>
+<rect x="322" y="1130" width="7" height="92" rx="3.5" fill="#FFB645"/>
+<text x="348" y="1186" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#FFB645">38</text>
+<text x="396" y="1174" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Quantum</text><text x="396" y="1201" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Computing</text>
+</g><g>
+<rect x="620" y="1130" width="282" height="92" rx="14" fill="#171041" stroke="#FF6EA0" stroke-width="2"/>
+<rect x="620" y="1130" width="7" height="92" rx="3.5" fill="#FF6EA0"/>
+<text x="646" y="1186" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#FF6EA0">39</text>
+<text x="694" y="1174" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Research</text><text x="694" y="1201" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="21" font-weight="600" fill="#EDE7FF">Methodology</text>
+</g><g>
+<rect x="918" y="1130" width="282" height="92" rx="14" fill="#171041" stroke="#FF6EA0" stroke-width="2"/>
+<rect x="918" y="1130" width="7" height="92" rx="3.5" fill="#FF6EA0"/>
+<text x="944" y="1186" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" fill="#FF6EA0">40</text>
+<text x="992" y="1174" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#EDE7FF">Advanced</text><text x="992" y="1201" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="600" fill="#EDE7FF">Research Areas</text>
+</g>
+<text x="24" y="1278" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="600" fill="#C3B8EE">SUBRATA-CS.GITHUB.IO/OPEN · FREE AND OPEN SOURCE</text>
+<text x="1176" y="1278" text-anchor="end" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="600" fill="#C3B8EE">MIT LICENSED</text>
+<rect x="0.75" y="0.75" width="1198.5" height="1300.5" rx="22" fill="none" stroke="#8B6BFF" stroke-opacity="0.5" stroke-width="1.5"/>
 </g>
 </svg>
