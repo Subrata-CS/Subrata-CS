@@ -104,7 +104,7 @@ The [**Learning Hub**](https://subrata-cs.github.io/open/)
 
 <br/><br/>
 
-<a href="https://subrata-cs.github.io/open/"><img src="./assets/topics-grid.svg?v=1" width="100%" alt="Forty computer science sections covered by the Learning Hub — foundations, core CS, engineering, AI and data, frontier and research tracks" /></a>
+<a href="https://subrata-cs.github.io/open/"><img src="./assets/topics-grid.svg?v=2" width="100%" alt="Forty computer science sections covered by the Learning Hub — foundations, core CS, engineering, AI and data, frontier and research tracks" /></a>
 
 <br/>
 
