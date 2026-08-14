@@ -1,51 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 26" width="1200" height="26" role="presentation" aria-hidden="true">
-  <defs>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#6D5AF7" stop-opacity="0"/>
-      <stop offset="18%"  stop-color="#6D5AF7" stop-opacity="0.75"/>
-      <stop offset="50%"  stop-color="#22C9E8" stop-opacity="0.9"/>
-      <stop offset="82%"  stop-color="#F65C8E" stop-opacity="0.75"/>
-      <stop offset="100%" stop-color="#F65C8E" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="comet" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7FE6FF" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#7FE6FF" stop-opacity="1"/>
-    </linearGradient>
-    <filter id="g" x="-50%" y="-400%" width="200%" height="900%">
-      <feGaussianBlur stdDeviation="2.4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <style>
-      .runner { animation: run 6s cubic-bezier(.55,0,.45,1) infinite; }
-      .runner2 { animation: run 6s cubic-bezier(.55,0,.45,1) 3s infinite; }
-      @keyframes run {
-        0%   { transform: translateX(-200px); opacity: 0; }
-        10%  { opacity: 1; }
-        90%  { opacity: 1; }
-        100% { transform: translateX(1240px); opacity: 0; }
-      }
-      .node { animation: tw 3s ease-in-out infinite; }
-      .node.b { animation-delay: 1s; }
-      .node.c { animation-delay: 2s; }
-      @keyframes tw { 0%,100% { opacity:.25; } 50% { opacity:1; } }
-      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .runner,.runner2 { opacity:0; } }
-    </style>
-  </defs>
-
-  <path d="M0 13 H1200" stroke="url(#line)" stroke-width="1.6"/>
-  <g filter="url(#g)">
-    <g class="runner">
-      <rect x="0" y="11.6" width="170" height="2.8" rx="1.4" fill="url(#comet)"/>
-      <circle cx="170" cy="13" r="3.4" fill="#FFFFFF"/>
-    </g>
-    <g class="runner2">
-      <rect x="0" y="11.8" width="110" height="2.4" rx="1.2" fill="#F7A93B" opacity="0.55"/>
-      <circle cx="110" cy="13" r="2.6" fill="#F7A93B"/>
-    </g>
-  </g>
-  <g fill="#9B8CFA">
-    <circle class="node"   cx="300" cy="13" r="2.6"/>
-    <circle class="node b" cx="600" cy="13" r="3"/>
-    <circle class="node c" cx="900" cy="13" r="2.6"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="1200" height="28" role="presentation" aria-hidden="true">
+<defs>
+<linearGradient id="ln" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#8B6BFF" stop-opacity="0"/>
+<stop offset="18%" stop-color="#8B6BFF"/>
+<stop offset="50%" stop-color="#2ED8F7"/>
+<stop offset="82%" stop-color="#FF6EA0"/>
+<stop offset="100%" stop-color="#FF6EA0" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="cm" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#9BEFFF" stop-opacity="0"/><stop offset="100%" stop-color="#FFFFFF"/>
+</linearGradient>
+<style>
+.run{animation:run 6s cubic-bezier(.55,0,.45,1) infinite}
+@keyframes run{0%{transform:translateX(-220px);opacity:0}12%{opacity:1}88%{opacity:1}100%{transform:translateX(1260px);opacity:0}}
+.nd{animation:tw 3s ease-in-out infinite}.nd.b{animation-delay:1s}.nd.c{animation-delay:2s}
+@keyframes tw{0%,100%{opacity:.3}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</defs>
+<path d="M0 14 H1200" stroke="url(#ln)" stroke-width="3" stroke-linecap="round"/>
+<g class="run"><rect x="0" y="12" width="180" height="4" rx="2" fill="url(#cm)"/><circle cx="180" cy="14" r="4.5" fill="#FFFFFF"/></g>
+<g fill="#B072FF"><circle class="nd" cx="300" cy="14" r="3.4"/><circle class="nd b" cx="600" cy="14" r="4"/><circle class="nd c" cx="900" cy="14" r="3.4"/></g>
 </svg>
