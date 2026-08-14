@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 324" width="1200" height="324" role="img" aria-label="Four stage workflow: detect layout regions, encode into patch embeddings, retrieve the top matching regions, then generate a grounded answer with a citation">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Four stage workflow: detect layout regions, encode into patch embeddings, retrieve the top matching regions, then generate a grounded answer with a citation">
 <title>Document understanding workflow — layout, encode, retrieve, grounded answer</title>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -6,7 +6,7 @@
 </linearGradient>
 <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#C3B8EE"/></marker>
 <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8B6BFF" stroke-opacity="0.09" stroke-width="1"/></pattern>
-<clipPath id="cp"><rect width="1200" height="324" rx="22"/></clipPath>
+<clipPath id="cp"><rect width="1200" height="400" rx="22"/></clipPath>
 <style>
 .wire{stroke-dasharray:8 8;animation:flow 1.4s linear infinite}
 @keyframes flow{to{stroke-dashoffset:-32}}
@@ -16,42 +16,44 @@
 </style>
 </defs>
 <g clip-path="url(#cp)">
-<rect width="1200" height="324" fill="url(#bg)"/>
-<rect width="1200" height="324" fill="url(#grid)"/>
+<rect width="1200" height="400" fill="url(#bg)"/>
+<rect width="1200" height="400" fill="url(#grid)"/>
+<text x="26" y="52" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">How a page becomes a grounded answer</text>
+<text x="26" y="80" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" fill="#C3B8EE">THE PIPELINE MY WORK SITS INSIDE</text>
 <g>
-<rect x="26" y="28" width="278" height="268" rx="18" fill="#171041" stroke="#8B6BFF" stroke-width="2.5"/>
-<rect x="26" y="28" width="278" height="56" rx="18" fill="#8B6BFF" fill-opacity="0.20"/>
-<rect x="26" y="28" width="278" height="56" fill="#8B6BFF" fill-opacity="0.10"/>
-<text x="48" y="65" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#8B6BFF">01 · LAYOUT</text>
-<text x="48" y="128" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">Detect regions</text>
-<text x="48" y="160" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">title · paragraph ·</text><text x="48" y="188" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">table · figure</text>
-<g transform="translate(48,228)"><rect width="86" height="52" rx="6" fill="#0A0620" stroke="#8B6BFF" stroke-width="2"/><rect x="8" y="8" width="44" height="9" rx="3" fill="#8B6BFF"/><rect x="8" y="23" width="70" height="6" rx="3" fill="#C3B8EE" opacity="0.55"/><rect x="8" y="34" width="34" height="12" rx="3" fill="none" stroke="#2FDCA0" stroke-width="2"/><rect x="50" y="34" width="28" height="12" rx="3" fill="none" stroke="#FFB645" stroke-width="2"/></g>
+<rect x="26" y="96" width="278" height="268" rx="18" fill="#171041" stroke="#8B6BFF" stroke-width="2.5"/>
+<rect x="26" y="96" width="278" height="56" rx="18" fill="#8B6BFF" fill-opacity="0.20"/>
+<rect x="26" y="96" width="278" height="56" fill="#8B6BFF" fill-opacity="0.10"/>
+<text x="48" y="133" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#8B6BFF">01 · LAYOUT</text>
+<text x="48" y="196" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">Detect regions</text>
+<text x="48" y="228" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">title · paragraph ·</text><text x="48" y="256" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">table · figure</text>
+<g transform="translate(48,296)"><rect width="86" height="52" rx="6" fill="#0A0620" stroke="#8B6BFF" stroke-width="2"/><rect x="8" y="8" width="44" height="9" rx="3" fill="#8B6BFF"/><rect x="8" y="23" width="70" height="6" rx="3" fill="#C3B8EE" opacity="0.55"/><rect x="8" y="34" width="34" height="12" rx="3" fill="none" stroke="#2FDCA0" stroke-width="2"/><rect x="50" y="34" width="28" height="12" rx="3" fill="none" stroke="#FFB645" stroke-width="2"/></g>
 </g><g>
-<rect x="320" y="28" width="278" height="268" rx="18" fill="#171041" stroke="#2ED8F7" stroke-width="2.5"/>
-<rect x="320" y="28" width="278" height="56" rx="18" fill="#2ED8F7" fill-opacity="0.20"/>
-<rect x="320" y="28" width="278" height="56" fill="#2ED8F7" fill-opacity="0.10"/>
-<text x="342" y="65" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#2ED8F7">02 · ENCODE</text>
-<text x="342" y="128" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">Patch embeddings</text>
-<text x="342" y="160" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">the page becomes</text><text x="342" y="188" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">vectors</text>
-<g transform="translate(342,228)"><rect class="pp" x="0" y="0" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.0s"/><rect class="pp" x="22" y="0" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.12s"/><rect class="pp" x="44" y="0" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.24s"/><rect class="pp" x="66" y="0" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.36s"/><rect class="pp" x="0" y="22" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.48s"/><rect class="pp" x="22" y="22" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.6s"/><rect class="pp" x="44" y="22" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.72s"/><rect class="pp" x="66" y="22" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.84s"/><rect x="94" y="14" width="10" height="10" rx="5" fill="#EDE7FF"/></g>
+<rect x="320" y="96" width="278" height="268" rx="18" fill="#171041" stroke="#2ED8F7" stroke-width="2.5"/>
+<rect x="320" y="96" width="278" height="56" rx="18" fill="#2ED8F7" fill-opacity="0.20"/>
+<rect x="320" y="96" width="278" height="56" fill="#2ED8F7" fill-opacity="0.10"/>
+<text x="342" y="133" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#2ED8F7">02 · ENCODE</text>
+<text x="342" y="196" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">Patch embeddings</text>
+<text x="342" y="228" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">the page becomes</text><text x="342" y="256" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">vectors</text>
+<g transform="translate(342,296)"><rect class="pp" x="0" y="0" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.0s"/><rect class="pp" x="22" y="0" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.12s"/><rect class="pp" x="44" y="0" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.24s"/><rect class="pp" x="66" y="0" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.36s"/><rect class="pp" x="0" y="22" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.48s"/><rect class="pp" x="22" y="22" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.6s"/><rect class="pp" x="44" y="22" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.72s"/><rect class="pp" x="66" y="22" width="18" height="18" rx="4" fill="#2ED8F7" style="animation-delay:0.84s"/><rect x="94" y="14" width="10" height="10" rx="5" fill="#EDE7FF"/></g>
 </g><g>
-<rect x="614" y="28" width="278" height="268" rx="18" fill="#171041" stroke="#2FDCA0" stroke-width="2.5"/>
-<rect x="614" y="28" width="278" height="56" rx="18" fill="#2FDCA0" fill-opacity="0.20"/>
-<rect x="614" y="28" width="278" height="56" fill="#2FDCA0" fill-opacity="0.10"/>
-<text x="636" y="65" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#2FDCA0">03 · RETRIEVE</text>
-<text x="636" y="128" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">Top-k regions</text>
-<text x="636" y="160" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">rank by similarity to</text><text x="636" y="188" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">the question</text>
-<g transform="translate(636,228)"><rect y="0" width="110" height="9" rx="4.5" fill="#2A2258"/><rect y="0" width="96" height="9" rx="4.5" fill="#2FDCA0"/><rect y="15" width="110" height="9" rx="4.5" fill="#2A2258"/><rect y="15" width="44" height="9" rx="4.5" fill="#5A5288"/><rect y="30" width="110" height="9" rx="4.5" fill="#2A2258"/><rect y="30" width="72" height="9" rx="4.5" fill="#2FDCA0"/><rect y="45" width="110" height="9" rx="4.5" fill="#2A2258"/><rect y="45" width="28" height="9" rx="4.5" fill="#5A5288"/></g>
+<rect x="614" y="96" width="278" height="268" rx="18" fill="#171041" stroke="#2FDCA0" stroke-width="2.5"/>
+<rect x="614" y="96" width="278" height="56" rx="18" fill="#2FDCA0" fill-opacity="0.20"/>
+<rect x="614" y="96" width="278" height="56" fill="#2FDCA0" fill-opacity="0.10"/>
+<text x="636" y="133" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#2FDCA0">03 · RETRIEVE</text>
+<text x="636" y="196" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">Top-k regions</text>
+<text x="636" y="228" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">rank by similarity to</text><text x="636" y="256" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">the question</text>
+<g transform="translate(636,296)"><rect y="0" width="110" height="9" rx="4.5" fill="#2A2258"/><rect y="0" width="96" height="9" rx="4.5" fill="#2FDCA0"/><rect y="15" width="110" height="9" rx="4.5" fill="#2A2258"/><rect y="15" width="44" height="9" rx="4.5" fill="#5A5288"/><rect y="30" width="110" height="9" rx="4.5" fill="#2A2258"/><rect y="30" width="72" height="9" rx="4.5" fill="#2FDCA0"/><rect y="45" width="110" height="9" rx="4.5" fill="#2A2258"/><rect y="45" width="28" height="9" rx="4.5" fill="#5A5288"/></g>
 </g><g>
-<rect x="908" y="28" width="278" height="268" rx="18" fill="#171041" stroke="#FF6EA0" stroke-width="2.5"/>
-<rect x="908" y="28" width="278" height="56" rx="18" fill="#FF6EA0" fill-opacity="0.20"/>
-<rect x="908" y="28" width="278" height="56" fill="#FF6EA0" fill-opacity="0.10"/>
-<text x="930" y="65" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#FF6EA0">04 · GENERATE</text>
-<text x="930" y="128" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">Grounded answer</text>
-<text x="930" y="160" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">with a citation back</text><text x="930" y="188" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">to the page</text>
-<g transform="translate(930,228)"><rect width="150" height="10" rx="5" fill="#C3B8EE" opacity="0.5"/><rect y="18" width="120" height="10" rx="5" fill="#C3B8EE" opacity="0.5"/><rect y="38" width="164" height="26" rx="8" fill="#0A0620" stroke="#2FDCA0" stroke-width="2"/><text x="12" y="56" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="15" font-weight="700" fill="#2FDCA0">cited · page 1</text></g>
+<rect x="908" y="96" width="278" height="268" rx="18" fill="#171041" stroke="#FF6EA0" stroke-width="2.5"/>
+<rect x="908" y="96" width="278" height="56" rx="18" fill="#FF6EA0" fill-opacity="0.20"/>
+<rect x="908" y="96" width="278" height="56" fill="#FF6EA0" fill-opacity="0.10"/>
+<text x="930" y="133" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="24" font-weight="700" letter-spacing="2" fill="#FF6EA0">04 · GENERATE</text>
+<text x="930" y="196" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">Grounded answer</text>
+<text x="930" y="228" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">with a citation back</text><text x="930" y="256" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">to the page</text>
+<g transform="translate(930,296)"><rect width="150" height="10" rx="5" fill="#C3B8EE" opacity="0.5"/><rect y="18" width="120" height="10" rx="5" fill="#C3B8EE" opacity="0.5"/><rect y="38" width="164" height="26" rx="8" fill="#0A0620" stroke="#2FDCA0" stroke-width="2"/><text x="12" y="56" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="15" font-weight="700" fill="#2FDCA0">cited · page 1</text></g>
 </g>
-<path class="wire" d="M305 162 H319" stroke="#C3B8EE" stroke-width="3" fill="none" marker-end="url(#ar)"/><path class="wire" d="M599 162 H613" stroke="#C3B8EE" stroke-width="3" fill="none" marker-end="url(#ar)"/><path class="wire" d="M893 162 H907" stroke="#C3B8EE" stroke-width="3" fill="none" marker-end="url(#ar)"/>
-<rect x="0.75" y="0.75" width="1198.5" height="322.5" rx="22" fill="none" stroke="#8B6BFF" stroke-opacity="0.5" stroke-width="1.5"/>
+<path class="wire" d="M305 230 H319" stroke="#C3B8EE" stroke-width="3" fill="none" marker-end="url(#ar)"/><path class="wire" d="M599 230 H613" stroke="#C3B8EE" stroke-width="3" fill="none" marker-end="url(#ar)"/><path class="wire" d="M893 230 H907" stroke="#C3B8EE" stroke-width="3" fill="none" marker-end="url(#ar)"/>
+<rect x="0.75" y="0.75" width="1198.5" height="398.5" rx="22" fill="none" stroke="#8B6BFF" stroke-opacity="0.5" stroke-width="1.5"/>
 </g>
 </svg>
