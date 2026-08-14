@@ -7,11 +7,12 @@
     focus-orbit.svg  vdu-rag.svg  topics-grid.svg  five-ways.svg
 
   To change any artwork:  py assets\_generate_assets.py   then bump ?v= below.
+  Spare, currently unused: header.svg, sec-about.svg, vdu-rag.svg
 -->
 
 <div align="center">
 
-<img src="./assets/typing.svg?v=5" alt="Computer Vision · Pattern Recognition — Research Scholar at IIIT Allahabad — Ex-TCSer, building the Learning Hub" width="100%" />
+<img src="./assets/typing.svg?v=6" alt="Computer Vision · Pattern Recognition — Research Scholar at IIIT Allahabad — Ex-TCSer, building the Learning Hub" width="100%" />
 
 <br/>
 
@@ -24,75 +25,17 @@
 
 </div>
 
-<img src="./assets/divider.svg?v=5" width="100%" alt="" />
+<img src="./assets/divider.svg?v=6" width="100%" alt="" />
 
-<img src="./assets/sec-about.svg?v=5" width="100%" alt="About — who is behind this profile" />
+<img src="./assets/divider.svg?v=6" width="100%" alt="" />
 
-I am **Subrata Pramanik**, a **research scholar** at **IIIT Allahabad** working on **computer vision and pattern recognition**. Before research I was a software engineer at **TCS**.
-
-<table>
-<tr>
-<td width="34%" valign="top">
-
-<img src="https://img.shields.io/badge/RESEARCH-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="Research" />
-
-<img src="https://img.shields.io/badge/Computer_Vision-8B6BFF?style=flat-square&labelColor=160F3C" alt="Computer vision" />
-<img src="https://img.shields.io/badge/Pattern_Recognition-B072FF?style=flat-square&labelColor=160F3C" alt="Pattern recognition" />
-
-</td>
-<td width="33%" valign="top">
-
-<img src="https://img.shields.io/badge/AFFILIATION-22C9E8?style=for-the-badge&labelColor=160F3C" alt="Affiliation" />
-
-<img src="https://img.shields.io/badge/IIIT_Allahabad-2ED8F7?style=flat-square&labelColor=160F3C" alt="IIIT Allahabad" />
-<img src="https://img.shields.io/badge/Ex--TCSer-5FE4FF?style=flat-square&labelColor=160F3C" alt="Ex-TCSer" />
-
-</td>
-<td width="33%" valign="top">
-
-<img src="https://img.shields.io/badge/OPEN_SOURCE-22C58B?style=for-the-badge&labelColor=160F3C" alt="Open source" />
-
-<img src="https://img.shields.io/badge/MIT_Licensed-2FDCA0?style=flat-square&labelColor=160F3C" alt="MIT licensed" />
-<img src="https://img.shields.io/badge/Free_forever-3FE0AE?style=flat-square&labelColor=160F3C" alt="Free forever" />
-
-</td>
-</tr>
-<tr>
-<td valign="top">
-
-<img src="https://img.shields.io/badge/BUILDING-F7A93B?style=for-the-badge&labelColor=160F3C" alt="Building" />
-
-<a href="https://subrata-cs.github.io/open/"><img src="https://img.shields.io/badge/The_Learning_Hub-FFB645?style=flat-square&labelColor=160F3C&logo=readthedocs&logoColor=white" alt="Open the Learning Hub" /></a>
-
-</td>
-<td valign="top">
-
-<img src="https://img.shields.io/badge/WEBSITE-F65C8E?style=for-the-badge&labelColor=160F3C" alt="Website" />
-
-<a href="https://subrata-cs.github.io/"><img src="https://img.shields.io/badge/Visit-FF6EA0?style=flat-square&labelColor=160F3C&logo=googlechrome&logoColor=white" alt="Visit my website" /></a>
-
-</td>
-<td valign="top">
-
-<img src="https://img.shields.io/badge/LINKEDIN-9B5CF6?style=for-the-badge&labelColor=160F3C" alt="LinkedIn" />
-
-<a href="https://www.linkedin.com/in/sp4532/"><img src="https://img.shields.io/badge/Connect-0A66C2?style=flat-square&labelColor=160F3C&logo=linkedin&logoColor=white" alt="Connect on LinkedIn" /></a>
-
-</td>
-</tr>
-</table>
-
-<img src="./assets/divider.svg?v=5" width="100%" alt="" />
-
-<img src="./assets/sec-focus.svg?v=5" width="100%" alt="Current focus — what I am reading, building and measuring" />
+<img src="./assets/sec-focus.svg?v=6" width="100%" alt="Current focus — what I am reading, building and measuring" />
 
 <div align="center">
 
-<img src="./assets/focus-orbit.svg?v=5" width="100%" alt="Visual document understanding at the centre, connected to layout-aware models, OCR-free reading, document VQA, retrieval-augmented generation, vision-language model probing and legibility limits" />
+<img src="./assets/focus-orbit.svg?v=6" width="100%" alt="Visual document understanding at the centre, connected to layout-aware models, OCR-free reading, document VQA, retrieval-augmented generation, vision-language model probing and legibility limits" />
 
 <br/>
-
-<img src="./assets/vdu-rag.svg?v=5" width="100%" alt="Four stage workflow — detect layout regions, encode into patch embeddings, retrieve the top matching regions, then generate a grounded answer with a citation back to the page" />
 
 <br/>
 
@@ -106,9 +49,9 @@ I am **Subrata Pramanik**, a **research scholar** at **IIIT Allahabad** working 
 
 </div>
 
-<img src="./assets/divider.svg?v=5" width="100%" alt="" />
+<img src="./assets/divider.svg?v=6" width="100%" alt="" />
 
-<img src="./assets/sec-hub.svg?v=5" width="100%" alt="Learning Hub — one shelf for everything I am learning" />
+<img src="./assets/sec-hub.svg?v=6" width="100%" alt="Learning Hub — one shelf for everything I am learning" />
 
 <div align="center">
 
@@ -116,11 +59,11 @@ I am **Subrata Pramanik**, a **research scholar** at **IIIT Allahabad** working 
 
 <br/><br/>
 
-<a href="https://subrata-cs.github.io/open/"><img src="./assets/topics-grid.svg?v=5" width="100%" alt="Forty computer science sections in the Learning Hub, grouped into six tracks — foundations, core CS, engineering, AI and data, frontier and research" /></a>
+<a href="https://subrata-cs.github.io/open/"><img src="./assets/topics-grid.svg?v=6" width="100%" alt="Forty computer science sections in the Learning Hub, grouped into six tracks — foundations, core CS, engineering, AI and data, frontier and research" /></a>
 
 <br/>
 
-<img src="./assets/five-ways.svg?v=5" width="100%" alt="Every topic page opens the same six ways — overview, key concepts, example, run your code, practice questions, references" />
+<img src="./assets/five-ways.svg?v=6" width="100%" alt="Every topic page opens the same six ways — overview, key concepts, example, run your code, practice questions, references" />
 
 <br/>
 
@@ -128,9 +71,9 @@ I am **Subrata Pramanik**, a **research scholar** at **IIIT Allahabad** working 
 
 </div>
 
-<img src="./assets/divider.svg?v=5" width="100%" alt="" />
+<img src="./assets/divider.svg?v=6" width="100%" alt="" />
 
-<img src="./assets/sec-publications.svg?v=5" width="100%" alt="Publications — peer-reviewed work and preprints" />
+<img src="./assets/sec-publications.svg?v=6" width="100%" alt="Publications — peer-reviewed work and preprints" />
 
 <div align="center">
 
@@ -144,13 +87,13 @@ I am **Subrata Pramanik**, a **research scholar** at **IIIT Allahabad** working 
 
 </div>
 
-<img src="./assets/divider.svg?v=5" width="100%" alt="" />
+<img src="./assets/divider.svg?v=6" width="100%" alt="" />
 
-<img src="./assets/sec-reach.svg?v=5" width="100%" alt="Reach me — mail, profiles and repositories" />
+<img src="./assets/sec-reach.svg?v=6" width="100%" alt="Reach me — mail, profiles and repositories" />
 
 <div align="center">
 
-<a href="mailto:subrata.official111@gmail.com"><img src="https://img.shields.io/badge/subrata.official111%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=160F3C" alt="Email subrata.official111@gmail.com" /></a>
+<a href="mailto:subrata.official111@gmail.com"><img src="https://img.shields.io/badge/Mail_me-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=160F3C" alt="Send me an email" /></a>
 
 <a href="https://subrata-cs.github.io/"><img src="https://img.shields.io/badge/Visit-6D5AF7?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=160F3C" alt="Visit my website" /></a>
 <a href="https://subrata-cs.github.io/open/"><img src="https://img.shields.io/badge/Learning_Hub-22C9E8?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=160F3C" alt="Learning Hub" /></a>
@@ -160,10 +103,10 @@ I am **Subrata Pramanik**, a **research scholar** at **IIIT Allahabad** working 
 
 </div>
 
-<img src="./assets/divider.svg?v=5" width="100%" alt="" />
+<img src="./assets/divider.svg?v=6" width="100%" alt="" />
 
 <div align="center">
 
-<img src="./assets/footer.svg?v=5" width="100%" alt="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad" />
+<img src="./assets/footer.svg?v=6" width="100%" alt="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad" />
 
 </div>
