@@ -1,65 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-label="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad">
-  <title>Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad</title>
-  <defs>
-    <linearGradient id="fBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#08050F"/>
-      <stop offset="55%" stop-color="#160F3C"/>
-      <stop offset="100%" stop-color="#08050F"/>
-    </linearGradient>
-    <linearGradient id="w1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6D5AF7" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#22C9E8" stop-opacity="0.55"/>
-    </linearGradient>
-    <linearGradient id="w2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#F65C8E" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#9B5CF6" stop-opacity="0.35"/>
-    </linearGradient>
-    <linearGradient id="w3" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22C58B" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#F7A93B" stop-opacity="0.3"/>
-    </linearGradient>
-    <linearGradient id="fTxt" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#EDE9FF"/>
-      <stop offset="100%" stop-color="#7FE6FF"/>
-    </linearGradient>
-    <clipPath id="fCard"><rect width="1200" height="150" rx="20"/></clipPath>
-    <style>
-      .wave { animation: slide 14s linear infinite; }
-      .wave.b { animation-duration: 20s; animation-direction: reverse; }
-      .wave.c { animation-duration: 27s; }
-      @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-600px); } }
-      .fade { animation: soft 4.5s ease-in-out infinite; }
-      @keyframes soft { 0%,100% { opacity:.55; } 50% { opacity:1; } }
-      .beacon { animation: beat 2.4s ease-in-out infinite; }
-      @keyframes beat { 0%,100% { opacity:.35; } 50% { opacity:1; } }
-      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
-    </style>
-  </defs>
-
-  <g clip-path="url(#fCard)">
-    <rect width="1200" height="150" fill="url(#fBg)"/>
-
-    <g transform="translate(0,66)">
-      <g class="wave c">
-        <path d="M0 44 q150 -34 300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 V90 H0 Z" fill="url(#w3)"/>
-      </g>
-      <g class="wave b">
-        <path d="M0 54 q150 -28 300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 V90 H0 Z" fill="url(#w2)"/>
-      </g>
-      <g class="wave">
-        <path d="M0 64 q150 -24 300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 t300 0 V90 H0 Z" fill="url(#w1)"/>
-      </g>
-    </g>
-
-    <text x="600" y="52" text-anchor="middle" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="3.4" fill="url(#fTxt)">SUBRATA PRAMANIK</text>
-    <text class="fade" x="600" y="76" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,monospace" font-size="10.5" letter-spacing="3" fill="#9B8CFA">RESEARCH SCHOLAR · COMPUTER VISION AND PATTERN RECOGNITION · IIIT ALLAHABAD</text>
-
-    <g class="beacon">
-      <circle cx="574" cy="98" r="3" fill="#22C58B"/>
-      <circle cx="600" cy="98" r="3" fill="#22C9E8"/>
-      <circle cx="626" cy="98" r="3" fill="#6D5AF7"/>
-    </g>
-
-    <rect x="0.5" y="0.5" width="1199" height="149" rx="20" fill="none" stroke="#6D5AF7" stroke-opacity="0.35"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad">
+<title>Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0A0620"/><stop offset="55%" stop-color="#151038"/><stop offset="100%" stop-color="#0A0620"/>
+</linearGradient>
+<linearGradient id="w1" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#8B6BFF" stop-opacity="0.6"/><stop offset="100%" stop-color="#2ED8F7" stop-opacity="0.6"/>
+</linearGradient>
+<linearGradient id="w2" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#FF6EA0" stop-opacity="0.4"/><stop offset="100%" stop-color="#B072FF" stop-opacity="0.4"/>
+</linearGradient>
+<clipPath id="cp"><rect width="1200" height="180" rx="22"/></clipPath>
+<style>
+.wv{animation:slide 16s linear infinite}.wv.b{animation-duration:23s;animation-direction:reverse}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-600px)}}
+.bc{animation:beat 2.4s ease-in-out infinite}
+@keyframes beat{0%,100%{opacity:.4}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</defs>
+<g clip-path="url(#cp)">
+<rect width="1200" height="180" fill="url(#bg)"/>
+<g transform="translate(0,96)">
+<g class="wv b"><path d="M0 56 q150 -30 300 0 t300 0 t300 0 t300 0 t300 0 t300 0 V110 H0 Z" fill="url(#w2)"/></g>
+<g class="wv"><path d="M0 68 q150 -26 300 0 t300 0 t300 0 t300 0 t300 0 t300 0 V110 H0 Z" fill="url(#w1)"/></g>
+</g>
+<text x="600" y="66" text-anchor="middle" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="700" letter-spacing="3" fill="#FFFFFF">SUBRATA PRAMANIK</text>
+<text x="600" y="98" text-anchor="middle" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" font-weight="600" letter-spacing="1.8" fill="#C3B8EE">RESEARCH SCHOLAR · COMPUTER VISION &amp; PATTERN RECOGNITION · IIIT ALLAHABAD</text>
+<g class="bc">
+<circle cx="566" cy="124" r="6" fill="#2FDCA0"/><circle cx="600" cy="124" r="6" fill="#2ED8F7"/><circle cx="634" cy="124" r="6" fill="#8B6BFF"/>
+</g>
+<rect x="0.75" y="0.75" width="1198.5" height="178.5" rx="22" fill="none" stroke="#8B6BFF" stroke-opacity="0.5" stroke-width="1.5"/>
+</g>
 </svg>
