@@ -1,252 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Subrata Pramanik, Research Scholar in Computer Vision and Pattern Recognition, IIIT Allahabad">
-  <title>Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad</title>
-  <defs>
-    <linearGradient id="hBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#08050F"/>
-      <stop offset="48%" stop-color="#160F3C"/>
-      <stop offset="100%" stop-color="#08050F"/>
-    </linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Subrata Pramanik, Research Scholar in Computer Vision and Pattern Recognition, IIIT Allahabad, formerly TCS">
+<title>Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0A0620"/><stop offset="50%" stop-color="#151038"/><stop offset="100%" stop-color="#0A0620"/>
+</linearGradient>
+<radialGradient id="gl" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#2ED8F7" stop-opacity="0.30"/><stop offset="100%" stop-color="#2ED8F7" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#8B6BFF"/><stop offset="60%" stop-color="#2ED8F7"/><stop offset="100%" stop-color="#2ED8F7" stop-opacity="0"/>
+</linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8B6BFF" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<clipPath id="cp"><rect width="1200" height="380" rx="26"/></clipPath>
+<style>
+.net{transform-box:fill-box;transform-origin:center;animation:spin 46s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.live{animation:beat 2s ease-in-out infinite}
+@keyframes beat{0%,100%{opacity:1}50%{opacity:.3}}
+.hz{animation:drift 18s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-50px,24px) scale(1.15)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</defs>
+<g clip-path="url(#cp)">
+<rect width="1200" height="380" fill="url(#bg)"/>
+<rect width="1200" height="380" fill="url(#grid)"/>
+<ellipse class="hz" cx="960" cy="200" rx="300" ry="220" fill="url(#gl)"/>
 
-    <radialGradient id="blobA" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#6D5AF7" stop-opacity="0.75"/>
-      <stop offset="100%" stop-color="#6D5AF7" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="blobB" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22C9E8" stop-opacity="0.62"/>
-      <stop offset="100%" stop-color="#22C9E8" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="blobC" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#F65C8E" stop-opacity="0.45"/>
-      <stop offset="100%" stop-color="#F65C8E" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="blobD" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22C58B" stop-opacity="0.42"/>
-      <stop offset="100%" stop-color="#22C58B" stop-opacity="0"/>
-    </radialGradient>
+<!-- decorative network, kept clear of all text -->
+<g transform="translate(1010,196)" class="net">
+<g fill="none" stroke="#B072FF" stroke-opacity="0.45" stroke-width="1.6">
+<path d="M-120-84 L-10-44 M-120-84 L-10 40 M-120 0 L-10-44 M-120 0 L-10 104 M-120 84 L-10 40 M-120 84 L-10 104"/>
+<path d="M-10-104 L104-56 M-10-44 L104-56 M-10 40 L104 12 M-10 104 L104 76 M-10-44 L104 12 M-10 40 L104-56"/>
+</g>
+<g fill="#0A0620" stroke="#2ED8F7" stroke-width="2.4">
+<circle cx="-120" cy="-84" r="9"/><circle cx="-120" cy="0" r="9"/><circle cx="-120" cy="84" r="9"/>
+</g>
+<g fill="#0A0620" stroke="#B072FF" stroke-width="2.4">
+<circle cx="-10" cy="-104" r="8"/><circle cx="-10" cy="-44" r="8"/><circle cx="-10" cy="40" r="8"/><circle cx="-10" cy="104" r="8"/>
+</g>
+<g fill="#0A0620" stroke="#2FDCA0" stroke-width="2.4">
+<circle cx="104" cy="-56" r="9"/><circle cx="104" cy="12" r="9"/><circle cx="104" cy="76" r="9"/>
+</g>
+</g>
 
-    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#EDE9FF"/>
-      <stop offset="45%" stop-color="#B9A8FF"/>
-      <stop offset="100%" stop-color="#7FE6FF"/>
-    </linearGradient>
+<!-- identity block on a solid plate so every glyph stays high contrast -->
+<rect x="48" y="44" width="778" height="292" rx="20" fill="#171041" fill-opacity="0.92" stroke="#8B6BFF" stroke-opacity="0.5" stroke-width="1.5"/>
 
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.85"/>
-      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <animate attributeName="x1" from="-420" to="900" dur="5.5s" repeatCount="indefinite"/>
-      <animate attributeName="x2" from="-120" to="1200" dur="5.5s" repeatCount="indefinite"/>
-    </linearGradient>
+<g>
+<rect x="74" y="70" width="288" height="42" rx="21" fill="#221A55" stroke="#B072FF" stroke-opacity="0.75" stroke-width="1.5"/>
+<circle class="live" cx="98" cy="91" r="6" fill="#2FDCA0"/>
+<text x="116" y="98" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="19" font-weight="700" letter-spacing="2.6" fill="#EDE7FF">RESEARCH SCHOLAR</text>
+</g>
 
-    <linearGradient id="ruleGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#6D5AF7" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#6D5AF7"/>
-      <stop offset="70%" stop-color="#22C9E8"/>
-      <stop offset="100%" stop-color="#22C9E8" stop-opacity="0"/>
-    </linearGradient>
+<text x="74" y="182" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="55" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">SUBRATA PRAMANIK</text>
+<path d="M74 204 H800" stroke="url(#rule)" stroke-width="3" stroke-linecap="round"/>
 
-    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#7FE6FF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#7FE6FF" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#7FE6FF" stop-opacity="0"/>
-    </linearGradient>
+<text x="74" y="244" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="600" fill="#8FEBFF">Computer vision · pattern recognition</text>
+<text x="74" y="278" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="600" fill="#8FEBFF">Visual document understanding</text>
 
-    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="42"/>
-    </filter>
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="3.2" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+<g font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="19" font-weight="700" letter-spacing="1.6">
+<rect x="74" y="296" width="220" height="40" rx="10" fill="#221A55" stroke="#8B6BFF" stroke-width="1.5"/>
+<text x="94" y="323" fill="#EDE7FF">IIIT ALLAHABAD</text>
+<rect x="306" y="296" width="148" height="40" rx="10" fill="#221A55" stroke="#2ED8F7" stroke-width="1.5"/>
+<text x="326" y="323" fill="#9AEEFF">EX-TCSer</text>
+<rect x="466" y="296" width="192" height="40" rx="10" fill="#221A55" stroke="#2FDCA0" stroke-width="1.5"/>
+<text x="486" y="323" fill="#9AF0CE">OPEN SOURCE</text>
+</g>
 
-    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#9B8CFA" stroke-opacity="0.10" stroke-width="1"/>
-    </pattern>
-
-    <clipPath id="card"><rect x="0" y="0" width="1200" height="340" rx="26"/></clipPath>
-
-    <style>
-      .blob { filter: url(#soft); transform-box: fill-box; transform-origin: center; }
-      .bA { animation: driftA 17s ease-in-out infinite; }
-      .bB { animation: driftB 21s ease-in-out infinite; }
-      .bC { animation: driftC 25s ease-in-out infinite; }
-      .bD { animation: driftB 19s ease-in-out infinite reverse; }
-      @keyframes driftA {
-        0%,100% { transform: translate(0,0) scale(1); }
-        33%     { transform: translate(70px,-26px) scale(1.14); }
-        66%     { transform: translate(-40px,22px) scale(0.92); }
-      }
-      @keyframes driftB {
-        0%,100% { transform: translate(0,0) scale(1.02); }
-        50%     { transform: translate(-84px,30px) scale(1.2); }
-      }
-      @keyframes driftC {
-        0%,100% { transform: translate(0,0) scale(0.95); }
-        40%     { transform: translate(46px,34px) scale(1.18); }
-        75%     { transform: translate(-30px,-20px) scale(1.05); }
-      }
-      .gridDrift { animation: gridMove 24s linear infinite; }
-      @keyframes gridMove { from { transform: translate(0,0); } to { transform: translate(-34px,-34px); } }
-
-      .scan { animation: scan 7.5s cubic-bezier(.4,0,.6,1) infinite; }
-      @keyframes scan { 0% { transform: translateY(-40px); opacity:0; } 12% { opacity:.9; } 88% { opacity:.9; } 100% { transform: translateY(360px); opacity:0; } }
-
-      .bracket { stroke-dasharray: 90; stroke-dashoffset: 90; animation: draw 3.4s ease-in-out infinite; }
-      .bracket.d2 { animation-delay: .25s; }
-      .bracket.d3 { animation-delay: .5s; }
-      .bracket.d4 { animation-delay: .75s; }
-      @keyframes draw { 0% { stroke-dashoffset: 90; opacity:.25; } 45% { stroke-dashoffset: 0; opacity:1; } 100% { stroke-dashoffset: 0; opacity:.45; } }
-
-      .caret { animation: blink 1.05s steps(1) infinite; }
-      @keyframes blink { 0%,49% { opacity:1; } 50%,100% { opacity:0; } }
-
-      .rule { stroke-dasharray: 620; stroke-dashoffset: 620; animation: ruleIn 1.6s .5s ease-out forwards; }
-      @keyframes ruleIn { to { stroke-dashoffset: 0; } }
-
-      .net { animation: netSpin 34s linear infinite; transform-box: fill-box; transform-origin: center; }
-      @keyframes netSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-
-      .edge { animation: edgeFlicker 4.2s ease-in-out infinite; }
-      .e2 { animation-delay: .6s; } .e3 { animation-delay: 1.2s; } .e4 { animation-delay: 1.8s; }
-      @keyframes edgeFlicker { 0%,100% { stroke-opacity:.14; } 50% { stroke-opacity:.5; } }
-
-      .live { animation: livePulse 1.8s ease-in-out infinite; }
-      @keyframes livePulse { 0%,100% { opacity:1; } 50% { opacity:.25; } }
-
-      @media (prefers-reduced-motion: reduce) {
-        * { animation: none !important; }
-        .bracket { stroke-dashoffset: 0; }
-        .rule { stroke-dashoffset: 0; }
-      }
-    </style>
-  </defs>
-
-  <g clip-path="url(#card)">
-    <rect width="1200" height="340" fill="url(#hBg)"/>
-
-    <g>
-      <ellipse class="blob bA" cx="180" cy="70"  rx="300" ry="190" fill="url(#blobA)"/>
-      <ellipse class="blob bB" cx="980" cy="255" rx="330" ry="205" fill="url(#blobB)"/>
-      <ellipse class="blob bC" cx="640" cy="330" rx="270" ry="150" fill="url(#blobC)"/>
-      <ellipse class="blob bD" cx="1120" cy="40" rx="240" ry="150" fill="url(#blobD)"/>
-    </g>
-
-    <g class="gridDrift">
-      <rect x="-40" y="-40" width="1280" height="420" fill="url(#grid)"/>
-    </g>
-
-    <rect class="scan" x="0" y="0" width="1200" height="42" fill="url(#scanGrad)" opacity="0.3"/>
-
-    <!-- corner brackets -->
-    <g fill="none" stroke="#22C9E8" stroke-width="2" stroke-linecap="round" opacity="0.8">
-      <path class="bracket"    d="M28 74 V40 A12 12 0 0 1 40 28 H74"/>
-      <path class="bracket d2" d="M1126 28 H1160 A12 12 0 0 1 1172 40 V74"/>
-      <path class="bracket d3" d="M1172 266 V300 A12 12 0 0 1 1160 312 H1126"/>
-      <path class="bracket d4" d="M74 312 H40 A12 12 0 0 1 28 300 V266"/>
-    </g>
-
-    <!-- right: live neural graph -->
-    <g transform="translate(924,168)">
-      <g class="net">
-        <g fill="none" stroke="#9B8CFA" stroke-width="1.1">
-          <g class="edge">
-            <path d="M-150-80 L-30-40 M-150-80 L-30 40 M-150 0 L-30-40 M-150 0 L-30 110"/>
-          </g>
-          <g class="edge e2">
-            <path d="M-150 80 L-30 40 M-150 80 L-30 110 M-150-80 L-30-110 M-150 0 L-30 40"/>
-          </g>
-          <g class="edge e3">
-            <path d="M-30-110 L100-60 M-30-40 L100-60 M-30 40 L100 10 M-30 110 L100 80"/>
-          </g>
-          <g class="edge e4">
-            <path d="M-30-40 L100 10 M-30 40 L100-60 M-30 110 L100 10 M-30-110 L100 80"/>
-          </g>
-        </g>
-
-        <g fill="#0B0718" stroke="#22C9E8" stroke-width="1.6">
-          <circle cx="-150" cy="-80" r="7"><animate attributeName="r" values="6;9;6" dur="3.1s" repeatCount="indefinite"/></circle>
-          <circle cx="-150" cy="0"   r="7"><animate attributeName="r" values="7;10;7" dur="3.7s" begin="-1s" repeatCount="indefinite"/></circle>
-          <circle cx="-150" cy="80"  r="7"><animate attributeName="r" values="6;9;6" dur="4.1s" begin="-2s" repeatCount="indefinite"/></circle>
-        </g>
-        <g fill="#0B0718" stroke="#9B5CF6" stroke-width="1.6">
-          <circle cx="-30" cy="-110" r="6"><animate attributeName="r" values="6;9;6" dur="3.4s" begin="-.4s" repeatCount="indefinite"/></circle>
-          <circle cx="-30" cy="-40"  r="6"><animate attributeName="r" values="6;10;6" dur="3.9s" begin="-1.4s" repeatCount="indefinite"/></circle>
-          <circle cx="-30" cy="40"   r="6"><animate attributeName="r" values="6;9;6" dur="3.2s" begin="-2.2s" repeatCount="indefinite"/></circle>
-          <circle cx="-30" cy="110"  r="6"><animate attributeName="r" values="6;10;6" dur="4.4s" begin="-.9s" repeatCount="indefinite"/></circle>
-        </g>
-        <g fill="#0B0718" stroke="#22C58B" stroke-width="1.6">
-          <circle cx="100" cy="-60" r="7"><animate attributeName="r" values="7;10;7" dur="3.6s" begin="-1.6s" repeatCount="indefinite"/></circle>
-          <circle cx="100" cy="10"  r="7"><animate attributeName="r" values="6;9;6" dur="4.2s" begin="-.6s" repeatCount="indefinite"/></circle>
-          <circle cx="100" cy="80"  r="7"><animate attributeName="r" values="7;10;7" dur="3.3s" begin="-2.6s" repeatCount="indefinite"/></circle>
-        </g>
-
-        <!-- signal pulses travelling along edges -->
-        <g fill="#7FE6FF" filter="url(#glow)">
-          <circle r="3.4">
-            <animate attributeName="cx" values="-150;-30;100" dur="2.6s" repeatCount="indefinite"/>
-            <animate attributeName="cy" values="-80;-40;-60" dur="2.6s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="0;1;1;0" dur="2.6s" repeatCount="indefinite"/>
-          </circle>
-          <circle r="3.4">
-            <animate attributeName="cx" values="-150;-30;100" dur="3.1s" begin="0.7s" repeatCount="indefinite"/>
-            <animate attributeName="cy" values="0;40;10" dur="3.1s" begin="0.7s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="0;1;1;0" dur="3.1s" begin="0.7s" repeatCount="indefinite"/>
-          </circle>
-          <circle r="3.4" fill="#F7A93B">
-            <animate attributeName="cx" values="-150;-30;100" dur="2.9s" begin="1.5s" repeatCount="indefinite"/>
-            <animate attributeName="cy" values="80;110;80" dur="2.9s" begin="1.5s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="0;1;1;0" dur="2.9s" begin="1.5s" repeatCount="indefinite"/>
-          </circle>
-          <circle r="3.4" fill="#F65C8E">
-            <animate attributeName="cx" values="-150;-30;100" dur="3.4s" begin="2.1s" repeatCount="indefinite"/>
-            <animate attributeName="cy" values="-80;-110;80" dur="3.4s" begin="2.1s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="0;1;1;0" dur="3.4s" begin="2.1s" repeatCount="indefinite"/>
-          </circle>
-        </g>
-      </g>
-    </g>
-
-    <!-- left: identity block -->
-    <g font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,monospace">
-      <g>
-        <rect x="64" y="60" width="216" height="26" rx="13" fill="#6D5AF7" fill-opacity="0.16" stroke="#9B8CFA" stroke-opacity="0.55"/>
-        <circle class="live" cx="82" cy="73" r="4" fill="#22C58B"/>
-        <text x="96" y="78" font-size="12" letter-spacing="2.4" fill="#CFC6FF">RESEARCH SCHOLAR</text>
-      </g>
-
-      <g>
-        <text x="64" y="146" font-size="52" font-weight="700" letter-spacing="1.5"
-              font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" fill="url(#nameGrad)">SUBRATA PRAMANIK</text>
-        <text x="64" y="146" font-size="52" font-weight="700" letter-spacing="1.5"
-              font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" fill="url(#shine)">SUBRATA PRAMANIK</text>
-      </g>
-
-      <path class="rule" d="M64 164 H684" stroke="url(#ruleGrad)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-
-      <text x="64" y="200" font-size="17" letter-spacing="0.6" fill="#8FE3F5">
-        computer vision · pattern recognition · visual document understanding<tspan class="caret" fill="#F7A93B" font-weight="700">_</tspan>
-      </text>
-
-      <g font-size="11.5" letter-spacing="1.8">
-        <g>
-          <rect x="64" y="230" width="176" height="30" rx="8" fill="#160F3C" fill-opacity="0.85" stroke="#6D5AF7" stroke-opacity="0.7"/>
-          <text x="82" y="249.5" fill="#CFC6FF">IIIT ALLAHABAD</text>
-        </g>
-        <g>
-          <rect x="252" y="230" width="122" height="30" rx="8" fill="#160F3C" fill-opacity="0.85" stroke="#22C9E8" stroke-opacity="0.7"/>
-          <text x="270" y="249.5" fill="#8FE3F5">EX-TCSer</text>
-        </g>
-        <g>
-          <rect x="386" y="230" width="164" height="30" rx="8" fill="#160F3C" fill-opacity="0.85" stroke="#22C58B" stroke-opacity="0.7"/>
-          <text x="404" y="249.5" fill="#8DE8C0">OPEN SOURCE</text>
-        </g>
-      </g>
-
-      <text x="64" y="292" font-size="11" letter-spacing="2.6" fill="#7C6FB8">PhD TRACK · LAYOUT-AWARE MODELS · DOCUMENT VQA · RETRIEVAL-AUGMENTED GENERATION</text>
-    </g>
-
-    <rect x="0.5" y="0.5" width="1199" height="339" rx="26" fill="none" stroke="#6D5AF7" stroke-opacity="0.45" stroke-width="1"/>
-  </g>
+<rect x="0.75" y="0.75" width="1198.5" height="378.5" rx="26" fill="none" stroke="#8B6BFF" stroke-opacity="0.55" stroke-width="1.5"/>
+</g>
 </svg>
