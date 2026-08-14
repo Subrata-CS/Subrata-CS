@@ -99,12 +99,6 @@
       .bracket.d4 { animation-delay: .75s; }
       @keyframes draw { 0% { stroke-dashoffset: 90; opacity:.25; } 45% { stroke-dashoffset: 0; opacity:1; } 100% { stroke-dashoffset: 0; opacity:.45; } }
 
-      .rise { opacity: 0; animation: rise .9s cubic-bezier(.2,.8,.2,1) forwards; }
-      .r1 { animation-delay: .10s; } .r2 { animation-delay: .28s; }
-      .r3 { animation-delay: .46s; } .r4 { animation-delay: .64s; }
-      .r5 { animation-delay: .78s; } .r6 { animation-delay: .92s; } .r7 { animation-delay: 1.06s; }
-      @keyframes rise { from { opacity:0; transform: translateY(14px); } to { opacity:1; transform: translateY(0); } }
-
       .caret { animation: blink 1.05s steps(1) infinite; }
       @keyframes blink { 0%,49% { opacity:1; } 50%,100% { opacity:0; } }
 
@@ -118,9 +112,11 @@
       .e2 { animation-delay: .6s; } .e3 { animation-delay: 1.2s; } .e4 { animation-delay: 1.8s; }
       @keyframes edgeFlicker { 0%,100% { stroke-opacity:.14; } 50% { stroke-opacity:.5; } }
 
+      .live { animation: livePulse 1.8s ease-in-out infinite; }
+      @keyframes livePulse { 0%,100% { opacity:1; } 50% { opacity:.25; } }
+
       @media (prefers-reduced-motion: reduce) {
         * { animation: none !important; }
-        .rise { opacity: 1; }
         .bracket { stroke-dashoffset: 0; }
         .rule { stroke-dashoffset: 0; }
       }
@@ -214,49 +210,41 @@
 
     <!-- left: identity block -->
     <g font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,monospace">
-      <g class="rise r1">
+      <g>
         <rect x="64" y="60" width="216" height="26" rx="13" fill="#6D5AF7" fill-opacity="0.16" stroke="#9B8CFA" stroke-opacity="0.55"/>
-        <circle cx="82" cy="73" r="4" fill="#22C58B">
-          <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
-        </circle>
+        <circle class="live" cx="82" cy="73" r="4" fill="#22C58B"/>
         <text x="96" y="78" font-size="12" letter-spacing="2.4" fill="#CFC6FF">RESEARCH SCHOLAR</text>
       </g>
 
-      <g class="rise r2">
+      <g>
         <text x="64" y="146" font-size="52" font-weight="700" letter-spacing="1.5"
               font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" fill="url(#nameGrad)">SUBRATA PRAMANIK</text>
         <text x="64" y="146" font-size="52" font-weight="700" letter-spacing="1.5"
               font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" fill="url(#shine)">SUBRATA PRAMANIK</text>
       </g>
 
-      <g class="rise r3">
-        <path class="rule" d="M64 164 H684" stroke="url(#ruleGrad)" stroke-width="2.5" stroke-linecap="round"/>
-      </g>
+      <path class="rule" d="M64 164 H684" stroke="url(#ruleGrad)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
 
-      <g class="rise r4">
-        <text x="64" y="200" font-size="17" letter-spacing="0.6" fill="#8FE3F5">
-          computer vision · pattern recognition · visual document understanding<tspan class="caret" fill="#F7A93B" font-weight="700">_</tspan>
-        </text>
-      </g>
+      <text x="64" y="200" font-size="17" letter-spacing="0.6" fill="#8FE3F5">
+        computer vision · pattern recognition · visual document understanding<tspan class="caret" fill="#F7A93B" font-weight="700">_</tspan>
+      </text>
 
       <g font-size="11.5" letter-spacing="1.8">
-        <g class="rise r5">
+        <g>
           <rect x="64" y="230" width="176" height="30" rx="8" fill="#160F3C" fill-opacity="0.85" stroke="#6D5AF7" stroke-opacity="0.7"/>
           <text x="82" y="249.5" fill="#CFC6FF">IIIT ALLAHABAD</text>
         </g>
-        <g class="rise r6">
+        <g>
           <rect x="252" y="230" width="122" height="30" rx="8" fill="#160F3C" fill-opacity="0.85" stroke="#22C9E8" stroke-opacity="0.7"/>
           <text x="270" y="249.5" fill="#8FE3F5">EX-TCSer</text>
         </g>
-        <g class="rise r7">
-          <rect x="386" y="230" width="152" height="30" rx="8" fill="#160F3C" fill-opacity="0.85" stroke="#22C58B" stroke-opacity="0.7"/>
-          <text x="404" y="249.5" fill="#8DE8C0">KOLKATA · IN</text>
+        <g>
+          <rect x="386" y="230" width="164" height="30" rx="8" fill="#160F3C" fill-opacity="0.85" stroke="#22C58B" stroke-opacity="0.7"/>
+          <text x="404" y="249.5" fill="#8DE8C0">OPEN SOURCE</text>
         </g>
       </g>
 
-      <g class="rise r7">
-        <text x="64" y="292" font-size="11" letter-spacing="2.6" fill="#7C6FB8">PhD TRACK · LAYOUT-AWARE MODELS · DOCUMENT VQA · RETRIEVAL-AUGMENTED GENERATION</text>
-      </g>
+      <text x="64" y="292" font-size="11" letter-spacing="2.6" fill="#7C6FB8">PhD TRACK · LAYOUT-AWARE MODELS · DOCUMENT VQA · RETRIEVAL-AUGMENTED GENERATION</text>
     </g>
 
     <rect x="0.5" y="0.5" width="1199" height="339" rx="26" fill="none" stroke="#6D5AF7" stroke-opacity="0.45" stroke-width="1"/>
