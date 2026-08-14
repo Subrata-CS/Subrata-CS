@@ -170,7 +170,23 @@ def header():
 
 
 # ══════════════════════════════════════════════════════ section banners ══
-def banner(title, sub, accent, accent2):
+def banner(title, sub, accent, accent2, cta=None):
+    """cta: text for a call-to-action pill on the right, or None for dots."""
+    if cta:
+        pw = int(len(cta) * (19 * 0.66 + 1.9)) + 108
+        px = 1160 - pw
+        right = (f'<g><rect x="{px}" y="34" width="{pw}" height="48" rx="24" '
+                 f'fill="{accent}" fill-opacity="0.20" stroke="{accent}" stroke-width="2"/>'
+                 f'<text x="{px + 26}" y="64" font-family="{MONO}" font-size="19" font-weight="700" '
+                 f'letter-spacing="1.6" fill="{INK}">{esc(cta)}</text>'
+                 f'<g transform="translate({px + pw - 62},58)">'
+                 f'<path class="fl" d="M0 0 H30" stroke="{accent2}" stroke-width="3.5" stroke-linecap="round" fill="none"/>'
+                 f'<path d="M26 -7 L36 0 L26 7" fill="none" stroke="{accent2}" stroke-width="3.5" '
+                 f'stroke-linecap="round" stroke-linejoin="round"/></g></g>')
+    else:
+        right = (f'<g transform="translate(0,58)" fill="{accent2}">'
+                 f'<circle class="dt" cx="1120" cy="0" r="5"/><circle class="dt b" cx="1142" cy="0" r="5"/>'
+                 f'<circle class="dt c" cx="1164" cy="0" r="5"/></g>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 116" width="1200" height="116" role="img" aria-label="{esc(title)} — {esc(sub)}">
 <title>{esc(title)}</title>
 <defs>
@@ -188,6 +204,8 @@ def banner(title, sub, accent, accent2):
 @keyframes pulse{{0%,100%{{opacity:.7}}50%{{opacity:1}}}}
 .dt{{animation:br 2.2s ease-in-out infinite}}.dt.b{{animation-delay:.35s}}.dt.c{{animation-delay:.7s}}
 @keyframes br{{0%,100%{{opacity:.3}}50%{{opacity:1}}}}
+.fl{{stroke-dasharray:8 8;animation:fl 1.2s linear infinite}}
+@keyframes fl{{to{{stroke-dashoffset:-32}}}}
 {RM}
 </style>
 </defs>
@@ -201,9 +219,7 @@ def banner(title, sub, accent, accent2):
 <text x="98" y="56" font-family="{SANS}" font-size="38" font-weight="700" letter-spacing="3" fill="{INK}">{esc(title)}</text>
 <path d="M100 70 H{100 + int(approx_w(title, 38, True) + 60)}" stroke="{accent}" stroke-width="3" stroke-linecap="round" stroke-opacity="0.85"/>
 <text x="100" y="96" font-family="{MONO}" font-size="19" font-weight="600" letter-spacing="2" fill="{INK_3}">{esc(sub)}</text>
-<g transform="translate(0,58)" fill="{accent2}">
-<circle class="dt" cx="1120" cy="0" r="5"/><circle class="dt b" cx="1142" cy="0" r="5"/><circle class="dt c" cx="1164" cy="0" r="5"/>
-</g>
+{right}
 <rect x="0.75" y="0.75" width="1198.5" height="114.5" rx="18" fill="none" stroke="{accent}" stroke-opacity="0.5" stroke-width="1.5"/>
 </g>
 </svg>'''
@@ -374,30 +390,61 @@ def five_ways():
 <rect x="{x + 82}" y="{y + 104}" width="{w - 110}" height="6" rx="3" fill="{col}" fill-opacity="0.30"/>
 <rect class="gw" x="{x + 82}" y="{y + 104}" width="{int((w - 110) * (0.5 + 0.08 * i))}" height="6" rx="3" fill="{col}" style="animation-delay:{i * .15}s"/>
 </g>''')
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 432" width="1200" height="432" role="img" aria-label="Every topic page opens the same six ways: overview, key concepts, example, run your code, practice questions and references">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 510" width="1200" height="510" role="img" aria-label="Every topic page opens the same six ways: overview, key concepts, example, run your code, practice questions and references — and a Code Lab you can open in the browser">
 <title>Every topic page opens the same six ways</title>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0%" stop-color="{BG0}"/><stop offset="50%" stop-color="{BG1}"/><stop offset="100%" stop-color="{BG0}"/>
 </linearGradient>
 {GRID}
-<clipPath id="cp"><rect width="1200" height="432" rx="22"/></clipPath>
+<clipPath id="cp"><rect width="1200" height="510" rx="22"/></clipPath>
 <style>
 .gw{{transform-box:fill-box;transform-origin:left;animation:gw 2.6s ease-in-out infinite}}
 @keyframes gw{{0%,100%{{transform:scaleX(.55)}}50%{{transform:scaleX(1)}}}}
+.fl{{stroke-dasharray:8 8;animation:fl 1.2s linear infinite}}
+@keyframes fl{{to{{stroke-dashoffset:-32}}}}
 {RM}
 </style>
 </defs>
 <g clip-path="url(#cp)">
-<rect width="1200" height="432" fill="url(#bg)"/>
-<rect width="1200" height="432" fill="url(#grid)"/>
+<rect width="1200" height="510" fill="url(#bg)"/>
+<rect width="1200" height="510" fill="url(#grid)"/>
 <text x="26" y="52" font-family="{SANS}" font-size="30" font-weight="700" fill="{INK}">Every topic page opens the same six ways</text>
 <text x="26" y="80" font-family="{MONO}" font-size="18" fill="{INK_3}">SAME SHAPE, EVERY SUBJECT — SO YOU NEVER HUNT FOR ANYTHING</text>
 {''.join(cards)}
-<rect x="0.75" y="0.75" width="1198.5" height="430.5" rx="22" fill="none" stroke="{VIOLET}" stroke-opacity="0.5" stroke-width="1.5"/>
+<g>
+<rect x="420" y="440" width="360" height="52" rx="26" fill="{AMBER}" fill-opacity="0.20" stroke="{AMBER}" stroke-width="2.5"/>
+<text x="454" y="473" font-family="{MONO}" font-size="21" font-weight="700" letter-spacing="2" fill="{INK}">CODE LAB</text>
+<g transform="translate(688,466)">
+<path class="fl" d="M0 0 H30" stroke="{AMBER}" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+<path d="M26 -8 L37 0 L26 8" fill="none" stroke="{AMBER}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<rect x="0.75" y="0.75" width="1198.5" height="508.5" rx="22" fill="none" stroke="{VIOLET}" stroke-opacity="0.5" stroke-width="1.5"/>
 </g>
 </svg>'''
 
+
+# ╔══════════════════════════════════════════════════════════════════════╗
+# ║  EDIT ZONE — change these lists, run the script, everything follows.  ║
+# ╚══════════════════════════════════════════════════════════════════════╝
+
+# Publications. Add a line and re-run; colours are picked automatically.
+#   ("conference" | "journal" | "preprint" | "workshop", year, title, link)
+PUBLICATIONS = [
+    ("conference", 2026, "Demo Paper I — I will update",   "https://example.com/paper-2026-conference"),
+    ("journal",    2026, "Demo Paper II — I will update",  "https://example.com/paper-2026-journal"),
+    ("conference", 2027, "Demo Paper III — I will update", "https://example.com/paper-2027-conference"),
+    ("journal",    2028, "Demo Paper IV — I will update",  "https://example.com/paper-2028-journal"),
+    ("conference", 2029, "Demo Paper V — I will update",   "https://example.com/paper-2029-conference"),
+]
+
+# Learning Hub sections. Add or remove freely — the numbering, the grid
+# height and the "N sections" heading all recalculate themselves.
+# Write either  "Section name"  or  ("Section name", topic_count).
+# If every entry carries a count the topic total is summed automatically;
+# otherwise TOPIC_COUNT below is used.
+TOPIC_COUNT = 578
 
 # ═══════════════════════════════════════════════════════ topics grid ════
 SECTIONS = [
@@ -415,9 +462,14 @@ SECTIONS = [
     "Internet of Things", "Robotics", "Quantum Computing",
     "Research Methodology", "Advanced Research Areas",
 ]
+SECTION_NAMES = [x[0] if isinstance(x, (tuple, list)) else x for x in SECTIONS]
+SECTION_TOPICS = [x[1] for x in SECTIONS if isinstance(x, (tuple, list))]
+N_SECTIONS = len(SECTION_NAMES)
+N_TOPICS = sum(SECTION_TOPICS) if len(SECTION_TOPICS) == N_SECTIONS else TOPIC_COUNT
+
 TRACKS = [(1, 6, "FOUNDATIONS", VIOLET), (7, 12, "CORE CS", CYAN),
           (13, 25, "ENGINEERING", PURPLE), (26, 34, "AI & DATA", GREEN),
-          (35, 38, "FRONTIER", AMBER), (39, 40, "RESEARCH", PINK)]
+          (35, 38, "FRONTIER", AMBER), (39, 10 ** 6, "RESEARCH", PINK)]
 
 
 def track_colour(n):
@@ -430,7 +482,7 @@ def track_colour(n):
 def topics_grid():
     cols, x0, y0, w, h, gx, gy = 4, 24, 176, 282, 92, 16, 14
     cards = []
-    for i, name in enumerate(SECTIONS):
+    for i, name in enumerate(SECTION_NAMES):
         n = i + 1
         col = track_colour(n)
         x = x0 + (i % cols) * (w + gx)
@@ -456,9 +508,10 @@ def topics_grid():
         legend.append(f'<circle cx="{lx + 9}" cy="132" r="8" fill="{col}"/>'
                       f'<text x="{lx + 26}" y="140" font-family="{MONO}" font-size="18" font-weight="700" letter-spacing="1.4" fill="{INK_2}">{esc(label)}</text>')
         lx += 26 + int(len(label) * (18 * 0.66 + 1.4)) + 40
-    height = y0 + 10 * (h + gy) + 66
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 {height}" width="1200" height="{height}" role="img" aria-label="Forty computer science sections in the Learning Hub, grouped into six tracks: foundations, core CS, engineering, AI and data, frontier and research">
-<title>The Learning Hub — 40 sections, 578 topics</title>
+    rows = -(-N_SECTIONS // cols)          # ceiling division
+    height = y0 + rows * (h + gy) + 66
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 {height}" width="1200" height="{height}" role="img" aria-label="{N_SECTIONS} computer science sections in the Learning Hub, grouped into six tracks: foundations, core CS, engineering, AI and data, frontier and research">
+<title>The Learning Hub — {N_SECTIONS} sections, {N_TOPICS} topics</title>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0%" stop-color="{BG0}"/><stop offset="52%" stop-color="{BG1}"/><stop offset="100%" stop-color="{BG0}"/>
@@ -469,13 +522,13 @@ def topics_grid():
 <g clip-path="url(#cp)">
 <rect width="1200" height="{height}" fill="url(#bg)"/>
 <rect width="1200" height="{height}" fill="url(#grid)"/>
-<text x="24" y="60" font-family="{SANS}" font-size="36" font-weight="700" fill="{INK}">40 sections · 578 topics</text>
+<text x="24" y="60" font-family="{SANS}" font-size="36" font-weight="700" fill="{INK}">{N_SECTIONS} sections &#183; {N_TOPICS} topics</text>
 <text x="24" y="92" font-family="{MONO}" font-size="19" fill="{INK_3}">EVERY SUBJECT ON THE SHELF, GROUPED INTO SIX TRACKS</text>
 <path d="M24 106 H620" stroke="{VIOLET}" stroke-width="3" stroke-linecap="round"/>
 {''.join(legend)}
 {''.join(cards)}
 <text x="24" y="{height - 24}" font-family="{MONO}" font-size="18" font-weight="600" fill="{INK_3}">SUBRATA-CS.GITHUB.IO/OPEN · FREE AND OPEN SOURCE</text>
-<text x="1176" y="{height - 24}" text-anchor="end" font-family="{MONO}" font-size="18" font-weight="600" fill="{INK_3}">MIT LICENSED</text>
+<text x="1176" y="{height - 24}" text-anchor="end" font-family="{MONO}" font-size="18" font-weight="600" fill="{INK_3}">MIT License &#183; &#169; 2026 Subrata Pramanik</text>
 <rect x="0.75" y="0.75" width="1198.5" height="{height - 1.5}" rx="22" fill="none" stroke="{VIOLET}" stroke-opacity="0.5" stroke-width="1.5"/>
 </g>
 </svg>'''
@@ -581,6 +634,42 @@ def typing():
 </svg>'''
 
 
+
+# ══════════════════════════════════ publications table, written into README ══
+PUB_COLOUR = {"conference": "6D5AF7", "journal": "22C9E8",
+              "preprint": "F7A93B", "workshop": "22C58B", "thesis": "F65C8E"}
+YEAR_COLOUR = ["F65C8E", "9B5CF6", "22C58B", "F7A93B", "22C9E8"]
+BADGE = "https://img.shields.io/badge/{}-{}?style=for-the-badge&labelColor=160F3C"
+
+
+def publications_table():
+    rows = ["| Type | Year | Paper |", "|:---:|:---:|:---|"]
+    for i, (kind, year, title, link) in enumerate(PUBLICATIONS):
+        kc = PUB_COLOUR.get(kind.lower(), "6D5AF7")
+        yc = YEAR_COLOUR[i % len(YEAR_COLOUR)]
+        rows.append(
+            f'| <img src="{BADGE.format(kind.upper(), kc)}" alt="{kind}" /> '
+            f'| <img src="{BADGE.format(year, yc)}" alt="{year}" /> '
+            f'| [{title}]({link}) |')
+    return "\n".join(rows)
+
+
+def update_readme():
+    """Rewrite the publications table in README.md between its markers."""
+    path = os.path.join(os.path.dirname(OUT) or ".", "README.md")
+    a, b = "<!-- PUBLICATIONS:START -->", "<!-- PUBLICATIONS:END -->"
+    if not os.path.exists(path):
+        print("README.md not found next to assets/ — table not updated")
+        return
+    doc = open(path, encoding="utf-8").read()
+    if a not in doc or b not in doc:
+        print("README.md has no PUBLICATIONS markers — table not updated")
+        return
+    new = doc[:doc.index(a) + len(a)] + "\n\n" + publications_table() + "\n\n" + doc[doc.index(b):]
+    open(path, "w", encoding="utf-8").write(new)
+    print(f"{'README.md':24s} {len(PUBLICATIONS)} publications written")
+
+
 # ═══════════════════════════════════════════════════════════════ build ══
 write("divider.svg", divider())
 write("header.svg", header())
@@ -588,10 +677,12 @@ write("typing.svg", typing())
 write("footer.svg", footer())
 write("sec-about.svg", banner("ABOUT", "WHO IS BEHIND THIS PROFILE", VIOLET, PURPLE))
 write("sec-focus.svg", banner("CURRENT FOCUS", "WHAT I AM READING, BUILDING AND MEASURING", GREEN, "#3FE0AE"))
-write("sec-hub.svg", banner("LEARNING HUB", "ONE SHELF FOR EVERYTHING I AM LEARNING", CYAN, "#5FE4FF"))
+write("sec-hub.svg", banner("LEARNING HUB", "ONE SHELF FOR EVERYTHING I AM LEARNING", CYAN, "#5FE4FF",
+                            cta="OPEN THE LEARNING HUB"))
 write("sec-publications.svg", banner("PUBLICATIONS", "PEER-REVIEWED WORK AND PREPRINTS", AMBER, "#FF9256"))
 write("sec-reach.svg", banner("REACH ME", "MAIL, PROFILES AND REPOSITORIES", PINK, PURPLE))
 write("focus-orbit.svg", focus())
 write("vdu-rag.svg", workflow())
 write("five-ways.svg", five_ways())
 write("topics-grid.svg", topics_grid())
+update_readme()

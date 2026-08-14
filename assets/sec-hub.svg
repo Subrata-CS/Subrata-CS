@@ -15,6 +15,8 @@
 @keyframes pulse{0%,100%{opacity:.7}50%{opacity:1}}
 .dt{animation:br 2.2s ease-in-out infinite}.dt.b{animation-delay:.35s}.dt.c{animation-delay:.7s}
 @keyframes br{0%,100%{opacity:.3}50%{opacity:1}}
+.fl{stroke-dasharray:8 8;animation:fl 1.2s linear infinite}
+@keyframes fl{to{stroke-dashoffset:-32}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 </defs>
@@ -28,9 +30,7 @@
 <text x="98" y="56" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="3" fill="#FFFFFF">LEARNING HUB</text>
 <path d="M100 70 H470" stroke="#2ED8F7" stroke-width="3" stroke-linecap="round" stroke-opacity="0.85"/>
 <text x="100" y="96" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="19" font-weight="600" letter-spacing="2" fill="#C3B8EE">ONE SHELF FOR EVERYTHING I AM LEARNING</text>
-<g transform="translate(0,58)" fill="#5FE4FF">
-<circle class="dt" cx="1120" cy="0" r="5"/><circle class="dt b" cx="1142" cy="0" r="5"/><circle class="dt c" cx="1164" cy="0" r="5"/>
-</g>
+<g><rect x="749" y="34" width="411" height="48" rx="24" fill="#2ED8F7" fill-opacity="0.20" stroke="#2ED8F7" stroke-width="2"/><text x="775" y="64" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="19" font-weight="700" letter-spacing="1.6" fill="#FFFFFF">OPEN THE LEARNING HUB</text><g transform="translate(1098,58)"><path class="fl" d="M0 0 H30" stroke="#5FE4FF" stroke-width="3.5" stroke-linecap="round" fill="none"/><path d="M26 -7 L36 0 L26 7" fill="none" stroke="#5FE4FF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></g></g>
 <rect x="0.75" y="0.75" width="1198.5" height="114.5" rx="18" fill="none" stroke="#2ED8F7" stroke-opacity="0.5" stroke-width="1.5"/>
 </g>
 </svg>

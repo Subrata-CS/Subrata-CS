@@ -15,6 +15,8 @@
 @keyframes pulse{0%,100%{opacity:.7}50%{opacity:1}}
 .dt{animation:br 2.2s ease-in-out infinite}.dt.b{animation-delay:.35s}.dt.c{animation-delay:.7s}
 @keyframes br{0%,100%{opacity:.3}50%{opacity:1}}
+.fl{stroke-dasharray:8 8;animation:fl 1.2s linear infinite}
+@keyframes fl{to{stroke-dashoffset:-32}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 </defs>
@@ -28,9 +30,7 @@
 <text x="98" y="56" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="3" fill="#FFFFFF">CURRENT FOCUS</text>
 <path d="M100 70 H495" stroke="#2FDCA0" stroke-width="3" stroke-linecap="round" stroke-opacity="0.85"/>
 <text x="100" y="96" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="19" font-weight="600" letter-spacing="2" fill="#C3B8EE">WHAT I AM READING, BUILDING AND MEASURING</text>
-<g transform="translate(0,58)" fill="#3FE0AE">
-<circle class="dt" cx="1120" cy="0" r="5"/><circle class="dt b" cx="1142" cy="0" r="5"/><circle class="dt c" cx="1164" cy="0" r="5"/>
-</g>
+<g transform="translate(0,58)" fill="#3FE0AE"><circle class="dt" cx="1120" cy="0" r="5"/><circle class="dt b" cx="1142" cy="0" r="5"/><circle class="dt c" cx="1164" cy="0" r="5"/></g>
 <rect x="0.75" y="0.75" width="1198.5" height="114.5" rx="18" fill="none" stroke="#2FDCA0" stroke-opacity="0.5" stroke-width="1.5"/>
 </g>
 </svg>

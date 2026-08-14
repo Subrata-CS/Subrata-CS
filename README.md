@@ -6,13 +6,26 @@
     sec-about.svg  sec-focus.svg  sec-hub.svg  sec-publications.svg  sec-reach.svg
     focus-orbit.svg  vdu-rag.svg  topics-grid.svg  five-ways.svg
 
-  To change any artwork:  py assets\_generate_assets.py   then bump ?v= below.
+  ONE COMMAND UPDATES EVERYTHING:   py assets\_generate_assets.py
+
+  Open assets/_generate_assets.py and look for the "EDIT ZONE" near the top:
+    PUBLICATIONS  — add a line (type, year, title, link). The script rewrites
+                    the table below between the PUBLICATIONS markers and picks
+                    the colours itself: conference/journal/preprint/workshop
+                    each get their own colour, and the year badges cycle.
+                    Never hand-edit between the markers; it gets overwritten.
+    SECTIONS      — add or remove a Learning Hub section. The "N sections"
+                    heading, the numbering and the grid height all follow.
+    TOPIC_COUNT   — the topic total shown next to the section count.
+  After changing any artwork, bump every ?v= number below by one so GitHub
+  stops serving the cached image.
+
   Spare, currently unused: header.svg, sec-about.svg, vdu-rag.svg
 -->
 
 <div align="center">
 
-<img src="./assets/typing.svg?v=6" alt="Computer Vision · Pattern Recognition — Research Scholar at IIIT Allahabad — Ex-TCSer, building the Learning Hub" width="100%" />
+<img src="./assets/typing.svg?v=7" alt="Computer Vision · Pattern Recognition — Research Scholar at IIIT Allahabad — Ex-TCSer, building the Learning Hub" width="100%" />
 
 <br/>
 
@@ -25,15 +38,13 @@
 
 </div>
 
-<img src="./assets/divider.svg?v=6" width="100%" alt="" />
+<img src="./assets/divider.svg?v=7" width="100%" alt="" />
 
-<img src="./assets/divider.svg?v=6" width="100%" alt="" />
-
-<img src="./assets/sec-focus.svg?v=6" width="100%" alt="Current focus — what I am reading, building and measuring" />
+<img src="./assets/sec-focus.svg?v=7" width="100%" alt="Current focus — what I am reading, building and measuring" />
 
 <div align="center">
 
-<img src="./assets/focus-orbit.svg?v=6" width="100%" alt="Visual document understanding at the centre, connected to layout-aware models, OCR-free reading, document VQA, retrieval-augmented generation, vision-language model probing and legibility limits" />
+<img src="./assets/focus-orbit.svg?v=7" width="100%" alt="Visual document understanding at the centre, connected to layout-aware models, OCR-free reading, document VQA, retrieval-augmented generation, vision-language model probing and legibility limits" />
 
 <br/>
 
@@ -49,47 +60,44 @@
 
 </div>
 
-<img src="./assets/divider.svg?v=6" width="100%" alt="" />
+<img src="./assets/divider.svg?v=7" width="100%" alt="" />
 
-<img src="./assets/sec-hub.svg?v=6" width="100%" alt="Learning Hub — one shelf for everything I am learning" />
+<a href="https://subrata-cs.github.io/open/"><img src="./assets/sec-hub.svg?v=7" width="100%" alt="Learning Hub — one shelf for everything I am learning. Click to open it." /></a>
 
 <div align="center">
 
-<a href="https://subrata-cs.github.io/open/"><img src="https://img.shields.io/badge/%E2%86%92%20%20OPEN%20THE%20LEARNING%20HUB-6D5AF7?style=for-the-badge&labelColor=160F3C&logo=readthedocs&logoColor=white" alt="Open the Learning Hub" /></a>
-
-<br/><br/>
-
-<a href="https://subrata-cs.github.io/open/"><img src="./assets/topics-grid.svg?v=6" width="100%" alt="Forty computer science sections in the Learning Hub, grouped into six tracks — foundations, core CS, engineering, AI and data, frontier and research" /></a>
+<a href="https://subrata-cs.github.io/open/"><img src="./assets/topics-grid.svg?v=7" width="100%" alt="Forty computer science sections in the Learning Hub, grouped into six tracks — foundations, core CS, engineering, AI and data, frontier and research" /></a>
 
 <br/>
 
-<img src="./assets/five-ways.svg?v=6" width="100%" alt="Every topic page opens the same six ways — overview, key concepts, example, run your code, practice questions, references" />
+<a href="https://subrata-cs.github.io/open/playground"><img src="./assets/five-ways.svg?v=7" width="100%" alt="Every topic page opens the same six ways — overview, key concepts, example, run your code, practice questions, references. Click to open the Code Lab." /></a>
 
-<br/>
-
-<a href="https://subrata-cs.github.io/open/playground"><img src="https://img.shields.io/badge/CODE_LAB%20%E2%80%94%20RUN%20PYTHON,%20C,%20C++,%20JAVA,%20GO,%20SQL%20IN%20YOUR%20BROWSER-F7A93B?style=for-the-badge&labelColor=160F3C&logo=jupyter&logoColor=white" alt="Code Lab — run Python, C, C++, Java, Go and SQL in your browser" /></a>
 
 </div>
 
-<img src="./assets/divider.svg?v=6" width="100%" alt="" />
+<img src="./assets/divider.svg?v=7" width="100%" alt="" />
 
-<img src="./assets/sec-publications.svg?v=6" width="100%" alt="Publications — peer-reviewed work and preprints" />
+<img src="./assets/sec-publications.svg?v=7" width="100%" alt="Publications — peer-reviewed work and preprints" />
 
 <div align="center">
+
+<!-- PUBLICATIONS:START -->
 
 | Type | Year | Paper |
 |:---:|:---:|:---|
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="Conference" /> | **2026** | [Demo Paper I — I will update](https://example.com/paper-2026-conference) |
-| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="Journal" /> | **2026** | [Demo Paper II — I will update](https://example.com/paper-2026-journal) |
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="Conference" /> | **2027** | [Demo Paper III — I will update](https://example.com/paper-2027-conference) |
-| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="Journal" /> | **2028** | [Demo Paper IV — I will update](https://example.com/paper-2028-journal) |
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="Conference" /> | **2029** | [Demo Paper V — I will update](https://example.com/paper-2029-conference) |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2026-F65C8E?style=for-the-badge&labelColor=160F3C" alt="2026" /> | [Demo Paper I — I will update](https://example.com/paper-2026-conference) |
+| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="journal" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=for-the-badge&labelColor=160F3C" alt="2026" /> | [Demo Paper II — I will update](https://example.com/paper-2026-journal) |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2027-22C58B?style=for-the-badge&labelColor=160F3C" alt="2027" /> | [Demo Paper III — I will update](https://example.com/paper-2027-conference) |
+| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="journal" /> | <img src="https://img.shields.io/badge/2028-F7A93B?style=for-the-badge&labelColor=160F3C" alt="2028" /> | [Demo Paper IV — I will update](https://example.com/paper-2028-journal) |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2029-22C9E8?style=for-the-badge&labelColor=160F3C" alt="2029" /> | [Demo Paper V — I will update](https://example.com/paper-2029-conference) |
+
+<!-- PUBLICATIONS:END -->
 
 </div>
 
-<img src="./assets/divider.svg?v=6" width="100%" alt="" />
+<img src="./assets/divider.svg?v=7" width="100%" alt="" />
 
-<img src="./assets/sec-reach.svg?v=6" width="100%" alt="Reach me — mail, profiles and repositories" />
+<img src="./assets/sec-reach.svg?v=7" width="100%" alt="Reach me — mail, profiles and repositories" />
 
 <div align="center">
 
@@ -103,10 +111,10 @@
 
 </div>
 
-<img src="./assets/divider.svg?v=6" width="100%" alt="" />
+<img src="./assets/divider.svg?v=7" width="100%" alt="" />
 
 <div align="center">
 
-<img src="./assets/footer.svg?v=6" width="100%" alt="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad" />
+<img src="./assets/footer.svg?v=7" width="100%" alt="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad" />
 
 </div>
