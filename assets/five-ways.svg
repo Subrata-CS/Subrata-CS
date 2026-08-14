@@ -1,130 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Every topic page opens the same six ways: overview, key concepts, example, run your code, practice questions, references">
-  <title>Every topic page opens the same six ways — overview, key concepts, example, run your code, practice questions, references</title>
-  <defs>
-    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1B1345"/>
-      <stop offset="100%" stop-color="#0C0820"/>
-    </linearGradient>
-    <linearGradient id="wBg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#08050F"/>
-      <stop offset="52%" stop-color="#120C2C"/>
-      <stop offset="100%" stop-color="#08050F"/>
-    </linearGradient>
-    <pattern id="wGrid" width="34" height="34" patternUnits="userSpaceOnUse">
-      <path d="M34 0H0V34" fill="none" stroke="#9B8CFA" stroke-opacity="0.06" stroke-width="1"/>
-    </pattern>
-    <clipPath id="wClip"><rect width="1200" height="200" rx="20"/></clipPath>
-    <style>
-      .card { transform-box: fill-box; transform-origin: center; animation: float 6.5s ease-in-out infinite; }
-      .c2 { animation-delay: .35s; } .c3 { animation-delay: .7s; }
-      .c4 { animation-delay: 1.05s; } .c5 { animation-delay: 1.4s; } .c6 { animation-delay: 1.75s; }
-      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
-
-      .trace { stroke-dasharray: 120 500; stroke-dashoffset: 620; animation: trace 5s linear infinite; }
-      .t2 { animation-delay: .8s; } .t3 { animation-delay: 1.6s; }
-      .t4 { animation-delay: 2.4s; } .t5 { animation-delay: 3.2s; } .t6 { animation-delay: 4s; }
-      @keyframes trace { to { stroke-dashoffset: 0; } }
-
-      .pip { animation: pip 2.6s ease-in-out infinite; }
-      @keyframes pip { 0%,100% { opacity:.3; } 50% { opacity:1; } }
-
-      .cursor { animation: blink 1.1s steps(1) infinite; }
-      @keyframes blink { 0%,49% { opacity:1; } 50%,100% { opacity:0; } }
-
-      .lbl { font-family: 'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; font-size: 14px; font-weight: 700; letter-spacing: .3px; }
-      .sub { font-family: 'JetBrains Mono',ui-monospace,monospace; font-size: 9px; letter-spacing: 1.3px; }
-      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .trace { stroke-dashoffset: 0; } }
-    </style>
-  </defs>
-
-  <g clip-path="url(#wClip)">
-    <rect width="1200" height="200" fill="url(#wBg)"/>
-    <rect width="1200" height="200" fill="url(#wGrid)"/>
-
-    <!-- 1 · overview -->
-    <g class="card"><g transform="translate(14,30)">
-      <rect width="186" height="140" rx="14" fill="url(#cardBg)" stroke="#6D5AF7" stroke-opacity="0.45"/>
-      <rect class="trace" width="186" height="140" rx="14" fill="none" stroke="#9B8CFA" stroke-width="2" stroke-linecap="round"/>
-      <g transform="translate(22,24)">
-        <rect width="28" height="34" rx="4" fill="none" stroke="#9B8CFA" stroke-width="2"/>
-        <path d="M7 10h14 M7 18h14 M7 26h9" stroke="#6D5AF7" stroke-width="2" stroke-linecap="round"/>
-      </g>
-      <circle class="pip" cx="164" cy="24" r="3.2" fill="#6D5AF7"/>
-      <text class="lbl" x="22" y="102" fill="#EDE9FF">Overview</text>
-      <text class="sub" x="22" y="122" fill="#7C6FB8">WHAT IT IS, IN SHORT</text>
-    </g></g>
-
-    <!-- 2 · key concepts -->
-    <g class="card c2"><g transform="translate(212,30)">
-      <rect width="186" height="140" rx="14" fill="url(#cardBg)" stroke="#22C9E8" stroke-opacity="0.45"/>
-      <rect class="trace t2" width="186" height="140" rx="14" fill="none" stroke="#7FE6FF" stroke-width="2" stroke-linecap="round"/>
-      <g transform="translate(22,24)" fill="none" stroke="#7FE6FF" stroke-width="2" stroke-linecap="round">
-        <circle cx="7" cy="8" r="3.4"/><path d="M16 8h18"/>
-        <circle cx="7" cy="20" r="3.4"/><path d="M16 20h24"/>
-        <circle cx="7" cy="32" r="3.4"/><path d="M16 32h14"/>
-      </g>
-      <circle class="pip" cx="164" cy="24" r="3.2" fill="#22C9E8"/>
-      <text class="lbl" x="22" y="102" fill="#EDE9FF">Key Concepts</text>
-      <text class="sub" x="22" y="122" fill="#7C6FB8">THE IDEAS THAT MATTER</text>
-    </g></g>
-
-    <!-- 3 · example -->
-    <g class="card c3"><g transform="translate(410,30)">
-      <rect width="186" height="140" rx="14" fill="url(#cardBg)" stroke="#22C58B" stroke-opacity="0.45"/>
-      <rect class="trace t3" width="186" height="140" rx="14" fill="none" stroke="#8DE8C0" stroke-width="2" stroke-linecap="round"/>
-      <g transform="translate(22,24)">
-        <rect width="44" height="34" rx="5" fill="#08050F" stroke="#22C58B" stroke-width="2"/>
-        <path d="M9 12l6 5-6 5" fill="none" stroke="#8DE8C0" stroke-width="2" stroke-linecap="round"/>
-        <path d="M22 22h12" stroke="#8DE8C0" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
-      </g>
-      <circle class="pip" cx="164" cy="24" r="3.2" fill="#22C58B"/>
-      <text class="lbl" x="22" y="102" fill="#EDE9FF">Example</text>
-      <text class="sub" x="22" y="122" fill="#7C6FB8">WORKED, WITH OUTPUT</text>
-    </g></g>
-
-    <!-- 4 · run your code -->
-    <g class="card c4"><g transform="translate(608,30)">
-      <rect width="186" height="140" rx="14" fill="url(#cardBg)" stroke="#F7A93B" stroke-opacity="0.5"/>
-      <rect class="trace t4" width="186" height="140" rx="14" fill="none" stroke="#F7A93B" stroke-width="2" stroke-linecap="round"/>
-      <g transform="translate(22,24)">
-        <rect width="44" height="34" rx="5" fill="#08050F" stroke="#F7A93B" stroke-width="2"/>
-        <path d="M9 12l6 5-6 5" fill="none" stroke="#F6864F" stroke-width="2" stroke-linecap="round"/>
-        <rect class="cursor" x="20" y="15" width="12" height="4" rx="2" fill="#F7A93B"/>
-        <circle class="pip" cx="52" cy="4" r="5" fill="#22C58B"/>
-      </g>
-      <circle class="pip" cx="164" cy="24" r="3.2" fill="#F7A93B"/>
-      <text class="lbl" x="22" y="102" fill="#EDE9FF">Run your code</text>
-      <text class="sub" x="22" y="122" fill="#7C6FB8">IN THE BROWSER</text>
-    </g></g>
-
-    <!-- 5 · practice -->
-    <g class="card c5"><g transform="translate(806,30)">
-      <rect width="186" height="140" rx="14" fill="url(#cardBg)" stroke="#9B5CF6" stroke-opacity="0.5"/>
-      <rect class="trace t5" width="186" height="140" rx="14" fill="none" stroke="#C4A9FF" stroke-width="2" stroke-linecap="round"/>
-      <g transform="translate(22,24)" fill="none" stroke="#C4A9FF" stroke-width="2" stroke-linecap="round">
-        <rect x="0" y="0" width="34" height="38" rx="4"/>
-        <path d="M8 12h18 M8 21h18 M8 30h10"/>
-        <path d="M28 26l5 5 9-11" stroke="#22C58B" stroke-width="2.6"/>
-      </g>
-      <circle class="pip" cx="164" cy="24" r="3.2" fill="#9B5CF6"/>
-      <text class="lbl" x="22" y="102" fill="#EDE9FF">Practice</text>
-      <text class="sub" x="22" y="122" fill="#7C6FB8">QUESTIONS TO TRY</text>
-    </g></g>
-
-    <!-- 6 · references -->
-    <g class="card c6"><g transform="translate(1004,30)">
-      <rect width="186" height="140" rx="14" fill="url(#cardBg)" stroke="#F65C8E" stroke-opacity="0.5"/>
-      <rect class="trace t6" width="186" height="140" rx="14" fill="none" stroke="#F65C8E" stroke-width="2" stroke-linecap="round"/>
-      <g transform="translate(22,24)" fill="none" stroke-width="2">
-        <rect y="6" width="12" height="32" rx="3" stroke="#F65C8E"/>
-        <rect x="16" y="2" width="12" height="36" rx="3" stroke="#9B5CF6"/>
-        <rect x="32" y="10" width="12" height="28" rx="3" stroke="#F7A93B"/>
-      </g>
-      <circle class="pip" cx="164" cy="24" r="3.2" fill="#F65C8E"/>
-      <text class="lbl" x="22" y="102" fill="#EDE9FF">References</text>
-      <text class="sub" x="22" y="122" fill="#7C6FB8">WHERE TO GO NEXT</text>
-    </g></g>
-
-    <rect x="0.5" y="0.5" width="1199" height="199" rx="20" fill="none" stroke="#6D5AF7" stroke-opacity="0.3"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 432" width="1200" height="432" role="img" aria-label="Every topic page opens the same six ways: overview, key concepts, example, run your code, practice questions and references">
+<title>Every topic page opens the same six ways</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#0A0620"/><stop offset="50%" stop-color="#151038"/><stop offset="100%" stop-color="#0A0620"/>
+</linearGradient>
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8B6BFF" stroke-opacity="0.09" stroke-width="1"/></pattern>
+<clipPath id="cp"><rect width="1200" height="432" rx="22"/></clipPath>
+<style>
+.gw{transform-box:fill-box;transform-origin:left;animation:gw 2.6s ease-in-out infinite}
+@keyframes gw{0%,100%{transform:scaleX(.55)}50%{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</defs>
+<g clip-path="url(#cp)">
+<rect width="1200" height="432" fill="url(#bg)"/>
+<rect width="1200" height="432" fill="url(#grid)"/>
+<text x="26" y="52" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">Every topic page opens the same six ways</text>
+<text x="26" y="80" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="18" fill="#C3B8EE">SAME SHAPE, EVERY SUBJECT — SO YOU NEVER HUNT FOR ANYTHING</text>
+<g>
+<rect x="26" y="100" width="372" height="150" rx="16" fill="#171041" stroke="#8B6BFF" stroke-width="2.5"/>
+<rect x="26" y="100" width="8" height="150" rx="4" fill="#8B6BFF"/>
+<circle cx="70" cy="152" r="22" fill="none" stroke="#8B6BFF" stroke-width="2.5"/>
+<text x="70" y="161" text-anchor="middle" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="22" font-weight="700" fill="#8B6BFF">1</text>
+<text x="108" y="152" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Overview</text>
+<text x="108" y="184" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">What it is, in short</text>
+<rect x="108" y="204" width="262" height="6" rx="3" fill="#8B6BFF" fill-opacity="0.30"/>
+<rect class="gw" x="108" y="204" width="131" height="6" rx="3" fill="#8B6BFF" style="animation-delay:0.0s"/>
+</g><g>
+<rect x="414" y="100" width="372" height="150" rx="16" fill="#171041" stroke="#2ED8F7" stroke-width="2.5"/>
+<rect x="414" y="100" width="8" height="150" rx="4" fill="#2ED8F7"/>
+<circle cx="458" cy="152" r="22" fill="none" stroke="#2ED8F7" stroke-width="2.5"/>
+<text x="458" y="161" text-anchor="middle" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="22" font-weight="700" fill="#2ED8F7">2</text>
+<text x="496" y="152" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Key concepts</text>
+<text x="496" y="184" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">The ideas that matter</text>
+<rect x="496" y="204" width="262" height="6" rx="3" fill="#2ED8F7" fill-opacity="0.30"/>
+<rect class="gw" x="496" y="204" width="151" height="6" rx="3" fill="#2ED8F7" style="animation-delay:0.15s"/>
+</g><g>
+<rect x="802" y="100" width="372" height="150" rx="16" fill="#171041" stroke="#2FDCA0" stroke-width="2.5"/>
+<rect x="802" y="100" width="8" height="150" rx="4" fill="#2FDCA0"/>
+<circle cx="846" cy="152" r="22" fill="none" stroke="#2FDCA0" stroke-width="2.5"/>
+<text x="846" y="161" text-anchor="middle" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="22" font-weight="700" fill="#2FDCA0">3</text>
+<text x="884" y="152" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Example</text>
+<text x="884" y="184" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">Worked, with output</text>
+<rect x="884" y="204" width="262" height="6" rx="3" fill="#2FDCA0" fill-opacity="0.30"/>
+<rect class="gw" x="884" y="204" width="172" height="6" rx="3" fill="#2FDCA0" style="animation-delay:0.3s"/>
+</g><g>
+<rect x="26" y="266" width="372" height="150" rx="16" fill="#171041" stroke="#FFB645" stroke-width="2.5"/>
+<rect x="26" y="266" width="8" height="150" rx="4" fill="#FFB645"/>
+<circle cx="70" cy="318" r="22" fill="none" stroke="#FFB645" stroke-width="2.5"/>
+<text x="70" y="327" text-anchor="middle" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="22" font-weight="700" fill="#FFB645">4</text>
+<text x="108" y="318" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Run your code</text>
+<text x="108" y="350" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">Right in the browser</text>
+<rect x="108" y="370" width="262" height="6" rx="3" fill="#FFB645" fill-opacity="0.30"/>
+<rect class="gw" x="108" y="370" width="193" height="6" rx="3" fill="#FFB645" style="animation-delay:0.44999999999999996s"/>
+</g><g>
+<rect x="414" y="266" width="372" height="150" rx="16" fill="#171041" stroke="#B072FF" stroke-width="2.5"/>
+<rect x="414" y="266" width="8" height="150" rx="4" fill="#B072FF"/>
+<circle cx="458" cy="318" r="22" fill="none" stroke="#B072FF" stroke-width="2.5"/>
+<text x="458" y="327" text-anchor="middle" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="22" font-weight="700" fill="#B072FF">5</text>
+<text x="496" y="318" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">Practice</text>
+<text x="496" y="350" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">Questions to try</text>
+<rect x="496" y="370" width="262" height="6" rx="3" fill="#B072FF" fill-opacity="0.30"/>
+<rect class="gw" x="496" y="370" width="214" height="6" rx="3" fill="#B072FF" style="animation-delay:0.6s"/>
+</g><g>
+<rect x="802" y="266" width="372" height="150" rx="16" fill="#171041" stroke="#FF6EA0" stroke-width="2.5"/>
+<rect x="802" y="266" width="8" height="150" rx="4" fill="#FF6EA0"/>
+<circle cx="846" cy="318" r="22" fill="none" stroke="#FF6EA0" stroke-width="2.5"/>
+<text x="846" y="327" text-anchor="middle" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="22" font-weight="700" fill="#FF6EA0">6</text>
+<text x="884" y="318" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" fill="#FFFFFF">References</text>
+<text x="884" y="350" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="17" fill="#C3B8EE">Where to go next</text>
+<rect x="884" y="370" width="262" height="6" rx="3" fill="#FF6EA0" fill-opacity="0.30"/>
+<rect class="gw" x="884" y="370" width="235" height="6" rx="3" fill="#FF6EA0" style="animation-delay:0.75s"/>
+</g>
+<rect x="0.75" y="0.75" width="1198.5" height="430.5" rx="22" fill="none" stroke="#8B6BFF" stroke-opacity="0.5" stroke-width="1.5"/>
+</g>
 </svg>
