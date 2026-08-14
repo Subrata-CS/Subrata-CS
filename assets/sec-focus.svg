@@ -1,81 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 86" width="1200" height="86" role="img" aria-label="Current research focus">
-  <title>Current research focus</title>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#160F3C"/>
-      <stop offset="55%" stop-color="#0E0A26"/>
-      <stop offset="100%" stop-color="#08050F"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#22C58B"/>
-      <stop offset="100%" stop-color="#3BC07A"/>
-    </linearGradient>
-    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#F2EEFF"/>
-      <stop offset="100%" stop-color="#22C58B"/>
-    </linearGradient>
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="48%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="52%" stop-color="#FFFFFF" stop-opacity="0.7"/>
-      <stop offset="56%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
-      <animate attributeName="x1" from="-300" to="900" dur="6s" begin="0.8s" repeatCount="indefinite"/>
-      <animate attributeName="x2" from="-60" to="1140" dur="6s" begin="0.8s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="under" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22C58B"/>
-      <stop offset="100%" stop-color="#3BC07A" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="haze" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#22C58B" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#22C58B" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="soft" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="24"/></filter>
-    <clipPath id="card"><rect width="1200" height="86" rx="16"/></clipPath>
-    <style>
-      .haze { filter: url(#soft); transform-box: fill-box; transform-origin: center; animation: sweep 13s ease-in-out infinite; }
-      @keyframes sweep { 0%,100% { transform: translateX(0) scale(1); } 50% { transform: translateX(300px) scale(1.25); } }
-      .bar { animation: pulse 2.6s ease-in-out infinite; }
-      @keyframes pulse { 0%,100% { opacity:.65; } 50% { opacity:1; } }
-      .under { stroke-dasharray: 300; stroke-dashoffset: 300; animation: drawIn 4.5s ease-in-out infinite; }
-      @keyframes drawIn { 0% { stroke-dashoffset:300; } 40%,70% { stroke-dashoffset:0; } 100% { stroke-dashoffset:-300; } }
-      .tick { animation: march 3.2s linear infinite; }
-      @keyframes march { from { transform: translateX(0); } to { transform: translateX(-24px); } }
-      .glyph { transform-box: fill-box; transform-origin: center; animation: spin 9s linear infinite; }
-      @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-      .dot { animation: breathe 2.2s ease-in-out infinite; }
-      .dot.b { animation-delay: .35s; }
-      .dot.c { animation-delay: .7s; }
-      @keyframes breathe { 0%,100% { opacity:.3; } 50% { opacity:1; } }
-      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .under { stroke-dashoffset: 0; } }
-    </style>
-  </defs>
-  <g clip-path="url(#card)">
-    <rect width="1200" height="86" fill="url(#bg)"/>
-    <ellipse class="haze" cx="200" cy="43" rx="260" ry="70" fill="url(#haze)"/>
-    <rect class="bar" x="0" y="0" width="6" height="86" fill="url(#accent)"/>
-
-    <g class="glyph" transform="translate(46,43)">
-      <circle r="13" fill="none" stroke="#22C58B" stroke-opacity="0.85" stroke-width="1.6" stroke-dasharray="6 5"/>
-      <circle r="5" fill="#3BC07A" fill-opacity="0.9"/>
-    </g>
-
-    <text x="80" y="49" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="4.5" fill="url(#txt)">CURRENT FOCUS</text>
-    <text x="80" y="49" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="4.5" fill="url(#shine)">CURRENT FOCUS</text>
-    <text x="82" y="70" font-family="'JetBrains Mono','Fira Code',ui-monospace,Menlo,monospace" font-size="10.5" letter-spacing="2.6" fill="#7C6FB8">WHAT I AM READING, BUILDING AND MEASURING</text>
-    <path class="under" d="M80 57 H380" stroke="url(#under)" stroke-width="2" stroke-linecap="round" fill="none"/>
-
-    <g transform="translate(0,43)">
-      <g class="tick" stroke="#22C58B" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round">
-        <path d="M900 0h8 M924 0h8 M948 0h8 M972 0h8 M996 0h8 M1020 0h8 M1044 0h8 M1068 0h8 M1092 0h8 M1116 0h8"/>
-      </g>
-      <g fill="#3BC07A">
-        <circle class="dot"   cx="1146" cy="0" r="3.5"/>
-        <circle class="dot b" cx="1160" cy="0" r="3.5"/>
-        <circle class="dot c" cx="1174" cy="0" r="3.5"/>
-      </g>
-    </g>
-    <rect x="0.5" y="0.5" width="1199" height="85" rx="16" fill="none" stroke="#22C58B" stroke-opacity="0.35"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 116" width="1200" height="116" role="img" aria-label="CURRENT FOCUS — WHAT I AM READING, BUILDING AND MEASURING">
+<title>CURRENT FOCUS</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#1C1447"/><stop offset="60%" stop-color="#151038"/><stop offset="100%" stop-color="#0A0620"/>
+</linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#2FDCA0"/><stop offset="100%" stop-color="#3FE0AE"/>
+</linearGradient>
+<clipPath id="cp"><rect width="1200" height="116" rx="18"/></clipPath>
+<style>
+.gl{transform-box:fill-box;transform-origin:center;animation:spin 11s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bar{animation:pulse 2.8s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.7}50%{opacity:1}}
+.dt{animation:br 2.2s ease-in-out infinite}.dt.b{animation-delay:.35s}.dt.c{animation-delay:.7s}
+@keyframes br{0%,100%{opacity:.3}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</defs>
+<g clip-path="url(#cp)">
+<rect width="1200" height="116" fill="url(#bg)"/>
+<rect x="0" y="0" width="10" height="116" fill="url(#ac)" class="bar"/>
+<g class="gl" transform="translate(56,58)">
+<circle r="18" fill="none" stroke="#2FDCA0" stroke-width="2.4" stroke-dasharray="8 6"/>
+<circle r="7" fill="#3FE0AE"/>
+</g>
+<text x="98" y="56" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="3" fill="#FFFFFF">CURRENT FOCUS</text>
+<path d="M100 70 H495" stroke="#2FDCA0" stroke-width="3" stroke-linecap="round" stroke-opacity="0.85"/>
+<text x="100" y="96" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="19" font-weight="600" letter-spacing="2" fill="#C3B8EE">WHAT I AM READING, BUILDING AND MEASURING</text>
+<g transform="translate(0,58)" fill="#3FE0AE">
+<circle class="dt" cx="1120" cy="0" r="5"/><circle class="dt b" cx="1142" cy="0" r="5"/><circle class="dt c" cx="1164" cy="0" r="5"/>
+</g>
+<rect x="0.75" y="0.75" width="1198.5" height="114.5" rx="18" fill="none" stroke="#2FDCA0" stroke-opacity="0.5" stroke-width="1.5"/>
+</g>
 </svg>
