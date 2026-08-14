@@ -1,3 +1,12 @@
+<!--
+  README.md — Subrata Pramanik (Subrata-CS/Subrata-CS)
+  Assets expected in ./assets/ :
+    header.svg · divider.svg · footer.svg
+    sec-about.svg · sec-focus.svg · sec-hub.svg · sec-publications.svg · sec-reach.svg
+    focus-orbit.svg · vdu-rag.svg · topics-grid.svg · five-ways.svg
+  Bump the ?v= number after editing any asset to bust GitHub's raw cache.
+-->
+
 <div align="center">
 
 <img src="./assets/header.svg?v=3" alt="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad" width="100%" />
@@ -87,6 +96,17 @@ The [**Learning Hub**](https://subrata-cs.github.io/open/)
 <img src="https://img.shields.io/badge/DOCUMENT_VQA-22C58B?style=flat-square&labelColor=160F3C" alt="" />
 <img src="https://img.shields.io/badge/RETRIEVAL_AUGMENTED_GENERATION-F7A93B?style=flat-square&labelColor=160F3C" alt="" />
 <img src="https://img.shields.io/badge/VISION_LANGUAGE_MODELS-F65C8E?style=flat-square&labelColor=160F3C" alt="" />
+
+<br/><br/>
+
+<details>
+<summary><b>The pipeline I keep coming back to</b> — layout → encode → retrieve → grounded answer</summary>
+
+<br/>
+
+<img src="./assets/vdu-rag.svg?v=1" width="100%" alt="A document page is segmented into layout regions, encoded into patch embeddings, matched against an index of passages, and answered by a generator that cites the page region it used" />
+
+</details>
 
 </div>
 
