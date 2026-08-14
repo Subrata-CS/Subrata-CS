@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1216 866" width="1216" height="866" role="img" aria-label="Forty computer science sections covered by the Learning Hub, grouped into six tracks">
+<title>The Learning Hub — 40 sections, 578 topics</title>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#08050F"/><stop offset="52%" stop-color="#140E33"/><stop offset="100%" stop-color="#08050F"/></linearGradient>
+<linearGradient id="cd" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1B1345"/><stop offset="100%" stop-color="#0C0820"/></linearGradient>
+<linearGradient id="tt" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#EDE9FF"/><stop offset="55%" stop-color="#B9A8FF"/><stop offset="100%" stop-color="#7FE6FF"/></linearGradient>
+<radialGradient id="hz" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6D5AF7" stop-opacity="0.5"/><stop offset="100%" stop-color="#6D5AF7" stop-opacity="0"/></radialGradient>
+<filter id="sf" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="46"/></filter>
+<pattern id="gd" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#9B8CFA" stroke-opacity="0.07"/></pattern>
+<clipPath id="cp"><rect width="1216" height="866" rx="22"/></clipPath>
+<style>
+.bx{rx:12px;fill:url(#cd);stroke-opacity:.42;stroke-width:1}
+.eg{rx:2px;animation:eg 3.4s ease-in-out infinite}
+@keyframes eg{0%,100%{opacity:.55}50%{opacity:1}}
+.pp{animation:pp 2.8s ease-in-out infinite}
+@keyframes pp{0%,100%{opacity:.25}50%{opacity:1}}
+.nu{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;font-weight:700;letter-spacing:1.4px}
+.nm{font-family:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;font-size:12.5px;font-weight:600}
+.lb,.cap{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;letter-spacing:1.6px;fill:#7C6FB8}
+g[class*=k]{transform-box:fill-box;transform-origin:center;animation:fl 7s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.c1{animation-delay:.28s}.c2{animation-delay:.56s}.c3{animation-delay:.84s}.c4{animation-delay:1.12s}
+.ka .bx,.ka .eg{stroke:#6D5AF7}.ka .eg,.ka .nu,.ka .pp,.ka .lg{fill:#6D5AF7}.ka .nm,.ka .lb{fill:#CFC6FF}
+.kb .bx,.kb .eg{stroke:#22C9E8}.kb .eg,.kb .nu,.kb .pp,.kb .lg{fill:#22C9E8}.kb .nm,.kb .lb{fill:#A9EEFA}
+.kc .bx,.kc .eg{stroke:#9B5CF6}.kc .eg,.kc .nu,.kc .pp,.kc .lg{fill:#9B5CF6}.kc .nm,.kc .lb{fill:#DCC9FF}
+.kd .bx,.kd .eg{stroke:#22C58B}.kd .eg,.kd .nu,.kd .pp,.kd .lg{fill:#22C58B}.kd .nm,.kd .lb{fill:#A6EFCD}
+.ke .bx,.ke .eg{stroke:#F7A93B}.ke .eg,.ke .nu,.ke .pp,.ke .lg{fill:#F7A93B}.ke .nm,.ke .lb{fill:#F8DCAE}
+.kf .bx,.kf .eg{stroke:#F65C8E}.kf .eg,.kf .nu,.kf .pp,.kf .lg{fill:#F65C8E}.kf .nm,.kf .lb{fill:#FBC7D8}
+.hz{filter:url(#sf);transform-box:fill-box;transform-origin:center;animation:dr 18s ease-in-out infinite}
+@keyframes dr{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(120px,40px) scale(1.25)}}
+.rl{stroke-dasharray:520;stroke-dashoffset:520;animation:dw 2s .3s ease-out forwards}
+@keyframes dw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none !important}.rl{stroke-dashoffset:0}}
+</style>
+</defs>
+<g clip-path="url(#cp)">
+<rect width="1216" height="866" fill="url(#bg)"/>
+<ellipse class="hz" cx="260" cy="120" rx="420" ry="220" fill="url(#hz)"/>
+<rect width="1216" height="866" fill="url(#gd)"/>
+<text x="20" y="52" font-family="'Segoe UI',Roboto,Arial,sans-serif" font-size="27" font-weight="700" fill="url(#tt)">40 sections &#183; 578 topics</text>
+<text class="cap" x="20" y="76">EVERY SUBJECT ON THE SHELF, GROUPED INTO SIX TRACKS</text>
+<path class="rl" d="M20 88 H538" stroke="#6D5AF7" stroke-opacity=".8" stroke-width="2" stroke-linecap="round" fill="none"/>
+<g transform="translate(0,108)"><g class="ka" transform="translate(20,0)"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">FOUNDATIONS</text></g><g class="kb" transform="translate(131,0)"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">CORE CS</text></g><g class="kc" transform="translate(212,0)"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">ENGINEERING</text></g><g class="kd" transform="translate(323,0)"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">AI &amp; DATA</text></g><g class="ke" transform="translate(409,0)"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">FRONTIER</text></g><g class="kf" transform="translate(498,0)"><circle class="lg" cy="-4" r="4"/><text class="lb" x="12">RESEARCH</text></g></g>
+<g class="ka c0" transform="translate(18,118)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">01</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Computer Fundamentals</text></g>
+<g class="ka c1" transform="translate(257,118)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">02</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Programming Fundamentals</text></g>
+<g class="ka c2" transform="translate(496,118)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">03</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Discrete Mathematics</text></g>
+<g class="ka c3" transform="translate(735,118)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">04</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Linear Algebra</text></g>
+<g class="ka c4" transform="translate(974,118)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">05</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Probability &amp; Statistics</text></g>
+<g class="ka c0" transform="translate(18,204)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">06</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Calculus</text></g>
+<g class="kb c1" transform="translate(257,204)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">07</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Data Structures &amp; Algorithms</text></g>
+<g class="kb c2" transform="translate(496,204)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">08</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Computer Organization</text></g>
+<g class="kb c3" transform="translate(735,204)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">09</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Operating Systems</text></g>
+<g class="kb c4" transform="translate(974,204)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">10</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Computer Networks</text></g>
+<g class="kb c0" transform="translate(18,290)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">11</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Database Systems</text></g>
+<g class="kb c1" transform="translate(257,290)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">12</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Software Engineering</text></g>
+<g class="kc c2" transform="translate(496,290)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">13</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Git &amp; GitHub</text></g>
+<g class="kc c3" transform="translate(735,290)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">14</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Web Development</text></g>
+<g class="kc c4" transform="translate(974,290)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">15</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Mobile Development</text></g>
+<g class="kc c0" transform="translate(18,376)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">16</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Cloud Computing</text></g>
+<g class="kc c1" transform="translate(257,376)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">17</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Cybersecurity</text></g>
+<g class="kc c2" transform="translate(496,376)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">18</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Compiler Design</text></g>
+<g class="kc c3" transform="translate(735,376)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">19</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Theory of Computation</text></g>
+<g class="kc c4" transform="translate(974,376)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">20</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Distributed Systems</text></g>
+<g class="kc c0" transform="translate(18,462)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">21</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Parallel Computing</text></g>
+<g class="kc c1" transform="translate(257,462)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">22</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Computer Graphics</text></g>
+<g class="kc c2" transform="translate(496,462)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">23</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Human-Computer Interaction</text></g>
+<g class="kc c3" transform="translate(735,462)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">24</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Embedded Systems</text></g>
+<g class="kc c4" transform="translate(974,462)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">25</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Real-Time Systems</text></g>
+<g class="kd c0" transform="translate(18,548)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">26</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Data Science</text></g>
+<g class="kd c1" transform="translate(257,548)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">27</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Data Mining</text></g>
+<g class="kd c2" transform="translate(496,548)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">28</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Information Retrieval</text></g>
+<g class="kd c3" transform="translate(735,548)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">29</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Artificial Intelligence</text></g>
+<g class="kd c4" transform="translate(974,548)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">30</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Machine Learning</text></g>
+<g class="kd c0" transform="translate(18,634)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">31</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Deep Learning</text></g>
+<g class="kd c1" transform="translate(257,634)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">32</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Specialized AI Fields</text></g>
+<g class="kd c2" transform="translate(496,634)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">33</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">MLOps</text></g>
+<g class="kd c3" transform="translate(735,634)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">34</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">DevOps</text></g>
+<g class="ke c4" transform="translate(974,634)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">35</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Blockchain</text></g>
+<g class="ke c0" transform="translate(18,720)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">36</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Internet of Things</text></g>
+<g class="ke c1" transform="translate(257,720)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">37</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Robotics</text></g>
+<g class="ke c2" transform="translate(496,720)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">38</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Quantum Computing</text></g>
+<g class="kf c3" transform="translate(735,720)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">39</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Research Methodology</text></g>
+<g class="kf c4" transform="translate(974,720)"><rect class="bx" width="224" height="72"/><rect class="eg" width="4" height="72"/><text class="nu" x="18" y="27">40</text><circle class="pp" cx="206" cy="22" r="3.2"/><text class="nm" x="18" y="52">Advanced Research Areas</text></g>
+<text class="cap" x="20" y="840">SUBRATA-CS.GITHUB.IO/OPEN &#183; FREE AND OPEN SOURCE</text>
+<text class="cap" x="1196" y="840" text-anchor="end">MIT LICENSED</text>
+<rect x=".5" y=".5" width="1215" height="865" rx="22" fill="none" stroke="#6D5AF7" stroke-opacity=".35"/>
+</g>
+</svg>
