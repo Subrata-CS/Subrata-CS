@@ -11,8 +11,7 @@ Design rules applied everywhere:
 """
 import os, textwrap
 
-# Writes every SVG next to this script, i.e. straight into assets/.
-OUT = os.path.dirname(os.path.abspath(__file__)) or "."
+OUT = "/mnt/user-data/outputs/assets"
 os.makedirs(OUT, exist_ok=True)
 
 # ── palette ──────────────────────────────────────────────────────────────────
@@ -285,21 +284,21 @@ def workflow():
     for i, (num, tag, title, sub, col) in enumerate(stages):
         x = x0 + i * (w + gap)
         cards.append(f'''<g>
-<rect x="{x}" y="96" width="{w}" height="268" rx="18" fill="{PANEL}" stroke="{col}" stroke-width="2.5"/>
-<rect x="{x}" y="96" width="{w}" height="56" rx="18" fill="{col}" fill-opacity="0.20"/>
-<rect x="{x}" y="96" width="{w}" height="56" fill="{col}" fill-opacity="0.10"/>
-<text x="{x + 22}" y="133" font-family="{MONO}" font-size="24" font-weight="700" letter-spacing="2" fill="{col}">{num} · {tag}</text>
-<text x="{x + 22}" y="196" font-family="{SANS}" font-size="23" font-weight="700" fill="{INK}">{esc(title)}</text>
+<rect x="{x}" y="28" width="{w}" height="268" rx="18" fill="{PANEL}" stroke="{col}" stroke-width="2.5"/>
+<rect x="{x}" y="28" width="{w}" height="56" rx="18" fill="{col}" fill-opacity="0.20"/>
+<rect x="{x}" y="28" width="{w}" height="56" fill="{col}" fill-opacity="0.10"/>
+<text x="{x + 22}" y="65" font-family="{MONO}" font-size="24" font-weight="700" letter-spacing="2" fill="{col}">{num} · {tag}</text>
+<text x="{x + 22}" y="128" font-family="{SANS}" font-size="23" font-weight="700" fill="{INK}">{esc(title)}</text>
 ''' + "".join(
-            f'<text x="{x + 22}" y="{228 + j * 28}" font-family="{MONO}" font-size="17" fill="{INK_3}">{esc(l)}</text>'
+            f'<text x="{x + 22}" y="{160 + j * 28}" font-family="{MONO}" font-size="17" fill="{INK_3}">{esc(l)}</text>'
             for j, l in enumerate(wrap_to(sub, 17, w - 44))
         ) + f'''
-<g transform="translate({x + 22},296)">{_glyph(i, col)}</g>
+<g transform="translate({x + 22},228)">{_glyph(i, col)}</g>
 </g>''')
         if i < 3:
             ax = x + w + 1
-            arrows.append(f'<path class="wire" d="M{ax} 230 H{ax + gap - 2}" stroke="{INK_3}" stroke-width="3" fill="none" marker-end="url(#ar)"/>')
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Four stage workflow: detect layout regions, encode into patch embeddings, retrieve the top matching regions, then generate a grounded answer with a citation">
+            arrows.append(f'<path class="wire" d="M{ax} 162 H{ax + gap - 2}" stroke="{INK_3}" stroke-width="3" fill="none" marker-end="url(#ar)"/>')
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 324" width="1200" height="324" role="img" aria-label="Four stage workflow: detect layout regions, encode into patch embeddings, retrieve the top matching regions, then generate a grounded answer with a citation">
 <title>Document understanding workflow — layout, encode, retrieve, grounded answer</title>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -307,7 +306,7 @@ def workflow():
 </linearGradient>
 <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="{INK_3}"/></marker>
 {GRID}
-<clipPath id="cp"><rect width="1200" height="400" rx="22"/></clipPath>
+<clipPath id="cp"><rect width="1200" height="324" rx="22"/></clipPath>
 <style>
 .wire{{stroke-dasharray:8 8;animation:flow 1.4s linear infinite}}
 @keyframes flow{{to{{stroke-dashoffset:-32}}}}
@@ -317,13 +316,11 @@ def workflow():
 </style>
 </defs>
 <g clip-path="url(#cp)">
-<rect width="1200" height="400" fill="url(#bg)"/>
-<rect width="1200" height="400" fill="url(#grid)"/>
-<text x="26" y="52" font-family="{SANS}" font-size="30" font-weight="700" fill="{INK}">How a page becomes a grounded answer</text>
-<text x="26" y="80" font-family="{MONO}" font-size="18" fill="{INK_3}">THE PIPELINE MY WORK SITS INSIDE</text>
+<rect width="1200" height="324" fill="url(#bg)"/>
+<rect width="1200" height="324" fill="url(#grid)"/>
 {''.join(cards)}
 {''.join(arrows)}
-<rect x="0.75" y="0.75" width="1198.5" height="398.5" rx="22" fill="none" stroke="{VIOLET}" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="0.75" y="0.75" width="1198.5" height="322.5" rx="22" fill="none" stroke="{VIOLET}" stroke-opacity="0.5" stroke-width="1.5"/>
 </g>
 </svg>'''
 
@@ -523,9 +520,71 @@ def footer():
 </svg>'''
 
 
+
+# ═══════════════════════════════════════════════════ animated hero line ══
+def typing():
+    """Colourful animated banner that cycles through three lines.
+
+    Only line 1 carries opacity="1" as a presentation attribute, so if a
+    renderer ignores CSS the banner degrades to a single readable line
+    instead of three overlapping ones.
+    """
+    lines = [
+        ("Computer Vision · Pattern Recognition", CYAN),
+        ("Research Scholar at IIIT Allahabad", "#B9A8FF"),
+        ("Ex-TCSer · Building the Learning Hub", GREEN),
+    ]
+    out = []
+    for i, (txt, col) in enumerate(lines):
+        half = approx_w(txt, 40, True) / 2
+        out.append(
+            f'<g class="ln l{i + 1}" opacity="{1 if i == 0 else 0}">'
+            f'<text x="600" y="118" text-anchor="middle" font-family="{SANS}" font-size="40" '
+            f'font-weight="700" fill="{col}">{esc(txt)}</text>'
+            f'<rect class="car" x="{600 + half + 12:.0f}" y="90" width="6" height="38" rx="3" fill="{AMBER}"/>'
+            f'</g>')
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Computer vision and pattern recognition · Research scholar at IIIT Allahabad · Ex-TCSer, building the Learning Hub">
+<title>Computer Vision · Pattern Recognition — Research Scholar at IIIT Allahabad — Ex-TCSer</title>
+<defs>
+<linearGradient id="rain" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="{VIOLET}"><animate attributeName="stop-color" values="{VIOLET};{PINK};{CYAN};{VIOLET}" dur="14s" repeatCount="indefinite"/></stop>
+<stop offset="50%" stop-color="{PURPLE}"><animate attributeName="stop-color" values="{PURPLE};{AMBER};{GREEN};{PURPLE}" dur="14s" repeatCount="indefinite"/></stop>
+<stop offset="100%" stop-color="{CYAN}"><animate attributeName="stop-color" values="{CYAN};{VIOLET};{PINK};{CYAN}" dur="14s" repeatCount="indefinite"/></stop>
+</linearGradient>
+<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="{VIOLET}"/><stop offset="25%" stop-color="{CYAN}"/><stop offset="50%" stop-color="{GREEN}"/>
+<stop offset="75%" stop-color="{AMBER}"/><stop offset="100%" stop-color="{PINK}"/>
+</linearGradient>
+{GRID}
+<clipPath id="cp"><rect width="1200" height="200" rx="22"/></clipPath>
+<style>
+.ln{{animation:cyc 13.5s ease-in-out infinite}}
+.l2{{animation-delay:-9s}}.l3{{animation-delay:-4.5s}}
+@keyframes cyc{{0%{{opacity:0}}3%{{opacity:1}}30%{{opacity:1}}34%{{opacity:0}}100%{{opacity:0}}}}
+.car{{animation:blink 1.05s steps(1) infinite}}
+@keyframes blink{{0%,49%{{opacity:1}}50%,100%{{opacity:0}}}}
+.sheen{{animation:sheen 9s linear infinite}}
+@keyframes sheen{{from{{transform:translateX(-420px)}}to{{transform:translateX(1300px)}}}}
+{RM}
+</style>
+</defs>
+<g clip-path="url(#cp)">
+<rect width="1200" height="200" fill="url(#rain)"/>
+<rect width="1200" height="200" fill="{BG0}" fill-opacity="0.55"/>
+<rect width="1200" height="200" fill="url(#grid)"/>
+<g class="sheen"><rect x="0" y="0" width="220" height="200" fill="#FFFFFF" fill-opacity="0.05"/></g>
+<rect x="34" y="52" width="1132" height="96" rx="18" fill="{BG0}" fill-opacity="0.82" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5"/>
+{"".join(out)}
+<rect x="34" y="164" width="1132" height="6" rx="3" fill="url(#bar)" fill-opacity="0.9"/>
+<rect x="0.75" y="0.75" width="1198.5" height="198.5" rx="22" fill="none" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="1.5"/>
+</g>
+</svg>'''
+
+
 # ═══════════════════════════════════════════════════════════════ build ══
 write("divider.svg", divider())
 write("header.svg", header())
+write("typing.svg", typing())
 write("footer.svg", footer())
 write("sec-about.svg", banner("ABOUT", "WHO IS BEHIND THIS PROFILE", VIOLET, PURPLE))
 write("sec-focus.svg", banner("CURRENT FOCUS", "WHAT I AM READING, BUILDING AND MEASURING", GREEN, "#3FE0AE"))
