@@ -8,10 +8,14 @@ Design rules applied everywhere:
     solid panel under it.
   * Text never moves. Only decorative shapes animate.
   * Titles are pure white or near-white; colour carries meaning, not the text.
+
+Run it from anywhere:   py assets\\_generate_assets.py
+Output goes next to this file (assets/) and README.md one level up.
 """
 import os, textwrap
 
-OUT = "/mnt/user-data/outputs/assets"
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = HERE
 os.makedirs(OUT, exist_ok=True)
 
 # ── palette ──────────────────────────────────────────────────────────────────
@@ -641,9 +645,15 @@ PUB_COLOUR = {"conference": "6D5AF7", "journal": "22C9E8",
 YEAR_COLOUR = ["F65C8E", "9B5CF6", "22C58B", "F7A93B", "22C9E8"]
 BADGE = "https://img.shields.io/badge/{}-{}?style=for-the-badge&labelColor=160F3C"
 
+# Colours of the three table headings. Change the hex to restyle the header.
+HEAD_COLOUR = [("TYPE", "6D5AF7"), ("YEAR", "22C9E8"), ("PAPER", "F7A93B")]
+
 
 def publications_table():
-    rows = ["| Type | Year | Paper |", "|:---:|:---:|:---|"]
+    head = "| " + " | ".join(
+        f'<img src="{BADGE.format(label, colour)}" alt="{label.title()}" />'
+        for label, colour in HEAD_COLOUR) + " |"
+    rows = [head, "|:---:|:---:|:---|"]
     for i, (kind, year, title, link) in enumerate(PUBLICATIONS):
         kc = PUB_COLOUR.get(kind.lower(), "6D5AF7")
         yc = YEAR_COLOUR[i % len(YEAR_COLOUR)]
