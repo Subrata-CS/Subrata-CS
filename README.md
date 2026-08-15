@@ -14,6 +14,7 @@
                     the colours itself: conference/journal/preprint/workshop
                     each get their own colour, and the year badges cycle.
                     Never hand-edit between the markers; it gets overwritten.
+    HEAD_COLOUR   — the colours of the Type / Year / Paper headings.
     SECTIONS      — add or remove a Learning Hub section. The "N sections"
                     heading, the numbering and the grid height all follow.
     TOPIC_COUNT   — the topic total shown next to the section count.
@@ -83,7 +84,7 @@
 
 <!-- PUBLICATIONS:START -->
 
-| Type | Year | Paper |
+| <img src="https://img.shields.io/badge/TYPE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="Type" /> | <img src="https://img.shields.io/badge/YEAR-22C9E8?style=for-the-badge&labelColor=160F3C" alt="Year" /> | <img src="https://img.shields.io/badge/PAPER-F7A93B?style=for-the-badge&labelColor=160F3C" alt="Paper" /> |
 |:---:|:---:|:---|
 | <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2026-F65C8E?style=for-the-badge&labelColor=160F3C" alt="2026" /> | [Demo Paper I — I will update](https://example.com/paper-2026-conference) |
 | <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="journal" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=for-the-badge&labelColor=160F3C" alt="2026" /> | [Demo Paper II — I will update](https://example.com/paper-2026-journal) |
