@@ -12,7 +12,7 @@ Design rules applied everywhere:
 Run it from anywhere:   py assets\\_generate_assets.py
 Output goes next to this file (assets/) and README.md one level up.
 """
-import os, textwrap
+import json, os, textwrap, urllib.parse
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = HERE
@@ -39,6 +39,7 @@ def write(name, body):
 
 
 def esc(s):
+    s = str(s)
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
@@ -433,15 +434,42 @@ def five_ways():
 # ║  EDIT ZONE — change these lists, run the script, everything follows.  ║
 # ╚══════════════════════════════════════════════════════════════════════╝
 
-# Publications. Add a line and re-run; colours are picked automatically.
-#   ("conference" | "journal" | "preprint" | "workshop", year, title, link)
-PUBLICATIONS = [
-    ("conference", 2026, "Demo Paper I — I will update",   "https://example.com/paper-2026-conference"),
-    ("journal",    2026, "Demo Paper II — I will update",  "https://example.com/paper-2026-journal"),
-    ("conference", 2027, "Demo Paper III — I will update", "https://example.com/paper-2027-conference"),
-    ("journal",    2028, "Demo Paper IV — I will update",  "https://example.com/paper-2028-journal"),
-    ("conference", 2029, "Demo Paper V — I will update",   "https://example.com/paper-2029-conference"),
+# Publications live in  publications.json  at the repo root, so the "+ Add a
+# paper" button (an issue form + GitHub Action) can append to them without ever
+# touching this file. The list below is only a fallback if that file is missing.
+#   {"type": "conference" | "journal" | "preprint" | "workshop" | "thesis",
+#    "year": 2026, "title": "...", "link": "https://..."}
+PUBLICATIONS_FILE = os.path.join(os.path.dirname(OUT) or ".", "publications.json")
+
+FALLBACK_PUBLICATIONS = [
+    ("conference", 2026, "Demo Paper I \u2014 I will update",   "https://example.com/paper-2026-conference"),
+    ("journal",    2026, "Demo Paper II \u2014 I will update",  "https://example.com/paper-2026-journal"),
+    ("conference", 2027, "Demo Paper III \u2014 I will update", "https://example.com/paper-2027-conference"),
+    ("journal",    2028, "Demo Paper IV \u2014 I will update",  "https://example.com/paper-2028-journal"),
+    ("conference", 2029, "Demo Paper V \u2014 I will update",   "https://example.com/paper-2029-conference"),
 ]
+
+
+def load_publications():
+    """Read publications.json. Any number of entries; newest year first."""
+    if not os.path.exists(PUBLICATIONS_FILE):
+        print("publications.json not found - using the fallback list")
+        return list(FALLBACK_PUBLICATIONS)
+    with open(PUBLICATIONS_FILE, encoding="utf-8") as f:
+        data = json.load(f)
+    items = data["publications"] if isinstance(data, dict) else data
+    out = []
+    for it in items:
+        if isinstance(it, dict):
+            out.append((str(it.get("type", "conference")), it.get("year", ""),
+                        str(it.get("title", "")).strip(), str(it.get("link", "")).strip()))
+        else:
+            out.append(tuple(it))
+    out.sort(key=lambda r: (-int(r[1] or 0), r[2].lower()))
+    return out
+
+
+PUBLICATIONS = load_publications()
 
 # Learning Hub sections. Add or remove freely — the numbering, the grid
 # height and the "N sections" heading all recalculate themselves.
@@ -640,27 +668,69 @@ def typing():
 
 
 # ══════════════════════════════════ publications table, written into README ══
+# Three colour families, kept strictly apart so nothing ever looks accidental:
+#
+#   HEAD_COLOUR   one slate tone for TYPE / YEAR / PAPER. They are headings, so
+#                 they share a colour and stay quieter than the data under them.
+#                 Deliberately outside every data colour below, which means new
+#                 papers can never collide with the header.
+#   TYPE / YEAR   the vivid data colours - they carry meaning.
+#   TITLE_COLOUR  every paper name, always the same tone.
+#   LINK_COLOUR   every "Open" link, always the same tone, never a title tone.
+#
+# Change a hex here and re-run; the whole table restyles.
+HEAD_COLOUR = "5A6288"          # headings - TYPE, YEAR, PAPER (all three alike)
+TITLE_COLOUR = "241A5E"         # paper names - one tone for all of them
+LINK_COLOUR = "1F6FEB"          # paper links - one tone for all of them
+HEADINGS = ("TYPE", "YEAR", "PAPER")
+
 PUB_COLOUR = {"conference": "6D5AF7", "journal": "22C9E8",
               "preprint": "F7A93B", "workshop": "22C58B", "thesis": "F65C8E"}
-YEAR_COLOUR = ["F65C8E", "9B5CF6", "22C58B", "F7A93B", "22C9E8"]
+# Years get their own colour family, deliberately outside the TYPE family, so a
+# year badge can never end up wearing the same colour as the type beside it.
+# Keyed on the year itself: 2026 is always the same colour, on every row.
+YEAR_COLOUR = ["C04BE0", "FF7A45", "B8C400"]
 BADGE = "https://img.shields.io/badge/{}-{}?style=for-the-badge&labelColor=160F3C"
 
-# Colours of the three table headings. Change the hex to restyle the header.
-HEAD_COLOUR = [("TYPE", "6D5AF7"), ("YEAR", "22C9E8"), ("PAPER", "F7A93B")]
+# Guard rail: nothing structural may ever wear a data colour, and the type and
+# year families may never overlap. Edit a hex badly and the build stops here
+# instead of shipping a table where two badges look accidentally alike.
+_TYPES = {c.upper() for c in PUB_COLOUR.values()}
+_YEARS = {c.upper() for c in YEAR_COLOUR}
+if _TYPES & _YEARS:
+    raise SystemExit(f"Type and year share a colour: {_TYPES & _YEARS}")
+for _name, _hex in (("HEAD_COLOUR", HEAD_COLOUR), ("TITLE_COLOUR", TITLE_COLOUR),
+                    ("LINK_COLOUR", LINK_COLOUR)):
+    if _hex.upper() in _TYPES | _YEARS:
+        raise SystemExit(f"{_name} clashes with a data colour - pick another hex")
+if len({HEAD_COLOUR.upper(), TITLE_COLOUR.upper(), LINK_COLOUR.upper()}) != 3:
+    raise SystemExit("Heading, title and link colours must all differ")
+
+
+def shield(text):
+    """Escape text for a shields.io badge path segment."""
+    t = str(text).replace("-", "--").replace("_", "__").replace(" ", "_")
+    return urllib.parse.quote(t, safe="_-")
+
+
+def badge(text, colour, alt):
+    return f'<img src="{BADGE.format(shield(text), colour)}" alt="{esc(alt)}" />'
 
 
 def publications_table():
     head = "| " + " | ".join(
-        f'<img src="{BADGE.format(label, colour)}" alt="{label.title()}" />'
-        for label, colour in HEAD_COLOUR) + " |"
+        badge(label, HEAD_COLOUR, label.title()) for label in HEADINGS) + " |"
     rows = [head, "|:---:|:---:|:---|"]
     for i, (kind, year, title, link) in enumerate(PUBLICATIONS):
-        kc = PUB_COLOUR.get(kind.lower(), "6D5AF7")
-        yc = YEAR_COLOUR[i % len(YEAR_COLOUR)]
+        kc = PUB_COLOUR.get(str(kind).lower(), "6D5AF7")
+        yc = YEAR_COLOUR[int(year) % len(YEAR_COLOUR)] if str(year).isdigit() \
+            else YEAR_COLOUR[i % len(YEAR_COLOUR)]
+        name = badge(title, TITLE_COLOUR, title)
+        open_ = badge("OPEN", LINK_COLOUR, f"Open: {title}")
         rows.append(
-            f'| <img src="{BADGE.format(kind.upper(), kc)}" alt="{kind}" /> '
-            f'| <img src="{BADGE.format(year, yc)}" alt="{year}" /> '
-            f'| [{title}]({link}) |')
+            f'| {badge(str(kind).upper(), kc, kind)} '
+            f'| {badge(year, yc, year)} '
+            f'| <a href="{esc(link)}">{name}</a> <a href="{esc(link)}">{open_}</a> |')
     return "\n".join(rows)
 
 

@@ -1,0 +1,48 @@
+name: Visitors
+
+on:
+  schedule:
+    # Every six hours. GitHub's traffic API only keeps 14 days, and this stores
+    # each day permanently, so the count can never reset or be lost.
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: visitors
+  cancel-in-progress: false
+
+jobs:
+  count:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Count real visitors
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional. A personal access token with the "repo" scope widens the
+          # count from this repo to every public repo you own.
+          WIDE_TOKEN: ${{ secrets.INSIGHTS_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          HOME_REPO: ${{ github.event.repository.name }}
+          # How many of your own devices visit a repo on a day you work in it.
+          OWN_DEVICES: "1"
+          # "true" removes your devices from every day, not only days you pushed.
+          DISCOUNT_EVERY_DAY: "false"
+          BADGE_LABEL: "VISITORS"
+        run: python .github/scripts/traffic.py
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Update visitor count"
+          git push

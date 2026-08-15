@@ -1,0 +1,35 @@
+{
+  "_comment": "Add papers with the '+ Add a paper' button in the README, or edit this file by hand. Any number of entries works. type: conference | journal | preprint | workshop | thesis",
+  "publications": [
+    {
+      "type": "conference",
+      "year": 2026,
+      "title": "Demo Paper I — I will update",
+      "link": "https://example.com/paper-2026-conference"
+    },
+    {
+      "type": "journal",
+      "year": 2026,
+      "title": "Demo Paper II — I will update",
+      "link": "https://example.com/paper-2026-journal"
+    },
+    {
+      "type": "conference",
+      "year": 2027,
+      "title": "Demo Paper III — I will update",
+      "link": "https://example.com/paper-2027-conference"
+    },
+    {
+      "type": "journal",
+      "year": 2028,
+      "title": "Demo Paper IV — I will update",
+      "link": "https://example.com/paper-2028-journal"
+    },
+    {
+      "type": "conference",
+      "year": 2029,
+      "title": "Demo Paper V — I will update",
+      "link": "https://example.com/paper-2029-conference"
+    }
+  ]
+}

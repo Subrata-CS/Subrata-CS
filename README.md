@@ -9,15 +9,23 @@
   ONE COMMAND UPDATES EVERYTHING:   py assets\_generate_assets.py
 
   Open assets/_generate_assets.py and look for the "EDIT ZONE" near the top:
-    PUBLICATIONS  — add a line (type, year, title, link). The script rewrites
-                    the table below between the PUBLICATIONS markers and picks
-                    the colours itself: conference/journal/preprint/workshop
-                    each get their own colour, and the year badges cycle.
-                    Never hand-edit between the markers; it gets overwritten.
-    HEAD_COLOUR   — the colours of the Type / Year / Paper headings.
+    PUBLICATIONS  now live in publications.json at the repo root, not here.
+                    Click "+ Add a paper" under the table, fill the four boxes,
+                    submit — a GitHub Action writes the entry, rebuilds the
+                    table and closes the issue. Any number of papers works.
+                    Never hand-edit between the PUBLICATIONS markers below.
+    HEAD_COLOUR   one slate tone shared by the TYPE / YEAR / PAPER headings,
+                    kept outside every data colour so new papers never clash.
+    TITLE_COLOUR  every paper name.   LINK_COLOUR  every "Open" link.
     SECTIONS      — add or remove a Learning Hub section. The "N sections"
                     heading, the numbering and the grid height all follow.
     TOPIC_COUNT   — the topic total shown next to the section count.
+
+  VISITORS BADGE (bottom of Reach me) is written by .github/workflows/traffic.yml
+  every six hours from GitHub's own traffic API — real unique visitors, with my
+  own device removed on days I worked in the repo. Never edit between the
+  VISITORS markers. Tune OWN_DEVICES / DISCOUNT_EVERY_DAY in that workflow.
+  History is kept for good in data/traffic.json; the API only holds 14 days.
   After changing any artwork, bump every ?v= number below by one so GitHub
   stops serving the cached image.
 
@@ -35,7 +43,6 @@
 <a href="https://www.linkedin.com/in/sp4532/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=160F3C" alt="LinkedIn" /></a>
 <a href="mailto:subrata.official111@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=160F3C" alt="Email" /></a>
 <a href="https://orcid.org/0009-0001-5676-4312"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white&labelColor=160F3C" alt="ORCID" /></a>
-<img src="https://komarev.com/ghpvc/?username=Subrata-CS&style=for-the-badge&color=9B5CF6&labelColor=160F3C&label=PROFILE+VIEWS" alt="Profile views" />
 
 </div>
 
@@ -84,15 +91,17 @@
 
 <!-- PUBLICATIONS:START -->
 
-| <img src="https://img.shields.io/badge/TYPE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="Type" /> | <img src="https://img.shields.io/badge/YEAR-22C9E8?style=for-the-badge&labelColor=160F3C" alt="Year" /> | <img src="https://img.shields.io/badge/PAPER-F7A93B?style=for-the-badge&labelColor=160F3C" alt="Paper" /> |
+| <img src="https://img.shields.io/badge/TYPE-5A6288?style=for-the-badge&labelColor=160F3C" alt="Type" /> | <img src="https://img.shields.io/badge/YEAR-5A6288?style=for-the-badge&labelColor=160F3C" alt="Year" /> | <img src="https://img.shields.io/badge/PAPER-5A6288?style=for-the-badge&labelColor=160F3C" alt="Paper" /> |
 |:---:|:---:|:---|
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2026-F65C8E?style=for-the-badge&labelColor=160F3C" alt="2026" /> | [Demo Paper I — I will update](https://example.com/paper-2026-conference) |
-| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="journal" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=for-the-badge&labelColor=160F3C" alt="2026" /> | [Demo Paper II — I will update](https://example.com/paper-2026-journal) |
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2027-22C58B?style=for-the-badge&labelColor=160F3C" alt="2027" /> | [Demo Paper III — I will update](https://example.com/paper-2027-conference) |
-| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="journal" /> | <img src="https://img.shields.io/badge/2028-F7A93B?style=for-the-badge&labelColor=160F3C" alt="2028" /> | [Demo Paper IV — I will update](https://example.com/paper-2028-journal) |
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2029-22C9E8?style=for-the-badge&labelColor=160F3C" alt="2029" /> | [Demo Paper V — I will update](https://example.com/paper-2029-conference) |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2029-FF7A45?style=for-the-badge&labelColor=160F3C" alt="2029" /> | <a href="https://example.com/paper-2029-conference"><img src="https://img.shields.io/badge/Demo_Paper_V_%E2%80%94_I_will_update-241A5E?style=for-the-badge&labelColor=160F3C" alt="Demo Paper V — I will update" /></a> <a href="https://example.com/paper-2029-conference"><img src="https://img.shields.io/badge/OPEN-1F6FEB?style=for-the-badge&labelColor=160F3C" alt="Open: Demo Paper V — I will update" /></a> |
+| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="journal" /> | <img src="https://img.shields.io/badge/2028-C04BE0?style=for-the-badge&labelColor=160F3C" alt="2028" /> | <a href="https://example.com/paper-2028-journal"><img src="https://img.shields.io/badge/Demo_Paper_IV_%E2%80%94_I_will_update-241A5E?style=for-the-badge&labelColor=160F3C" alt="Demo Paper IV — I will update" /></a> <a href="https://example.com/paper-2028-journal"><img src="https://img.shields.io/badge/OPEN-1F6FEB?style=for-the-badge&labelColor=160F3C" alt="Open: Demo Paper IV — I will update" /></a> |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2027-B8C400?style=for-the-badge&labelColor=160F3C" alt="2027" /> | <a href="https://example.com/paper-2027-conference"><img src="https://img.shields.io/badge/Demo_Paper_III_%E2%80%94_I_will_update-241A5E?style=for-the-badge&labelColor=160F3C" alt="Demo Paper III — I will update" /></a> <a href="https://example.com/paper-2027-conference"><img src="https://img.shields.io/badge/OPEN-1F6FEB?style=for-the-badge&labelColor=160F3C" alt="Open: Demo Paper III — I will update" /></a> |
+| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2026-FF7A45?style=for-the-badge&labelColor=160F3C" alt="2026" /> | <a href="https://example.com/paper-2026-conference"><img src="https://img.shields.io/badge/Demo_Paper_I_%E2%80%94_I_will_update-241A5E?style=for-the-badge&labelColor=160F3C" alt="Demo Paper I — I will update" /></a> <a href="https://example.com/paper-2026-conference"><img src="https://img.shields.io/badge/OPEN-1F6FEB?style=for-the-badge&labelColor=160F3C" alt="Open: Demo Paper I — I will update" /></a> |
+| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="journal" /> | <img src="https://img.shields.io/badge/2026-FF7A45?style=for-the-badge&labelColor=160F3C" alt="2026" /> | <a href="https://example.com/paper-2026-journal"><img src="https://img.shields.io/badge/Demo_Paper_II_%E2%80%94_I_will_update-241A5E?style=for-the-badge&labelColor=160F3C" alt="Demo Paper II — I will update" /></a> <a href="https://example.com/paper-2026-journal"><img src="https://img.shields.io/badge/OPEN-1F6FEB?style=for-the-badge&labelColor=160F3C" alt="Open: Demo Paper II — I will update" /></a> |
 
 <!-- PUBLICATIONS:END -->
+
+<a href="https://github.com/Subrata-CS/Subrata-CS/issues/new?template=add-publication.yml"><img src="https://img.shields.io/badge/%2B-Add_a_paper-5A6288?style=for-the-badge&labelColor=160F3C" alt="Add a paper" /></a>
 
 </div>
 
@@ -109,6 +118,9 @@
 <a href="https://www.linkedin.com/in/sp4532/"><img src="https://img.shields.io/badge/Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=160F3C" alt="Connect on LinkedIn" /></a>
 <a href="https://orcid.org/0009-0001-5676-4312"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white&labelColor=160F3C" alt="ORCID" /></a>
 <a href="https://github.com/Subrata-CS?tab=repositories"><img src="https://img.shields.io/badge/Repositories-9B5CF6?style=for-the-badge&logo=github&logoColor=white&labelColor=160F3C" alt="Repositories" /></a>
+<!-- VISITORS:START -->
+<img src="https://img.shields.io/badge/VISITORS-0-5A6288?style=for-the-badge&labelColor=160F3C" alt="Unique visitors, my own visits not counted" />
+<!-- VISITORS:END -->
 
 </div>
 

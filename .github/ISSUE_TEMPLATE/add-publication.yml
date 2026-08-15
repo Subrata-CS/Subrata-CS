@@ -1,0 +1,41 @@
+name: Add a paper
+description: Add one publication to the README table.
+title: "Add paper"
+labels: ["publication"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - conference
+        - journal
+        - preprint
+        - workshop
+        - thesis
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      placeholder: "2026"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Paper name
+      placeholder: Layout-aware reading order for document VQA
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      placeholder: https://arxiv.org/abs/xxxx.xxxxx
+    validations:
+      required: true

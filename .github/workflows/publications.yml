@@ -1,0 +1,76 @@
+name: Publications
+
+on:
+  issues:
+    types: [opened, edited]
+  push:
+    paths:
+      - "publications.json"
+      - "assets/_generate_assets.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    # Only the owner's "Add a paper" issues, or a direct push, can change the table.
+    if: >-
+      github.event_name != 'issues' ||
+      (contains(github.event.issue.labels.*.name, 'publication') &&
+       github.event.issue.user.login == github.repository_owner)
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Add the paper from the issue form
+        id: add
+        if: github.event_name == 'issues'
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          set +e
+          printf '%s' "$BODY" | python .github/scripts/add_publication.py > out.txt 2> err.txt
+          code=$?
+          set -e
+          {
+            echo "ok=$([ $code -eq 0 ] && echo true || echo false)"
+            echo "message<<EOM"
+            cat out.txt err.txt
+            echo "EOM"
+          } >> "$GITHUB_OUTPUT"
+          cat out.txt err.txt
+
+      - name: Rebuild README and artwork
+        if: github.event_name != 'issues' || steps.add.outputs.ok == 'true'
+        run: python assets/_generate_assets.py
+
+      - name: Commit
+        if: github.event_name != 'issues' || steps.add.outputs.ok == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Update publications table"
+          git push
+
+      - name: Reply on the issue and close it
+        if: github.event_name == 'issues'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUM: ${{ github.event.issue.number }}
+          OK: ${{ steps.add.outputs.ok }}
+          MSG: ${{ steps.add.outputs.message }}
+        run: |
+          if [ "$OK" = "true" ]; then
+            gh issue comment "$NUM" --body "$MSG"$'\n\nThe table is live on the profile.'
+            gh issue close "$NUM"
+          else
+            gh issue comment "$NUM" --body "Nothing was added:"$'\n\n'"$MSG"$'\n\nEdit this issue to fix it and it will run again.'
+          fi
