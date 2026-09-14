@@ -29,25 +29,56 @@
 
 <div align="center">
 
-<img src="./assets/typing.svg?v=8" alt="Computer Vision · Pattern Recognition — Research Scholar at IIIT Allahabad — Ex-TCSer, building the Learning Hub" width="100%" />
+<img src="./assets/typing.svg?v=9" alt="Visual Document Understanding with retrieval-augmented generation — M.Tech + Ph.D. at IIIT Allahabad — Ex-TCSer, building the Learning Hub" width="100%" />
 
 <br/>
 
 <a href="https://subrata-cs.github.io/"><img src="https://img.shields.io/badge/Personal_Website-6D5AF7?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=160F3C" alt="Personal website" /></a>
 <a href="https://subrata-cs.github.io/open/"><img src="https://img.shields.io/badge/Learning_Hub-22C9E8?style=for-the-badge&logo=bookstack&logoColor=white&labelColor=160F3C" alt="Learning Hub" /></a>
 <a href="https://www.linkedin.com/in/sp4532/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=160F3C" alt="LinkedIn" /></a>
+<a href="mailto:pmr2024003@iiita.ac.in"><img src="https://img.shields.io/badge/Academic_Mail-2E7D32?style=for-the-badge&logo=maildotru&logoColor=white&labelColor=160F3C" alt="Academic email" /></a>
 <a href="mailto:subrata.official111@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=160F3C" alt="Email" /></a>
 <a href="https://orcid.org/0009-0001-5676-4312"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white&labelColor=160F3C" alt="ORCID" /></a>
 
 </div>
 
-<img src="./assets/divider.svg?v=8" width="100%" alt="" />
+<img src="./assets/divider.svg?v=9" width="100%" alt="" />
 
-<img src="./assets/sec-focus.svg?v=8" width="100%" alt="Current focus — what I am reading, building and measuring" />
+<img src="./assets/sec-about.svg?v=9" width="100%" alt="About — who is behind this profile" />
 
 <div align="center">
 
-<img src="./assets/focus-orbit.svg?v=8" width="100%" alt="Visual document understanding at the centre, connected to layout-aware models, OCR-free reading, document VQA, retrieval-augmented generation, vision-language model probing and legibility limits" />
+<b>M.Tech + Ph.D. (Integrated), Information Technology &nbsp;&middot;&nbsp; 2024&ndash;2028</b><br/>
+<a href="https://www.iiita.ac.in/">Indian Institute of Information Technology, Allahabad</a> &nbsp;&middot;&nbsp; Prayagraj, India
+
+<br/>
+
+<b>Research topic</b> &nbsp;&mdash;&nbsp; Visual Document Understanding with Retrieval-Augmented Generation<br/>
+<b>Laboratory</b> &nbsp;&mdash;&nbsp; <a href="https://imedia.iiita.ac.in/">iMeDIA Lab</a><br/>
+<b>Supervisor</b> &nbsp;&mdash;&nbsp; Dr. <a href="https://sites.google.com/site/mohammedjaved2016">Mohammed Javed</a><br/>
+<b>External supervisor</b> &nbsp;&mdash;&nbsp; Prof. <a href="https://en.wikipedia.org/wiki/David_Doermann">David Doermann</a>, University at Buffalo
+
+<br/>
+
+<img src="https://img.shields.io/badge/TEACHING_ASSISTANT-IIIT_ALLAHABAD_%C2%B7_2024%E2%80%93PRESENT-22C58B?style=for-the-badge&labelColor=160F3C" alt="Teaching Assistant at IIIT Allahabad, 2024 to present" />
+
+Problem Solving with Programming (PSP) &nbsp;&middot;&nbsp; Data Analytics (DA)
+
+<br/>
+
+<a href="https://subratasikhaniketan.com/"><img src="https://img.shields.io/badge/FOUNDER-SUBRATA_SIKHA_NIKETAN-F7A93B?style=for-the-badge&labelColor=160F3C" alt="Founder, Subrata Sikha Niketan" /></a>
+
+<img src="https://img.shields.io/badge/EX--TCS-ASSISTANT_SYSTEM_ENGINEER_%C2%B7_AUG_2022%E2%80%93MAR_2024-1F6FEB?style=for-the-badge&labelColor=160F3C" alt="Assistant System Engineer at Tata Consultancy Services, August 2022 to March 2024" />
+
+</div>
+
+<img src="./assets/divider.svg?v=9" width="100%" alt="" />
+
+<img src="./assets/sec-focus.svg?v=9" width="100%" alt="Current focus — what I am reading, building and measuring" />
+
+<div align="center">
+
+<img src="./assets/focus-orbit.svg?v=9" width="100%" alt="Visual document understanding at the centre, connected to layout-aware models, OCR-free reading, document VQA, retrieval-augmented generation, vision-language model probing and legibility limits" />
 
 <br/>
 
@@ -63,13 +94,13 @@
 
 </div>
 
-<img src="./assets/divider.svg?v=8" width="100%" alt="" />
+<img src="./assets/divider.svg?v=9" width="100%" alt="" />
 
-<a href="https://subrata-cs.github.io/open/"><img src="./assets/sec-hub.svg?v=8" width="100%" alt="Learning Hub — one shelf for everything I am learning. Click to open it." /></a>
+<a href="https://subrata-cs.github.io/open/"><img src="./assets/sec-hub.svg?v=9" width="100%" alt="Learning Hub — one shelf for everything I am learning. Click to open it." /></a>
 
 <div align="center">
 
-<a href="https://subrata-cs.github.io/open/"><img src="./assets/hub-invite.svg?v=8" width="100%" alt="Everything I am learning, written up in one place. Free, open source, no sign-up, nothing to install. Click to start reading." /></a>
+<a href="https://subrata-cs.github.io/open/"><img src="./assets/hub-invite.svg?v=9" width="100%" alt="Everything I am learning, written up in one place. Free, open source, no sign-up, nothing to install. Click to start reading." /></a>
 
 <br/>
 
@@ -78,19 +109,15 @@
 
 </div>
 
-<img src="./assets/divider.svg?v=8" width="100%" alt="" />
+<img src="./assets/divider.svg?v=9" width="100%" alt="" />
 
-<img src="./assets/sec-publications.svg?v=8" width="100%" alt="Publications — peer-reviewed work and preprints" />
+<img src="./assets/sec-publications.svg?v=9" width="100%" alt="Publications — peer-reviewed work and preprints" />
 
 <div align="center">
 
 <!-- PUBLICATIONS:START -->
 
-| <img src="https://img.shields.io/badge/TYPE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="Type" /> | <img src="https://img.shields.io/badge/YEAR-22C9E8?style=for-the-badge&labelColor=160F3C" alt="Year" /> | <img src="https://img.shields.io/badge/PAPER-F7A93B?style=for-the-badge&labelColor=160F3C" alt="Paper" /> |
-|:---:|:---:|:---|
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2027-F65C8E?style=for-the-badge&labelColor=160F3C" alt="2027" /> | <a href="https://example.com/paper-2027-conference"><img src="https://img.shields.io/badge/DEMO%20PAPER%20III%20%E2%80%94%20I%20WILL%20UPDATE-160F3C?style=for-the-badge" alt="Demo Paper III — I will update" /></a><a href="https://example.com/paper-2027-conference"><img src="https://img.shields.io/badge/OPEN-1F6FEB?style=for-the-badge" alt="Open Demo Paper III — I will update" /></a> |
-| <img src="https://img.shields.io/badge/CONFERENCE-6D5AF7?style=for-the-badge&labelColor=160F3C" alt="conference" /> | <img src="https://img.shields.io/badge/2026-9B5CF6?style=for-the-badge&labelColor=160F3C" alt="2026" /> | <a href="https://example.com/paper-2026-conference"><img src="https://img.shields.io/badge/DEMO%20PAPER%20I%20%E2%80%94%20I%20WILL%20UPDATE-160F3C?style=for-the-badge" alt="Demo Paper I — I will update" /></a><a href="https://example.com/paper-2026-conference"><img src="https://img.shields.io/badge/OPEN-1F6FEB?style=for-the-badge" alt="Open Demo Paper I — I will update" /></a> |
-| <img src="https://img.shields.io/badge/JOURNAL-22C9E8?style=for-the-badge&labelColor=160F3C" alt="journal" /> | <img src="https://img.shields.io/badge/2026-22C58B?style=for-the-badge&labelColor=160F3C" alt="2026" /> | <a href="https://example.com/paper-2026-journal"><img src="https://img.shields.io/badge/DEMO%20PAPER%20II%20%E2%80%94%20I%20WILL%20UPDATE-160F3C?style=for-the-badge" alt="Demo Paper II — I will update" /></a><a href="https://example.com/paper-2026-journal"><img src="https://img.shields.io/badge/OPEN-1F6FEB?style=for-the-badge" alt="Open Demo Paper II — I will update" /></a> |
+<img src="https://img.shields.io/badge/NO_PUBLICATIONS_YET-%E2%80%94_RESEARCH_IN_PROGRESS-221A55?style=for-the-badge&labelColor=160F3C" alt="No publications yet — research in progress" />
 
 <a href="https://github.com/Subrata-CS/Subrata-CS/edit/main/assets/_generate_assets.py"><img src="https://img.shields.io/badge/%2B-ADD_A_PAPER-221A55?style=for-the-badge&labelColor=160F3C" alt="Add a paper" /></a>
 
@@ -98,9 +125,9 @@
 
 </div>
 
-<img src="./assets/divider.svg?v=8" width="100%" alt="" />
+<img src="./assets/divider.svg?v=9" width="100%" alt="" />
 
-<img src="./assets/sec-reach.svg?v=8" width="100%" alt="Reach me — mail, profiles and repositories" />
+<img src="./assets/sec-reach.svg?v=9" width="100%" alt="Reach me — mail, profiles and repositories" />
 
 <div align="center">
 
@@ -118,10 +145,10 @@
 
 </div>
 
-<img src="./assets/divider.svg?v=8" width="100%" alt="" />
+<img src="./assets/divider.svg?v=9" width="100%" alt="" />
 
 <div align="center">
 
-<img src="./assets/footer.svg?v=8" width="100%" alt="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad" />
+<img src="./assets/footer.svg?v=9" width="100%" alt="Subrata Pramanik — M.Tech + Ph.D. researcher, visual document understanding, IIIT Allahabad" />
 
 </div>

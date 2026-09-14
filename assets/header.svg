@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Subrata Pramanik, Research Scholar in Computer Vision and Pattern Recognition, IIIT Allahabad, formerly TCS">
-<title>Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Subrata Pramanik, M.Tech and Ph.D. researcher in visual document understanding at IIIT Allahabad, formerly TCS">
+<title>Subrata Pramanik — M.Tech + Ph.D. researcher, IIIT Allahabad</title>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0%" stop-color="#0A0620"/><stop offset="50%" stop-color="#151038"/><stop offset="100%" stop-color="#0A0620"/>
@@ -50,7 +50,7 @@
 <g>
 <rect x="74" y="70" width="288" height="42" rx="21" fill="#221A55" stroke="#B072FF" stroke-opacity="0.75" stroke-width="1.5"/>
 <circle class="live" cx="98" cy="91" r="6" fill="#2FDCA0"/>
-<text x="116" y="98" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="19" font-weight="700" letter-spacing="2.6" fill="#EDE7FF">RESEARCH SCHOLAR</text>
+<text x="116" y="98" font-family="'JetBrains Mono','DejaVu Sans Mono',Consolas,ui-monospace,monospace" font-size="19" font-weight="700" letter-spacing="2.6" fill="#EDE7FF">M.TECH + PH.D.</text>
 </g>
 
 <text x="74" y="182" font-family="'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="55" font-weight="700" letter-spacing="0.5" fill="#FFFFFF">SUBRATA PRAMANIK</text>

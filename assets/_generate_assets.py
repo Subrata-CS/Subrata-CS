@@ -102,8 +102,8 @@ def divider():
 
 # ══════════════════════════════════════════════════════════════ header ══
 def header():
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Subrata Pramanik, Research Scholar in Computer Vision and Pattern Recognition, IIIT Allahabad, formerly TCS">
-<title>Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad</title>
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="Subrata Pramanik, M.Tech and Ph.D. researcher in visual document understanding at IIIT Allahabad, formerly TCS">
+<title>Subrata Pramanik — M.Tech + Ph.D. researcher, IIIT Allahabad</title>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0%" stop-color="{BG0}"/><stop offset="50%" stop-color="{BG1}"/><stop offset="100%" stop-color="{BG0}"/>
@@ -154,7 +154,7 @@ def header():
 <g>
 <rect x="74" y="70" width="288" height="42" rx="21" fill="{PANEL_HI}" stroke="{PURPLE}" stroke-opacity="0.75" stroke-width="1.5"/>
 <circle class="live" cx="98" cy="91" r="6" fill="{GREEN}"/>
-<text x="116" y="98" font-family="{MONO}" font-size="19" font-weight="700" letter-spacing="2.6" fill="{INK_2}">RESEARCH SCHOLAR</text>
+<text x="116" y="98" font-family="{MONO}" font-size="19" font-weight="700" letter-spacing="2.6" fill="{INK_2}">M.TECH + PH.D.</text>
 </g>
 
 <text x="74" y="182" font-family="{SANS}" font-size="55" font-weight="700" letter-spacing="0.5" fill="{INK}">SUBRATA PRAMANIK</text>
@@ -375,8 +375,8 @@ def _glyph(i, col):
 
 # ══════════════════════════════════════════════════════════════ footer ══
 def footer():
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad">
-<title>Subrata Pramanik — Research Scholar, Computer Vision and Pattern Recognition, IIIT Allahabad</title>
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" role="img" aria-label="Subrata Pramanik — M.Tech and Ph.D. researcher, visual document understanding with retrieval-augmented generation, IIIT Allahabad">
+<title>Subrata Pramanik — M.Tech + Ph.D. researcher, IIIT Allahabad</title>
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0%" stop-color="{BG0}"/><stop offset="55%" stop-color="{BG1}"/><stop offset="100%" stop-color="{BG0}"/>
@@ -403,7 +403,7 @@ def footer():
 <g class="wv"><path d="M0 68 q150 -26 300 0 t300 0 t300 0 t300 0 t300 0 t300 0 V110 H0 Z" fill="url(#w1)"/></g>
 </g>
 <text x="600" y="66" text-anchor="middle" font-family="{SANS}" font-size="32" font-weight="700" letter-spacing="3" fill="{INK}">SUBRATA PRAMANIK</text>
-<text x="600" y="98" text-anchor="middle" font-family="{MONO}" font-size="18" font-weight="600" letter-spacing="1.8" fill="{INK_3}">RESEARCH SCHOLAR · COMPUTER VISION &amp; PATTERN RECOGNITION · IIIT ALLAHABAD</text>
+<text x="600" y="98" text-anchor="middle" font-family="{MONO}" font-size="18" font-weight="600" letter-spacing="1.8" fill="{INK_3}">M.TECH + PH.D. RESEARCHER · VISUAL DOCUMENT UNDERSTANDING · IIIT ALLAHABAD</text>
 <g class="bc">
 <circle cx="566" cy="124" r="6" fill="{GREEN}"/><circle cx="600" cy="124" r="6" fill="{CYAN}"/><circle cx="634" cy="124" r="6" fill="{VIOLET}"/>
 </g>
@@ -422,8 +422,8 @@ def typing():
     instead of three overlapping ones.
     """
     lines = [
-        ("Computer Vision · Pattern Recognition", CYAN),
-        ("Research Scholar at IIIT Allahabad", "#B9A8FF"),
+        ("Visual Document Understanding · RAG", CYAN),
+        ("M.Tech + Ph.D. at IIIT Allahabad", "#B9A8FF"),
         ("Ex-TCSer · Building the Learning Hub", GREEN),
     ]
     out = []
@@ -436,7 +436,7 @@ def typing():
             f'<rect class="car" x="{600 + half + 12:.0f}" y="90" width="6" height="38" rx="3" fill="{AMBER}"/>'
             f'</g>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Computer vision and pattern recognition · Research scholar at IIIT Allahabad · Ex-TCSer, building the Learning Hub">
-<title>Computer Vision · Pattern Recognition — Research Scholar at IIIT Allahabad — Ex-TCSer</title>
+<title>Visual Document Understanding · RAG — M.Tech + Ph.D. at IIIT Allahabad — Ex-TCSer</title>
 <defs>
 <linearGradient id="rain" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0%" stop-color="{VIOLET}"><animate attributeName="stop-color" values="{VIOLET};{PINK};{CYAN};{VIOLET}" dur="14s" repeatCount="indefinite"/></stop>
@@ -558,9 +558,11 @@ def hub_invite():
 #   ("conference" | "journal" | "preprint" | "workshop" | "thesis",
 #    year, title, link)
 PUBLICATIONS = [
-    ("conference", 2027, "Demo Paper III — I will update", "https://example.com/paper-2027-conference"),
-    ("conference", 2026, "Demo Paper I — I will update",   "https://example.com/paper-2026-conference"),
-    ("journal",    2026, "Demo Paper II — I will update",  "https://example.com/paper-2026-journal"),
+    # Ekhono kono paper publish hoy ni, tai list ta khali.
+    # Paper accept hole niche er moto ekta line add kore script ta abar chalan:
+    #   ("conference", 2027, "Asol paper er title", "https://link-to-paper"),
+    #   ("journal",    2027, "Asol paper er title", "https://link-to-paper"),
+    # Type: conference | journal | preprint | workshop | thesis
 ]
 
 # Where the "+ ADD A PAPER" pill sends you: straight to this file on GitHub.
@@ -588,6 +590,17 @@ def bslug(s):
 
 
 def publications_table():
+    if not PUBLICATIONS:
+        # Nothing published yet. Say so plainly rather than showing an empty
+        # table or placeholder rows.
+        note = ("https://img.shields.io/badge/NO_PUBLICATIONS_YET-"
+                "%E2%80%94_RESEARCH_IN_PROGRESS-221A55"
+                "?style=for-the-badge&labelColor=160F3C")
+        pill = ("https://img.shields.io/badge/%2B-ADD_A_PAPER-"
+                f"{LABEL_BG}?style=for-the-badge&labelColor=160F3C")
+        return (f'<img src="{note}" alt="No publications yet — research in progress" />\n\n'
+                f'<a href="{ADD_PAPER_URL}"><img src="{pill}" alt="Add a paper" /></a>')
+
     head = "| " + " | ".join(
         f'<img src="{BADGE.format(label, colour)}" alt="{label.title()}" />'
         for label, colour in HEAD_COLOUR) + " |"
