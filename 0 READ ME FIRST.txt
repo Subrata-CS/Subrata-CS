@@ -1,0 +1,32 @@
+SUBRATA-CS (github.com/Subrata-CS/Subrata-CS) - WHERE EACH FILE GOES
+Open github.com in Chrome, then tap the menu (⋮) and tick "Desktop site".
+
+Every upload works the same way:
+Add file -> Upload files -> choose the file(s) -> Commit changes
+
+Step 1. Folder "1 .github-workflows"
+        Upload publications.yml into  .github/workflows
+
+Step 2. Folder "2 .github-scripts"
+        Upload profile.py into  .github/scripts
+
+Step 3. Folder "3 .github-ISSUE_TEMPLATE"
+        Upload all 4 .yml files into  .github/ISSUE_TEMPLATE
+
+Step 4. Delete the old files (open the file -> ⋯ -> Delete file -> Commit changes):
+        assets/_generate_assets.py
+        .github/scripts/add_publication.py   (if it exists)
+
+Step 5. Folder "4 repo root"
+        Upload README.md and publications.json to the main page of the repository
+
+Step 6. Create labels: github.com/Subrata-CS/Subrata-CS/labels -> New label
+        publication, news, award, service   (4 labels)
+
+Step 7. Settings -> Actions -> General -> Workflow permissions
+        -> Read and write permissions -> Save
+
+Do steps 1 to 4 before step 5. Otherwise the old workflow brings back
+the "NO PUBLICATIONS YET" badge.
+
+Check: open the Actions tab. A green tick next to "Publications" means it works.

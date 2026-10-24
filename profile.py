@@ -72,7 +72,7 @@ def replace_block(doc, name, body):
 # ─────────────────────────────────────────────────────────────── build ──
 def render_publications(pubs):
     if not pubs:
-        return "\nPapers under review, coming soon.\n"
+        return "\nManuscripts currently under review.\n"
     rows = ["", "| Year | Paper | Venue | Links |", "|:---:|:---|:---:|:---:|"]
     for p in pubs:
         title = cell(p["title"])
