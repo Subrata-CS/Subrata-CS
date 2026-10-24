@@ -27,7 +27,9 @@ I'm looking for research internships for Summer 2027.
 
 <!-- PUBLICATIONS:START -->
 
-Papers under review, coming soon.
+<img src="https://img.shields.io/badge/NO_PUBLICATIONS_YET-%E2%80%94_RESEARCH_IN_PROGRESS-221A55?style=for-the-badge&labelColor=160F3C" alt="No publications yet — research in progress" />
+
+<a href="https://github.com/Subrata-CS/Subrata-CS/edit/main/assets/_generate_assets.py"><img src="https://img.shields.io/badge/%2B-ADD_A_PAPER-221A55?style=for-the-badge&labelColor=160F3C" alt="Add a paper" /></a>
 
 <!-- PUBLICATIONS:END -->
 
