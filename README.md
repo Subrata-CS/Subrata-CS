@@ -11,7 +11,7 @@ I am an integrated M.Tech + Ph.D. student in Information Technology, advised by 
 
 I am open to **research internship opportunities for Summer 2027**.
 
-[Website](https://subrata-cs.github.io/) · [LinkedIn](https://www.linkedin.com/in/subrata-cs) · [ORCID](https://orcid.org/0009-0001-5676-4312) · pmr2024003 (at) iiita.ac.in
+[Website](https://subrata-cs.github.io/) · [LinkedIn](https://www.linkedin.com/in/subrata-cs) · [ORCID](https://orcid.org/0009-0001-5676-4312) · pmm2024003 (at) iiita.ac.in
 
 <!-- NEWS:START -->
 
