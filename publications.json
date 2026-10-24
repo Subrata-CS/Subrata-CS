@@ -1,10 +1,16 @@
 {
-  "_comment": "Ekhono kono paper publish hoy ni, tai list ta khali. Paper accept hole README er '+ Add a paper' button use korun, ba ei file e hate add korun. type: conference | journal | preprint | workshop | thesis",
-  "_example": {
-    "type": "conference",
-    "year": 2027,
-    "title": "Asol paper er title ekhane",
-    "link": "https://link-to-the-paper"
-  },
-  "publications": []
+  "_help": "README and website read this file. Add entries with the + button (subrata-cs.github.io/#edit) or Issues > New issue. Only add things that are real and public.",
+  "news": [
+    {
+      "date": "2024-07",
+      "text": "Joined the integrated M.Tech + Ph.D. programme at the Indian Institute of Information Technology Allahabad (iMeDIA Lab)."
+    },
+    {
+      "date": "2024-07",
+      "text": "Started as Teaching Assistant for Problem Solving with Programming and Data Analytics."
+    }
+  ],
+  "publications": [],
+  "awards": [],
+  "service": []
 }
