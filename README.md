@@ -1,18 +1,17 @@
-<a href="https://subrata-cs.github.io/"><img src="./assets/banner.png" width="100%" alt="Subrata Pramanik, Ph.D. student at the Indian Institute of Information Technology Allahabad" /></a>
+**Ph.D. Student** at the **Indian Institute of Information Technology Allahabad** · [iMeDIA Lab](https://imedia.iiita.ac.in/)<br>
+Visual Document Understanding · Multimodal Retrieval-Augmented Generation · Vision-Language Models
 
-### Hi, I'm Subrata 👋
+I am an integrated M.Tech + Ph.D. student in Information Technology, advised by [Dr. Mohammed Javed](https://sites.google.com/site/mohammedjaved2016) and externally supervised by [Prof. David Doermann](https://cse.buffalo.edu/~doermann/) (University at Buffalo). My research studies how vision-language models read, retrieve and reason over visually rich documents such as scanned pages, forms, tables, charts and infographics.
 
-I'm a Ph.D. student at the Indian Institute of Information Technology Allahabad, in the [iMeDIA Lab](https://imedia.iiita.ac.in/). I work on visual document understanding with Dr. Mohammed Javed and Prof. David Doermann (University at Buffalo).
+### Research Interests
 
-Things I'm working on right now:
+- **Visual document understanding:** layout-aware and OCR-free reading of real-world documents
+- **Multimodal RAG:** retrieving the right page or region before the model answers
+- **Evaluation:** fair and reproducible comparison of document VQA models on DocVQA, InfographicVQA and ChartQA
 
-- how vision-language models read scanned pages, forms, tables and charts
-- multimodal RAG, i.e. finding the right page or region before the model answers
-- evaluating document VQA models (DocVQA, InfographicVQA, ChartQA) fairly
+I am open to **research internship opportunities for Summer 2027**.
 
-I'm looking for research internships for Summer 2027.
-
-[Website](https://subrata-cs.github.io/) · [LinkedIn](https://www.linkedin.com/in/subrata-cs) · [ORCID](https://orcid.org/0009-0001-5676-4312)
+[Website](https://subrata-cs.github.io/) · [LinkedIn](https://www.linkedin.com/in/subrata-cs) · [ORCID](https://orcid.org/0009-0001-5676-4312) · pmr2024003 (at) iiita.ac.in
 
 <!-- NEWS:START -->
 
@@ -27,9 +26,7 @@ I'm looking for research internships for Summer 2027.
 
 <!-- PUBLICATIONS:START -->
 
-<img src="https://img.shields.io/badge/NO_PUBLICATIONS_YET-%E2%80%94_RESEARCH_IN_PROGRESS-221A55?style=for-the-badge&labelColor=160F3C" alt="No publications yet — research in progress" />
-
-<a href="https://github.com/Subrata-CS/Subrata-CS/edit/main/assets/_generate_assets.py"><img src="https://img.shields.io/badge/%2B-ADD_A_PAPER-221A55?style=for-the-badge&labelColor=160F3C" alt="Add a paper" /></a>
+Manuscripts currently under review.
 
 <!-- PUBLICATIONS:END -->
 
